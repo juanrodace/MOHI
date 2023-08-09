@@ -58,6 +58,10 @@ A continuación, se presenta el contenido general del curso. Si desea acceder a 
 
 ### [Sección 2.](Contenido/2.HEC-HMS/Readme.md) Modelación hidrológica. Software HEC-HMS.
 
+### [Sección 3.](Contenido/3.HEC-RAS/Readme.md) Modelación hidráulica del flujo a superficie libre. Software HEC-RAS.
+
+### [Sección 4.](Contenido/4.EPANET/Readme.md) Modelación hidráulica del flujo a presión. Software EPANET.
+
 
 ## Parte 1
 
@@ -82,11 +86,6 @@ A continuación, se presenta el contenido general del curso. Si desea acceder a 
 | [Tanque de alimentación asimétricos](ModulosClases/ModuloNo.3/TanqueAsimetricos.md)                                                                   | Utilizando las herramientas de Epanet se incluirán tanques de alimentación con formas asimétrica (diferentes a un cubo o a un paralelepípedo) en un sistema hidráulico con una red de flujo a presión.                                                                                                 | 
 | [Válvulas y accesorios con pérdidas menores](ModulosClases/ModuloNo.3/ValvulasyAccesorios.md)                                                         | Se adicionarán en algunos tramos de una red hidráulica previamente elaborada algunos accesorios que generará pérdidas menores. Adicionalmente se agregarán válvulas con especificaciones de apertura                                                                                                   |
 | [Incorporación de datos para la calibración de una red hidráulica utilizando EPANET](ModulosClases/ModuloNo.3/Calibracion.md)                         | A partir de valores de entrada predefinidos realizar un proceso de calibración a partir de la modelación secuencial de una red utilizando la herramienta de calibración incorporada en EPANET.                                                                                                         |
-
-
-### [Sección 3.](Contenido/3.HEC-RAS/Readme.md) Modelación hidráulica del flujo a superficie libre. Software HEC-RAS.
-
-### [Sección 4.](Contenido/4.EPANET/Readme.md) Modelación hidráulica del flujo a presión. Software EPANET.
 
 ### [Sección 5.](Contenido/5.SWMM/Readme.md) Modelación hidráulica de redes de drenaje o alcantarillado. Software SWMM.
 
