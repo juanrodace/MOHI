@@ -19,6 +19,9 @@ Este curso está concebido para ofrecer herramientas que permiten aplicar concep
 
 Por medio de las herramientas de modelación se podrán reproducir determinados fenómenos o procesos relacionados con el ciclo hidrológico y el flujo o transporte de los fluidos. Sus resultados se emplean en el ámbito de la ingeniería para tratar diferentes aspectos, como los relacionados con el transporte y distribución del agua, la intervención de cauces, el desarrollo de estructuras o vías, la hidráulica fluvial, entre otros. 
 
+<div align="center"><a href="Contenido/1. MOHI - Introducción Curso.pdf" target="_blank"><img src="Contenido/.icons/Presentation.png" alt="UECI" width="50%" border="0" /></a><br></div>
+
+
 ## Dirigido a
 
 Entidades públicas, empresas prestadoras de servicios, autoridades ambientales, privados, profesionales y/o estudiantes en Ingeniería Civil, Ingeniería Sanitaria y Ambiental, personal que labore áreas de consultoría en la Gestión del Riesgo, en el sector de agua y obras hidráulicas y el modelamiento de inundaciones como herramienta de planificación para el ordenamiento del territorio.
