@@ -1,9 +1,9 @@
 <div align="center"><a href="https://www.escuelaing.edu.co/es/investigacion-e-innovacion/centro-de-estudios-hidraulicos/" target="_blank"><img src="https://github.com/rcfdtools/R.TeachingResearchGuide/blob/main/CaseUse/.icons/IconCEHBanner.jpg" alt="R.LTWB" width="100%" border="0" /></a></div>
 
-# Curso de Epanet - Módulo 2 - Resultados. Análisis y revisión.
+# Resultados. Análisis y revisión.
 
 <div align="center">
-  <img src="../../.icons/IconoEpanetV3.png" width="600px">
+  <img src="../../.icons/EPANET.png" width="200px">
 </div>
 
 <div align="center">
@@ -197,8 +197,8 @@ _CursoEpanetBasico-Intermedio es de uso libre para fines académicos.
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [AndresOtalora92](https://github.com/AndresOtalora92?tab=repositories) en GitHub._
 
 
-| [Anterior](../ModuloNo.2/AlimentacionEPANET.md) | [:house: Inicio](../../README.md) | [:beginner: Ayuda / Colabora] | [Siguiente](../ModuloNo.3/DemandaVariableNodos.md) |
-|----------------------------|-----------------------------------|--------------------------------------------------------------------------------------------------|----------------------------------------------------|
+| [Anterior](../Parte1/AlimentacionEPANET.md) | [:house: Inicio](../../../Readme.md) | [:beginner: Ayuda / Colabora] | [Siguiente](../Parte2/DemandaVariableNodos.md) |
+|----------------------------|-----------------------------------|--------------------------------------------------------------------------------------------------|----------------------------------------------|
 
 <div align="center"><a href="https://enlace-academico.escuelaing.edu.co/psc/FORMULARIO/EMPLOYEE/SA/c/EC_LOCALIZACION_RE.LC_FRM_ADMEDCO_FL.GBL" target="_blank"><img src="https://github.com/rcfdtools/R.TeachingResearchGuide/blob/main/CaseUse/.icons/IconCEHBotonCertificado.png" alt="R.LTWB" width="260" border="0" /></a></div>
 
