@@ -376,8 +376,8 @@ _CursoEpanetBasico-Intermedio es de uso libre para fines académicos.
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [AndresOtalora92](https://github.com/AndresOtalora92?tab=repositories) en GitHub._
 
 
-| [Anterior](../../../README.md) | [:house: Inicio](../../../README.md) | [:beginner: Ayuda / Colabora] | [Siguiente](../../Trazado_red_EPANET.md) |
-|--------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------------------|---------------------------------------|
+| [Anterior](../../../README.md) | [:house: Inicio](../../../README.md) | [:beginner: Ayuda / Colabora] | [Siguiente](../Parte1/Trazado_red_EPANET.md) |
+|--------------------------------------------------|-----------------------------------|--------------------------------------------------------------------------------------------------|----------------------------------------------|
 
 <div align="center"><a href="https://enlace-academico.escuelaing.edu.co/psc/FORMULARIO/EMPLOYEE/SA/c/EC_LOCALIZACION_RE.LC_FRM_ADMEDCO_FL.GBL" target="_blank"><img src="https://github.com/rcfdtools/R.TeachingResearchGuide/blob/main/CaseUse/.icons/IconCEHBotonCertificado.png" alt="R.LTWB" width="260" border="0" /></a></div>
 
