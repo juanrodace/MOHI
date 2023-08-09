@@ -52,12 +52,12 @@ A continuación, se presenta el contenido general del curso. Si desea acceder a 
 
 ### [Sección 1.](Contenido/1.SIG/Readme.md) Sistemas de información geográfica (SIG). Fundamentos.
 
-| Microcontenido                                                      | Detalle           |
-|---------------------------------------------------------------------|-------------------|
-| [Conceptos Básicos.](Contenido/1.SIG/Conceptos.md)                  |                   |
-| [Fundamentos Generales.](Contenido/1.SIG/Fundamentos.md)            |                   |
-| [QGIS. Generalidades, usos y estructura.](Contenido/1.SIG/QGIS.md)  |                   |
-| [QGIS. Herramientas de geoprocesamiento.](Contenido/1.SIG/QGIS2.md) |                   |
+| Microcontenido                                                      | Detalle                                                                                                                                                                              |
+|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Conceptos Básicos.](Contenido/1.SIG/Conceptos.md)                  | Concepto general de los sistemas de información geográfica (SIG), aplicación, utilidad y funciones. Tipos de herramientas SIG.                                                       |
+| [Fundamentos Generales.](Contenido/1.SIG/Fundamentos.md)            | Georreferenciación y sistemas de coordenadas. Tipos de datos y codificación. Formatos, registros y atributos.                                                                        |
+| [QGIS. Generalidades, usos y estructura.](Contenido/1.SIG/QGIS.md)  | Introducción a la herramienta QGIS y ArcGIS. Estructura, ventanas, funciones. Visualización, simbología, manipulación gráficas, formatos y desarrollo de gráficas a partir de datos. |
+| [QGIS. Herramientas de geoprocesamiento.](Contenido/1.SIG/QGIS2.md) | Algunas funciones espaciales o de geoprocesamiento de las herramientas SIG. Aplicación en QGIS.                                                                                      |
 
 ### [Sección 2.](Contenido/2.HEC-HMS/Readme.md) Modelación hidrológica. Software HEC-HMS.
 
