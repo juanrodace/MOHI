@@ -59,7 +59,7 @@ A continuación, se presenta el contenido general del curso. Si desea acceder a 
 ### [Sección 2.](Contenido/2.HEC-HMS/Readme.md) Modelación hidrológica. Software HEC-HMS.
 
 
-## Módulo No. 2 - Uso y aplicación básica de EPANET. Ventanas y herramientas
+## Parte 1
 
 | Microcontenido                                                                                                                                        | Detalle                                                                                                                                                                                                                                                                                                                                                                                          | 
 |-------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -70,7 +70,7 @@ A continuación, se presenta el contenido general del curso. Si desea acceder a 
 | [Resultados. Análisis y revisión](ModulosClases/ModuloNo.2/AnalisisResultados.md)                                                                                                             | Con la red construida, los accesorios definidos y las características de la red, se describirán los procedimientos para la ejecución del modelo hidráulico y la extración de los resultados. Se aprenderá metodología para el análisis de la información utilizando herramientas de Office, herramientas SIG y las herramientas integradas directamente en EPANET.                               | 
 
 
-## Módulo No. 3 - Uso y aplicación intermedia de EPANET 
+## Parte 2
 
 
 | Microcontenido                                                                                                                                        | Detalle                                                                                                                                                                                                                                                                                                | 
