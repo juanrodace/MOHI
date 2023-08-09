@@ -60,7 +60,7 @@ A continuación, se presenta el contenido general del curso. Si desea acceder a 
 
 ### [Sección 3.](Contenido/3.HEC-RAS/Readme.md) Modelación hidráulica del flujo a superficie libre. Software HEC-RAS.
 
-### [Sección 4.](Contenido/4.EPANET/Parte 1/Generalidades_EPANET.md) Modelación hidráulica del flujo a presión. Software EPANET.
+### [Sección 4.](Contenido/3.HEC-RAS/Readme.md) Modelación hidráulica del flujo a presión. Software EPANET.
 
 
 ## Parte 1
