@@ -1,0 +1,9 @@
+
+;Datos medidos a las 12 pm
+;Location	Time	Value;
+;------------------------------
+N2		0	7
+N3		0	5
+N4		0	6
+N5		0	6
+N6		0	7
