@@ -25,8 +25,8 @@ _MOHI es de uso libre para fines académicos, conoce nuestra licencia, cláusula
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [juanrodace](https://github.com/juanrodace) en GitHub._
 
-| [:arrow_backward:Anterior](../../Readme.md) | [:house: Inicio](../../Readme.md) | [Siguiente:arrow_forward:](../2.HEC-HMS/Readme.md) |
-|---------------------------------------------|-----------------------------------|----------------------------------------------------|
+| [:arrow_backward:Anterior](../../Readme.md) | [:house: Inicio](../../Readme.md) | [Siguiente:arrow_forward:](Conceptos.md) |
+|---------------------------------------------|-----------------------------------|---------------------------------------------|
 
 ##
 
