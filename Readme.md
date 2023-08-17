@@ -63,10 +63,43 @@ A continuación, se presenta el contenido general del curso. Si desea acceder a 
 
 ### [Sección 3.](Contenido/3.HEC-RAS/Readme.md) Modelación hidráulica del flujo a superficie libre. Software HEC-RAS.
 
+#### [Parte 1](https://github.com/juanrodace/J.HRAS/tree/main/Section02/Readme.md). Modelación hidráulica básica
+
+| Microcontenido                                                                                          | Detalle                                                                                                                                                                                                                                                                                                                      | 
+|---------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Cargue y   validación geométrica básica.](https://github.com/juanrodace/J.HRAS/tree/main/Section02/Geometry/Readme.md)                                | En esta clase se presentan las funcionalidades, características y procedimiento general para el cargue y edición de la geometría de un modelo hidráulico.                                                                                                                                                                    |
+| [Cargue de   información topográfica.](https://github.com/juanrodace/J.HRAS/tree/main/Section02/Topography/Readme.md)                                  | En esta clase se presenta el proceso recomendado para cargar y validad información topográfica para la definición de la geometría del canal con uso de RASMapper y de edición geométrica.                                                                                                                                    |
+| [Condiciones hidráulicas y simulación 1D en flujo permanente.](https://github.com/juanrodace/J.HRAS/tree/main/Section02/Simulation_1D_SF/Readme.md)    | En esta clase se presentan la definición de las condiciones hidráulicas y de frontera para la modelación del flujo a superficie libre unidimensional (1D) en condición de flujo permanente.                                                                                                                                  |
+| [Condiciones hidráulicas y simulación 1D en flujo no permanente.](https://github.com/juanrodace/J.HRAS/tree/main/Section02/Simulation_1D_UF/Readme.md) | En esta clase se presentan la definición de las condiciones hidráulicas y de frontera para la modelación del flujo a superficie libre unidimensional (1D) en condición de flujo no permanente.                                                                                                                               |
+| [Visualización   de resultados.](https://github.com/juanrodace/J.HRAS/tree/main/Section02/Results/Readme.md)                                           | En esta clase se presentan las diferentes opciones de visualización de los resultados de un modelo unidimensional (1D) incluyendo las visualizaciones en tablas y visualizaciones gráficas. Igualmente, se presentan los errores, avisos (warnings) y notas (notes) comunes que pueden aparecer en el proceso de simulación. |
+
+
+#### [Parte 2](https://github.com/juanrodace/J.HRAS/tree/main/Section03/Readme.md). Modelación con opciones avanzadas
+
+| Microcontenido                                                 | Detalle                                                                                                                                                                                            | 
+|----------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Manning desde capa geoespacial.](https://github.com/juanrodace/J.HRAS/tree/main/Section03/Manning/Readme.md) | En esta clase se presenta el proceso recomendado para la definición del coeficiente de Manning en el modelo hidráulico a partir de un archivo de cobertura de suelo mediante el uso de RAS Mapper. |
+| [Confluencias y separaciones.](https://github.com/juanrodace/J.HRAS/tree/main/Section03/Confluence/Readme.md) | En esta clase se presenta el proceso recomendado para la definición geométrica donde dos o más tramos se unen o separan.                                                                           |
+| [Diques.](https://github.com/juanrodace/J.HRAS/tree/main/Section03/Levees/Readme.md)                          | En esta clase se presenta el uso y aplicación de diques en la simulación hidráulica.                                                                                                               |
+| [Estructuras.](https://github.com/juanrodace/J.HRAS/tree/main/Section03/Structures/Readme.md)                 | En esta clase se presentan la inclusión de diferentes estructuras en el sistema hidráulico a modelar como puentes, pontones, alcantarillas, presas, vertederos, entre otros.                       |
+| [Socavación.](https://github.com/juanrodace/J.HRAS/tree/main/Section03/Scour/Readme.md)                       | En esta clase se presentan la opción de simulación y cálculo de la socavación local en puentes del sistema hidráulico.                                                                             |
+
+
+#### [Parte 3.](https://github.com/juanrodace/J.HRAS/tree/main/Section04) Modelación hidráulica bidimensional
+
+| Microcontenido                                                          | Detalle                                                                                                                                                                        | 
+|-------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Modelo de terreno.](https://github.com/juanrodace/J.HRAS/tree/main/Section04/MDT/Readme.md)                           | En esta clase se presenta el proceso recomendado la creación del proyecto, configuración del RAS mapper y creación del modelo de terreno.                                      |
+| [Área 2D y malla.](https://github.com/juanrodace/J.HRAS/tree/main/Section04/Mesh/Readme.md)                            | En esta clase se presenta el proceso recomendado para la delimitación del área de drenaje y la creación y definición de la malla del modelo bidimensional (2D).                |
+| [Propiedades geométricas e hidráulicas.](https://github.com/juanrodace/J.HRAS/tree/main/Section04/Hydraulic/Readme.md) | En esta clase se presenta el proceso recomendado para el cálculo de las propiedades hidráulicas y geométricas en las celdas y caras de la malla.                               |
+| [Simulación 2D.](https://github.com/juanrodace/J.HRAS/tree/main/Section04/Simulation2D/Readme.md)                      | En esta clase se presenta el proceso recomendado para la definición de datos y condiciones de frontera y la simulación bidimensional (2D) en condición de flujo no permanente. |
+| [Resultados y mapas.](https://github.com/juanrodace/J.HRAS/tree/main/Section04/Results/Readme.md)                      | En esta clase se presentan las diferentes opciones de visualización de resultados y creación de mapas para los modelos 2D.                                                     |
+##
+
 ### [Sección 4.](Contenido/4.EPANET/Parte1/Generalidades_EPANET.md) Modelación hidráulica del flujo a presión. Software EPANET.
 
 
-## Parte 1
+#### Parte 1
 
 | Microcontenido                                                                                                                                        | Detalle                                                                                                                                                                                                                                                                                                                                                                                          | 
 |-------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -77,7 +110,7 @@ A continuación, se presenta el contenido general del curso. Si desea acceder a 
 | [Resultados. Análisis y revisión](Contenido/4.EPANET/Parte1/AnalisisResultados.md)                                                                                                             | Con la red construida, los accesorios definidos y las características de la red, se describirán los procedimientos para la ejecución del modelo hidráulico y la extración de los resultados. Se aprenderá metodología para el análisis de la información utilizando herramientas de Office, herramientas SIG y las herramientas integradas directamente en EPANET.                               | 
 
 
-## Parte 2
+#### Parte 2
 
 
 | Microcontenido                                                                                                                                        | Detalle                                                                                                                                                                                                                                                                                                | 
