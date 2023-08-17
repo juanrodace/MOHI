@@ -74,7 +74,7 @@ Los SIG se han vuelto cada vez más populares en los últimos años debido a la 
 - Gestión de Infraestructuras: Los SIG se utilizan para gestionar activos como edificios, instalaciones eléctricas y sistemas de distribución de agua. Facilitan la programación de mantenimiento y la toma de decisiones sobre inversiones.
 - Arqueología y Patrimonio Cultural: Los SIG se aplican en la localización y preservación de sitios arqueológicos y patrimonio cultural. Ayudan a analizar patrones espaciales y a tomar decisiones sobre excavaciones y conservación.
 - Análisis de Mercado: Las empresas utilizan SIG para identificar ubicaciones estratégicas para establecer tiendas o sucursales. Los datos geográficos ayudan a comprender la distribución demográfica y los comportamientos de los consumidores.
-- Educación: Los SIG se utilizan en la enseñanza y el aprendizaje para ilustrar conceptos geográficos y permitir a los estudiantes explorar patrones y relaciones espaciales.
+- Educación: Los SIG se utilizan en la enseñanza y el aprendizaje para ilustrar conceptos geográficos y permitir a los estudiantes explorar patrones y relaciones especiales...
 
 ## Tipos de herramienta SIG
 
