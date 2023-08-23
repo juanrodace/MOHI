@@ -121,6 +121,19 @@ No existe una proyección perfecta que sea adecuada para todas las situaciones, 
 ## Tipos de datos
 
 
+### Control de versiones
+
+| Versión | Descripción                                                    |                    Autor                    | Horas |
+|:-------:|:---------------------------------------------------------------|:-------------------------------------------:|:-----:|
+| 2023.08 | Versión inicial, definición de estructura general y contenido. | [juanrodace](https://github.com/juanrodace) |  1.0  |
+| 2023.08 | Inclusión de conceptos, esquemas y ejemplos.                   | [juanrodace](https://github.com/juanrodace) |  3.0  |
+
+| [:arrow_backward:Anterior](Conceptos.md) | [:house: Inicio](../../Readme.md) | [:beginner: Ayuda](https://github.com/juanrodace/MOHI/discussions) | [Siguiente:arrow_forward:](QGIS.md) |
+|------------------------------------------|-----------------------------------|--------------------------------------------------------------------|-------------------------------------|
+
+_MOHI es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](../../License.md)._
+
+_¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [juanrodace](https://github.com/juanrodace) en GitHub._ 
 
 [^1]: http://www.albireotopografia.es/wp-content/uploads/2015/01/Topografia-geoide-y-elipsoide.jpg
 [^2]: Preparation for Orienteering at the Priory. Geospatial Field Methods Couse. 2014.
