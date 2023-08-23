@@ -44,17 +44,6 @@ El objetivo principal de esta actividad es aplicar en el software los conceptos 
 </div>
 
 
-## Ejemplo de aplicación
-
-Utilizando la red hidráulica construida y presentada en las actividades anteriores de este módulo (módulo 3) se desarollará esta actividad. Se adicionará los siguientes accesorios a la red (los valores de "K" de cada tramo de tubería fueron tomados de las tablas de la actividad "Pérdidas de energía" del módulo 1:
-
-<div align="center">
-  <img src="Imagenes/FiguraNo.2.133.PNG" width="700px">
-</div>
-
-
-Adicionalmente se adicionará un nuevo tramo de tubería con una válvula Reductora de Presión o tipo VRP según EPANET.
-
 ## Tipos de válvulas en EPANET
 
 EPANET dentro de su base de datos permite la modelación de seis (6) tipos de válvulas las cuales se resumen a continuación:
@@ -128,6 +117,20 @@ menores. Normalmente, los fabricantes proporcionan una relación entre el grado 
 
 Las GPV se utilizan para representar un elemento con un comportamiento diferente y una relación entre el caudal y las pérdidas de energía. Además, se puede hacer uso de esta válvula para simular otro tipo de elementos físicos en un sistema de acueducto. Por ejemplo, simular turbinas, pozos de aspiración o válvulas preventivas contracorriente y reductoras de caudal (Rossman, 2000).  Para lograr modelar una GPV se requiere de una curva característica (se utiliza la misma ruta de acceso descrita para una curva característica de una bomba) que relacione las pérdidas de energía en el eje de las ordenadas (expresado en metros) y el caudal en el eje de las abscisas (expresado en litros por segundo).
 
+
+## Ejemplo de aplicación
+
+Utilizando la red hidráulica construida y presentada en las actividades anteriores de este módulo (módulo 3) se desarollará esta actividad. Se adicionará los siguientes accesorios a la red (los valores de "K" de cada tramo de tubería fueron tomados de las tablas de la actividad "Pérdidas de energía" del módulo 1:
+
+<div align="center">
+  <img src="Imagenes/FiguraNo.2.133.PNG" width="700px">
+</div>
+
+
+Adicionalmente se agregará un nuevo tramo de tubería con una válvula Reductora de Presión o tipo VRP según EPANET.
+
+_a. Para este ejercicio se agregarán en cada uno de los cuatro tramos definidos en el enunciado del problema, la suma de los coeficientes de pérdidas de los accesorios que se encuentra en los tramos._
+=======
 ## Accesorios menores, pérdidas localizadas y válvulas utilizando EPANET
 
 _a. Para este ejericio se agregarán en cada uno de los cuatro tramos definidos en el enunciado del problema, la suma de los coeficientes de pérdidas de los accesorios que se encuentra en los tramos._
