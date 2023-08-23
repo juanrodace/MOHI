@@ -32,9 +32,6 @@ En este módulo se describe con detalle las ventanas, herramientas, opciones y m
 
 El objetivo principal de esta actividad es permitir que el estudiante conozca los elementos que se usarán para la construcción del modelo, el manejo del programa y sus archivos y las diferentes herramientas de edición y alimentación de los objetos que componen la cuenca hidrográfica, los cauces y los elementos hidroclimatológicos.
 
-<br>
-
-
 ## HEC-HMS. Generalidades
 
 El software para modelación hidrológica (HEC-HMS) está diseñado para simular los procesos hidrológicos en cuencas hidrográficas dendríticas. El software incluye herramientas para desarrollar análisis hidrológicos tradicionales, tales como infiltración, hidrogramas unitarios y tránsito hidrológico. HEC-HMS incluye los procedimientos necesarios para realizar simulaciones continuas en el tiempo, en las que se incluyen: evapotranspiración, deshielo y estimación de la humedad del suelo. También tiene herramientas avanzadas para la simulación de la escorrentía espacializada utilizando procesos de transformación de escorrentía lineal a sistemas distribuidos.
@@ -65,7 +62,7 @@ En el siguiente link el lector podrán descargar de manera gratuita el software 
 En la siguiente figura se presentan las principales ventanas que conforman la interface gráfica del software HEC-HMS en su versión 4.11.
 
 <div align="center">
-  <img src="Imagenes/FiguraHECHMS_1.PNG" width="500px">
+  <img src="Imagenes/FiguraHECHMS_1.PNG" width="700px">
 </div>
 
 
@@ -81,7 +78,7 @@ En la siguiente figura se presentan las principales ventanas que conforman la in
 
 A medida que el usuario va desarrollando las diferentes actividades presentadas en este módulo podrá comprender el uso de cada ventana y la aplicación de las principales herramientas que componen el uso básico del software.
 
-### íconos principales
+### Principales Herramientas
 
 Para que el usuario se vaya familiarizando con el uso de los principales íconos que se usarán en el software, a continuación se presenta una tabla resumen con la descripción general de los principales íconos de la barra de herramientas y menus 
 
