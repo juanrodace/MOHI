@@ -116,7 +116,7 @@ La utilización del sistema **MAGNA-SIRGAS** está directamente relacionada con 
 
 <div align="center">
 <br>
-<img alt="MOHI" src=".img/MAGNA-SIRGAS.jpg" width="1000px"><br>
+<img alt="MOHI" src=".img/MAGNA-SIRGAS.jpg" width="800px"><br>
 </div>
 
 
