@@ -3,7 +3,7 @@
 # Generalidades de HEC-HMS
 
 <div align="center">
-  <img src="../../.icons/HMS.PNG" width="200px">
+  <img src="../.icons/HMS.PNG" width="200px">
 </div>
 
 <div align="center">
@@ -22,11 +22,11 @@ Profesor del Centro de Estudios Hidráulicos
 andres.otalora@escuelaing.edu.co
 <br></div>
 
-Keywords: `EPANET` `Ventanas` `Software` `herramientas`
+Keywords: `HEC-HMS` `Ventanas` `Software` `herramientas`
 
 ## Introducción
 
-En este módulo se describe con detalle las ventanas, herramientas, opciones y menús que componen el software EPANET.
+En este módulo se describe con detalle las ventanas, herramientas, opciones y menús que componen el software HEC-HMS.
 
 ## Objetivos
 
