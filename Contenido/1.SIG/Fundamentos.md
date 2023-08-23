@@ -61,7 +61,7 @@ Existen varios sistemas de coordenadas geográficas que se utilizan en todo el m
 |                  ED50 (European Datum 1950)                  | Utilizado en gran parte de Europa antes de la adopción del WGS84. Aunque ha sido en gran medida reemplazado por el WGS84, todavía puede encontrarse en algunos mapas y datos antiguos.                                                                                                                                                                                          |
 |                             UTM                              | Es un sistema de coordenadas rectangulares que se utiliza para el mapeo. El sistema UTM se divide en 60 zonas, cada una de las cuales cubre 6 grados de longitud. Cada zona tiene un código de dos letras, que se basa en su ubicación geográfica. El sistema UTM se utiliza para una variedad de propósitos, como la navegación, la cartografía y la investigación científica. |
 
-#### Códigos EPSG
+### Códigos EPSG
 
 Las iniciales **EPSG** representan "European Petroleum Survey Group", que era un grupo de trabajo que originalmente se creó en Europa en la década de 1980 para desarrollar estándares y recomendaciones técnicas para la industria petrolera y del gas. Uno de los logros más notables del grupo fue la creación de un conjunto de códigos numéricos únicos llamados "Códigos EPSG" que se utilizan para identificar sistemas de referencia de coordenadas y transformaciones geodésicas en aplicaciones de Sistemas de Información Geográfica (SIG) y otros sistemas relacionados.
 
@@ -70,41 +70,18 @@ Estos códigos, conocidos como "Códigos EPSG" o "ID EPSG", proporcionan una for
 Aunque el grupo original EPSG ya no está activo, sus estándares y códigos siguen siendo ampliamente utilizados en la industria de los SIG y la cartografía. Los códigos EPSG son utilizados por muchos software y herramientas SIG para asegurarse de que los sistemas de coordenadas y las transformaciones geodésicas se interpreten correctamente en diferentes aplicaciones y plataformas. En la siguiente tabla se presentan algunos de los códigos EPSG más conocidos que representan sistemas de coordenadas geográficas y proyecciones cartográficas utilizadas en todo el mundo.
 
 | Código EPSG | Sistema de Coordenadas / Proyección     | Descripción                                                                                            |
-|-------------|-----------------------------------------|--------------------------------------------------------------------------------------------------------|
-| 4326        | WGS 84 (Latitud y Longitud)             | Sistema global de coordenadas geográficas basado en el WGS 84.                                         |
-| 3857        | WGS 84 / Pseudo-Mercator (Web Mercator) | Proyección utilizada en mapas web y aplicaciones de navegación en línea.                               |
-| 3395        | WGS 84 / World Mercator                 | Proyección Mercator modificada para representar áreas polares con menos distorsión.                    |
-| 32633       | WGS 84 / UTM zona 33                    | Sistema de coordenadas UTM para la zona 33 en Europa.                                                  |
-| 26912       | NAD83 / UTM zona 12                     | Sistema de coordenadas UTM para la zona 12 en América del Norte.                                       |
-| 23030       | ED50 / UTM zona 30                      | Sistema de coordenadas UTM para la zona 30 basado en el ED50.                                          |
-| 25832       | ETRS89 / UTM zona 32                    | Sistema de coordenadas UTM para la zona 32 en Europa basado en el ETRS89.                              |
-| 54009       | Mollweide                               | Proyección cartográfica utilizada para representar áreas extensas con distorsiones de forma reducidas. |
-| 102013      | Albers Equal Area Conic                 | Proyección cónica utilizada para representar áreas con distorsiones de área mínimas.                   |
-| 27700       | OSGB 1936 / British National Grid       | Sistema de coordenadas utilizado en el Reino Unido.                                                    |
-| 32718       | WGS 84 / UTM zona 18 sur                | Sistema de coordenadas UTM para la zona 18 en el hemisferio sur.                                       |
-
-
-#### Sistema de coordenadas en Colombia
-
-Mediante resolución No. 068 de 2005 se adoptó como único datum oficial de Colombia el Marco Geocéntrico Nacional de Referencia - MAGNA, que por estar referida a SIRGAS, se denomina convencionalmente **MAGNA-SRIGAS**. El Instituto Geográfico Agustín Codazzi (IGAC), entidad gubernamental encargada de los sistemas geodésicos nacionales de referencia, promueve la adopción de MAGNA-SIRGAS como sistema de referencia oficial del país, en reemplazo del Datum BOGOTÁ, definido en 1941. **MAGNA-SIRGAS** garantiza la compatibilidad de las coordenadas colombianas con las técnicas espaciales de posicionamiento, por ejemplo los sistemas GNSS (Global Navigation Satellite Systems), y con conjuntos internacionales de datos georreferenciados. Los parámetros del sistea de coordenadas se presentan en la siguiente tabla.
-
-| Parámetro                 | Valor                                           |
-|---------------------------|-------------------------------------------------|
-| Código EPSG               | 4686                                            |
-| Datum geodésico*          | MAGNA-SIRGAS*                                   |
-| Elipsoide                 | GRS 1980                                        |
-| Meridiano Principal       | Greenwich 0,000000000000000000 Grados decimales |
-| Semieje mayor (a), metros | 6378137                                         | 
-| Semieje menor (b), metros | 6356752.314                                     |
-| ITRF                      | 1994, Época 1995.4                              |
-
-La utilización del sistema **MAGNA-SIRGAS** está directamente relacionada con la definición de una superficie de referencia vertical (geoide) que permita obtener alturas clásicas (referidas al nivel medio del mar) a partir de información GPS. El Geoide en Colombia se ha determinado mediante la técnica remove/restore, la cual permite relacionar las características regionales (longitudes de onda larga) del campo de gravedad, expresadas en un Modelo Geopotencial Global (MGG), y sus detalles (longitudes de onda corta), obtenidos a través de la evaluación local del modelo físico matemático de Strokes (o Molodensky). Con ayuda de la herramienta QGIS podemos visualizar la información del sistema de coordenadas.
-
-<div align="center">
-<br>
-<img alt="MOHI" src=".img/MAGNA-SIRGAS.jpg" width="550px"><br>
-</div>
-
+|:-----------:|-----------------------------------------|--------------------------------------------------------------------------------------------------------|
+|    4326     | WGS 84 (Latitud y Longitud)             | Sistema global de coordenadas geográficas basado en el WGS 84.                                         |
+|    3857     | WGS 84 / Pseudo-Mercator (Web Mercator) | Proyección utilizada en mapas web y aplicaciones de navegación en línea.                               |
+|    3395     | WGS 84 / World Mercator                 | Proyección Mercator modificada para representar áreas polares con menos distorsión.                    |
+|    32633    | WGS 84 / UTM zona 33                    | Sistema de coordenadas UTM para la zona 33 en Europa.                                                  |
+|    26912    | NAD83 / UTM zona 12                     | Sistema de coordenadas UTM para la zona 12 en América del Norte.                                       |
+|    23030    | ED50 / UTM zona 30                      | Sistema de coordenadas UTM para la zona 30 basado en el ED50.                                          |
+|    25832    | ETRS89 / UTM zona 32                    | Sistema de coordenadas UTM para la zona 32 en Europa basado en el ETRS89.                              |
+|    54009    | Mollweide                               | Proyección cartográfica utilizada para representar áreas extensas con distorsiones de forma reducidas. |
+|   102013    | Albers Equal Area Conic                 | Proyección cónica utilizada para representar áreas con distorsiones de área mínimas.                   |
+|    27700    | OSGB 1936 / British National Grid       | Sistema de coordenadas utilizado en el Reino Unido.                                                    |
+|    32718    | WGS 84 / UTM zona 18 sur                | Sistema de coordenadas UTM para la zona 18 en el hemisferio sur.                                       |
 
 ### Sistema de proyección de coordenadas
 
@@ -117,6 +94,33 @@ Un sistema de proyección de coordenadas es un conjunto de reglas y fórmulas ma
 - Proyecciones pseudocilíndricas: Estas proyecciones buscan un equilibrio entre la distorsión de forma y área. Ejemplos incluyen la proyección de Mollweide y la proyección de Robinson.
 
 No existe una proyección perfecta que sea adecuada para todas las situaciones, por lo que la elección depende de las necesidades específicas y los compromisos entre diferentes tipos de distorsiones.
+
+### Sistema de coordenadas en Colombia
+
+Mediante resolución No. 068 de 2005 se adoptó como único datum oficial de Colombia el Marco Geocéntrico Nacional de Referencia - MAGNA, que por estar referida a SIRGAS, se denomina convencionalmente **MAGNA-SRIGAS**. El Instituto Geográfico Agustín Codazzi (IGAC), entidad gubernamental encargada de los sistemas geodésicos nacionales de referencia, promueve la adopción de MAGNA-SIRGAS como sistema de referencia oficial del país, en reemplazo del Datum BOGOTÁ, definido en 1941. **MAGNA-SIRGAS** garantiza la compatibilidad de las coordenadas colombianas con las técnicas espaciales de posicionamiento, por ejemplo los sistemas GNSS (Global Navigation Satellite Systems), y con conjuntos internacionales de datos georreferenciados. Los parámetros del sistea de coordenadas se presentan en la siguiente tabla.
+
+<div align="center">
+
+| Parámetro                 | Valor                                           |
+|---------------------------|-------------------------------------------------|
+| Código EPSG               | 4686                                            |
+| Datum geodésico*          | MAGNA-SIRGAS*                                   |
+| Elipsoide                 | GRS 1980                                        |
+| Meridiano Principal       | Greenwich 0,000000000000000000 Grados decimales |
+| Semieje mayor (a), metros | 6378137                                         | 
+| Semieje menor (b), metros | 6356752.314                                     |
+| ITRF                      | 1994, Época 1995.4                              |
+</div>
+
+La utilización del sistema **MAGNA-SIRGAS** está directamente relacionada con la definición de una superficie de referencia vertical (geoide) que permita obtener alturas clásicas (referidas al nivel medio del mar) a partir de información GPS. El Geoide en Colombia se ha determinado mediante la técnica remove/restore, la cual permite relacionar las características regionales (longitudes de onda larga) del campo de gravedad, expresadas en un Modelo Geopotencial Global (MGG), y sus detalles (longitudes de onda corta), obtenidos a través de la evaluación local del modelo físico matemático de Strokes (o Molodensky). Con ayuda de la herramienta QGIS podemos visualizar la información del sistema de coordenadas.
+
+<div align="center">
+<br>
+<img alt="MOHI" src=".img/MAGNA-SIRGAS.jpg" width="1000px"><br>
+</div>
+
+
+
 
 ## Tipos de datos
 
