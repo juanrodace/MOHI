@@ -3,7 +3,7 @@
 # Generalidades de HEC-HMS
 
 <div align="center">
-  <img src="../../.icons/HMS.png" width="200px">
+  <img src="../../.icons/HMS.PNG" width="200px">
 </div>
 
 <div align="center">
@@ -32,17 +32,7 @@ En este módulo se describe con detalle las ventanas, herramientas, opciones y m
 
 El objetivo principal de esta actividad es permitir que el estudiante conozca con detalle los elementos que se usarán para la construcción del modelo, el manejo del programa y sus archivos y las diferentes herramientas de edición, calibración, complementación y alimentación de los objetos que componen la red.
 
-
 <br>
-
-<br>
-
-<div align="center">
-       <a href="https://youtu.be/EyjbS4aL2CI">
-        <img src="../../.icons/INICIO_ACTIVIDAD.PNG" width="800px">
-    </a>
-</div>
-
 
 
 ## HEC-HMS. Historia 
