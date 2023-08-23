@@ -61,6 +61,15 @@ A continuación, se presenta el contenido general del curso. Si desea acceder a 
 
 ### [Sección 2.](Contenido/2.HEC-HMS/Readme.md) Modelación hidrológica. Software HEC-HMS.
 
+
+| Microcontenido                                                 | Detalle                                                                                                                                                                                                                                                                                                                        |
+|----------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Conceptos Básicos.]()                                         | Generalidades y aplicaciones del software HEC-HMS en cuencas hidrográficas.                                                                                                                                                                                                                                                    |
+| [Características morfométricas de las cuencas en HECHMS]()     | Creación de un nuevo documento en HEC-HMS donde se incluirá una cuenca hidrográfica con diferentes subcuencas. Se alimentará el software con las características morfométricas de cada subcuenca.                                                                                                                              |
+| [Estimación de caudales máximos e hidrogramas de crecientes]() | Aplicación del software HEC-HMS para la determinación del hidrograma de escorrentía directa en una cuenca hidrográfica a partir del concepto de hidrograma unitario. Se utilizarán como valores de entrada  un hietograma de diseño. Se tendrá en cuenta el tránsito hidrológico en las corrientes que escurren por la cuenca. |
+| [Estimación de series de caudales medios diarios]()            | Aplicación del software HEC-HMS para la determinación de series de caudales medios diarios en una cuenca hidrográfica a partir de los conceptos de "tanques sucesivos"                                                                                                                                                         |
+
+
 ### [Sección 3.](Contenido/3.HEC-RAS/Readme.md) Modelación hidráulica del flujo a superficie libre. Software HEC-RAS.
 
 ### [Sección 4.](Contenido/4.EPANET/Parte1/Generalidades_EPANET.md) Modelación hidráulica del flujo a presión. Software EPANET.
