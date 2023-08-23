@@ -83,7 +83,7 @@ Aunque el grupo original EPSG ya no está activo, sus estándares y códigos sig
 |    27700    | OSGB 1936 / British National Grid       | Sistema de coordenadas utilizado en el Reino Unido.                                                    |
 |    32718    | WGS 84 / UTM zona 18 sur                | Sistema de coordenadas UTM para la zona 18 en el hemisferio sur.                                       |
 
-### Sistema de proyección de coordenadas
+### Sistema de proeycción de coordenadas
 
 Un sistema de proyección de coordenadas es un conjunto de reglas y fórmulas matemáticas que se utilizan para representar la superficie curva de la Tierra en un plano bidimensional, como un mapa. Debido a que la Tierra es tridimensional y curva, es necesario aplicar una proyección para representar su forma en un mapa plano, lo que puede resultar en distorsiones en áreas, formas, distancias o direcciones. Los sistemas de proyección son esenciales para la cartografía y la representación precisa de la información geográfica en un formato utilizable. Existen muchas proyecciones diferentes, cada una con sus propias características y aplicaciones específicas. Algunos tipos comunes de sistemas de proyección de coordenadas incluyen:
 
@@ -95,7 +95,9 @@ Un sistema de proyección de coordenadas es un conjunto de reglas y fórmulas ma
 
 No existe una proyección perfecta que sea adecuada para todas las situaciones, por lo que la elección depende de las necesidades específicas y los compromisos entre diferentes tipos de distorsiones.
 
-### Sistema de coordenadas en Colombia
+## Georeferenciación en Colombia
+
+### Sistema de coordenadas MAGNA-SIRGAS
 
 Mediante resolución No. 068 de 2005 se adoptó como único datum oficial de Colombia el Marco Geocéntrico Nacional de Referencia - MAGNA, que por estar referida a SIRGAS, se denomina convencionalmente **MAGNA-SRIGAS**. El Instituto Geográfico Agustín Codazzi (IGAC), entidad gubernamental encargada de los sistemas geodésicos nacionales de referencia, promueve la adopción de MAGNA-SIRGAS como sistema de referencia oficial del país, en reemplazo del Datum BOGOTÁ, definido en 1941. **MAGNA-SIRGAS** garantiza la compatibilidad de las coordenadas colombianas con las técnicas espaciales de posicionamiento, por ejemplo los sistemas GNSS (Global Navigation Satellite Systems), y con conjuntos internacionales de datos georreferenciados. Los parámetros del sistea de coordenadas se presentan en la siguiente tabla.
 
@@ -119,8 +121,13 @@ La utilización del sistema **MAGNA-SIRGAS** está directamente relacionada con 
 <img alt="MOHI" src=".img/MAGNA-SIRGAS.jpg" width="800px"><br>
 </div>
 
+### Sistema de proyección Gauss – Krüger
+
+El sistema de proyección Gauss-Krüger es una proyección cartográfica transversal utilizada para representar áreas geográficas en mapas. Es especialmente adecuada para regiones de tamaño moderado o pequeño en latitudes medias. Fue desarrollada por los matemáticos alemanes Carl Friedrich Gauss y Johann Heinrich Louis Krüger en el siglo XIX. La característica principal de esta proyección es que divide la Tierra en múltiples zonas, cada una de las cuales se proyecta utilizando una proyección cilíndrica transversa de Gauss. Cada zona tiene su propio meridiano central, y la deformación es mínima en torno a ese meridiano. 
 
 
+
+En Colombia, el origen principal de coordenadas Gauss–Krüger se definió en la pilastra sur del observatorio Astronómico de Bogotá, asignándole los valores N= 1000000 m y E= 1000000 m. Los orígenes complementarios se han establecido a 3º y 6º de longitud al este y oeste de dicho punto. Este sistema se utiliza para la elaboración de cartografía a escalas menores que 1: 1.500.000, donde se proyecta la totalidad del territorio nacional. También se utiliza para cartografía a escalas entre 1: 10.000 y 1: 500.000 de las zonas pobladas comprendidas en la zona de 3º correspondiente.
 
 ## Tipos de datos
 
