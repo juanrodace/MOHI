@@ -43,7 +43,7 @@ Un hidrograma corresponde a la representación gráfica en un plano cartesiano c
 
 
 <div align="center">
-  <img src="Imagenes/FiguraHECHMS_24.PNG" width="500px"> 
+  <img src="Imagenes/FiguraHECHMS_24.PNG" width="700px"> 
 </div>
 
 Los hidrogramas de escorrentía directa corresponden hidrogramas generados por lluvias intensas en la cuenca. Son hidrograma de corta duración los cuales no tienen en cuenta el caudal o flujo base generado por la escorrentía subsuperficial que puede alimentar un cauce.
@@ -69,11 +69,11 @@ El hidrograma unitario adimensional más usado en el mundo corresponde al hidrog
 En las siguientes figuras se presenta gráficamente y numéricamente el hidrograma unitario adimensional del SCS.
 
 <div align="center">
-  <img src="Imagenes/FiguraHECHMS_25.PNG" width="500px"> 
+  <img src="Imagenes/FiguraHECHMS_25.PNG" width="600px"> 
 </div>
 
 <div align="center">
-  <img src="Imagenes/FiguraHECHMS_26.PNG" width="500px"> 
+  <img src="Imagenes/FiguraHECHMS_26.PNG" width="400px"> 
 </div>
 
 ## Ejercicio de aplicación para el desarrollo de la actividad
@@ -85,7 +85,7 @@ Una empresa de ingeniería ha sido contratada para diseñar el vertedero que per
 Desde el punto de control correspondiente a la ubicación de la bocatoma, se ha trazado una cuenca. Debido a los afluentes que ingresan al cauce principal, la cuenca se ha dividido en 4 subcuencas tal y como se presenta en la siguiente figura.
 
 <div align="center">
-  <img src="Imagenes/FiguraHECHMS_27.PNG" width="500px"> 
+  <img src="Imagenes/FiguraHECHMS_27.PNG" width="400px"> 
 </div>
 
 Cada una de las subcuencas fue caracterizada, determinando sus características físicas y morfométricas. También se caracterizó el tipo y uso del suelo. En la siguiente tabla se resumen las principales características de las subcuencas.
@@ -96,6 +96,8 @@ Cada una de las subcuencas fue caracterizada, determinando sus características 
 |     2     |     40     |              2.5              |         2.8         |                    0.001000                   | 82 |         Seca         |
 |     3     |     50     |              4.2              |         5.0         |                    0.001905                  | 81 |        Húmeda        |
 |     4     |     74     |              7.0              |         8.0         |                   0.001000                   | 89 |        Norma         |
+
+
 Para la estimación del tiempo de concentración de cada subcuenca utilice la ecuación de Kirpich.
 
 ## Creación de un nuevo documento en HEC-HMS
