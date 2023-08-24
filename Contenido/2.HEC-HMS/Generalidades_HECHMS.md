@@ -34,7 +34,8 @@ El objetivo principal de esta actividad es permitir que el estudiante conozca lo
 
 ## HEC-HMS. Generalidades
 
-El software para modelación hidrológica (HEC-HMS) está diseñado para simular los procesos hidrológicos en cuencas hidrográficas dendríticas. El software incluye herramientas para desarrollar análisis hidrológicos tradicionales, tales como infiltración, hidrogramas unitarios y tránsito hidrológico. HEC-HMS incluye los procedimientos necesarios para realizar simulaciones continuas en el tiempo, en las que se incluyen: evapotranspiración, deshielo y estimación de la humedad del suelo. También tiene herramientas avanzadas para la simulación de la escorrentía espacializada utilizando procesos de transformación de escorrentía lineal a sistemas distribuidos.
+El software para modelación hidrológica (HEC-HMS) está diseñado para simular los procesos hidrológicos en cuencas hidrográficas dendríticas. El software incluye herramientas para desarrollar análisis hidrológicos tradicionales, tales como infiltración, hidrogramas unitarios y tránsito hidrológico. HEC-HMS incluye los procedimientos necesarios para realizar simulaciones continuas en el tiempo, en las que se incluyen: evapotranspiración, deshielo y estimación de la humedad del suelo. También tiene herramientas avanzadas para la simulación de la escorrentía especializada utilizando procesos de transformación de escorrentía lineal a sistemas distribuidos.
+
 
 ## HEC-HMS. Historia
 
@@ -62,13 +63,13 @@ En el siguiente link el lector podrán descargar de manera gratuita el software 
 En la siguiente figura se presentan las principales ventanas que conforman la interface gráfica del software HEC-HMS en su versión 4.11.
 
 <div align="center">
-  <img src="Imagenes/FiguraHECHMS_1.PNG" width="700px">
+  <img src="Imagenes/FiguraHECHMS_1.PNG" width="7 00px">
 </div>
 
 
 **1) Barra de herramientas y menus:** Barra que contiene los principales menús del software, tales como las herramientas de edición del archivo, las herramientas de presentación de los resultados, las herramientas para agregar los componentes, las herramientas de trabajo, el menú de ayudas, entre otros.
 
-**2) Barra de exploración de cuencas:** Barra que contiene las características de la cuenca y de las  subcuencas, las propiedades de los tramos de río, las propiedades de las variables hidroclimatológicas, las propiedades del suelo, las propiedades de modelación y las herramientas de enlace entre las subcuencas y la metereología (datos hidroclimatológicos).
+**2) Barra de exploración de cuencas:** Barra que contiene las características de la cuenca y de las subcuencas, las propiedades de los tramos de río, las propiedades de las variables hidroclimatológicas, las propiedades del suelo, las propiedades de modelación y las herramientas de enlace entre las subcuencas y la "metereología" (datos hidroclimatológicos).
 
 **3) Ventana de visualización de mapas:** Ventana que representa la cuenca principal que se está modelando. En esta ventana se muestran los íconos que el usuario puede ir agregando a la cuenca principal. En esta ventana se puede ver: embalses, tanques, subcuencas, herramientas de metereología, uniones y tramos de rios con tránsitos.
 
@@ -82,7 +83,8 @@ A medida que el usuario va desarrollando las diferentes actividades presentadas 
 
 Para que el usuario se vaya familiarizando con el uso de los principales íconos que se usarán en el software, a continuación se presenta una tabla resumen con la descripción general de los principales íconos de la barra de herramientas y menus 
 
-| Herramienta/íncono                                     | Descripción                                                                                                                                                                                                                                                                                                     |
+
+| Herramienta/ícono                                     | Descripción                                                                                                                                                                                                                                                                                                     |
 |--------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <img src="Imagenes/FiguraHECHMS_2.PNG" width="20px">   | Botón que permite crear un nuevo archivo.                                                                                                                                                                                                                                                                       |
 | <img src="Imagenes/FiguraHECHMS_3.PNG" width="20px">   | Botón que permite abrir un archivo de HEC-HMS previamente creado.                                                                                                                                                                                                                                               |
@@ -100,9 +102,9 @@ Para que el usuario se vaya familiarizando con el uso de los principales íconos
 | <img src="Imagenes/FiguraHECHMS_15.PNG" width="20px">  | Botón que permite ejecutar procesos de optimización con base en los parámetros escogidos y teniendo en cuenta las simulaciones previamente creada.                                                                                                                                                              |
 | <img src="Imagenes/FiguraHECHMS_17.PNG" width="20px">  | Botón que permite ejecutar procesos creación de pronósticos con base en información hidroclimatológica previamente definidas en los elementos que alimentan las subcuencas.                                                                                                                                     |
 | <img src="Imagenes/FiguraHECHMS_18.PNG" width="20px">  | Botón que permite ejecutar una simulación previa de caudales máximos tomando como punto de partida una lluvia con un porcentaje de excedencia. Esta herramienta crea tormentas de diseño, en cada subcuenca, en función de un hietograma definido.                                                              |
-| <img src="Imagenes/FiguraHECHMS_19.PNG" width="20px">  | Botón que permite ejecutar simulaciones tipo Monte Carlo. Esta simulaciones estiman los errores probabilísticos asociados a las variables de entrada y como esa incertdumbre modifica la variable calculada.                                                                                                    |
+| <img src="Imagenes/FiguraHECHMS_19.PNG" width="20px">  | Botón que permite ejecutar simulaciones tipo Monte Carlo. Esta simulaciones estiman los errores probabilísticos asociados a las variables de entrada y como esa incertidumbre modifica la variable calculada.                                                                                                   |
 | <img src="Imagenes/FiguraHECHMS_20.PNG" width="20px">  | Botón que permite mostrar los resultados globales de la simulación en un elemento dentro de una cuenca.                                                                                                                                                                                                         |
-| <img src="Imagenes/FiguraHECHMS_21.PNG" width="20px">  | Botón que permite mostrar de manera resumida en una gráfica, los valores de entrada, las pérdidas de masa en la cuenca (abstracciones) y los resultados obtenidos de la simulación en un elemento dentro de una cuenca una vez se ejecuta la simulación.                                                                                        |
+| <img src="Imagenes/FiguraHECHMS_21.PNG" width="20px">  | Botón que permite mostrar de manera resumida en una gráfica, los valores de entrada, las pérdidas de masa en la cuenca (abstracciones) y los resultados obtenidos de la simulación en un elemento dentro de una cuenca una vez se ejecuta la simulación.                                                        |
 | <img src="Imagenes/FiguraHECHMS_22.PNG" width="20px">  | Botón que permite mostrar de manera resumida en una tabla, los valores obtenidos de la simulación en un elemento dentro de una cuenca una vez se ejecuta la simulación.                                                                                                                                         |
 | <img src="Imagenes/FiguraHECHMS_23.PNG" width="20px">  | Botón que permite mostrar de manera detalla y para cada intervalo de tiempo definido previamente (dt), los valores hidrológicos de entrada y los resultados obtenidos una vez se ejecuta la simulación.                                                                                                         |
 
@@ -111,14 +113,14 @@ Para que el usuario se vaya familiarizando con el uso de los principales íconos
 
 | Versión    | Descripción   | Autor                                      | Horas |
 |------------|:--------------|--------------------------------------------|:-----:|
-| 2023.08.23 | Versión No. 1 | [AndresOtalora92](https://github.com/AndresOtalora92)  |   8   |
+| 2023.08.23 | Versión No. 1 | [AndresOtalora92](https://github.com/AndresOtalora92)  |   4   |
 
 _MOHI es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](../../License.md)._
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [AndresOtalora92](https://github.com/AndresOtalora92?tab=repositories) en GitHub._
 
 
-| [Anterior](../../../Readme.md) | [:house: Inicio](../../../Readme.md) | [:beginner: Ayuda / Colabora] | [Siguiente]() |
+| [Anterior](../../../Readme.md) | [:house: Inicio](../../../Readme.md) | [:beginner: Ayuda / Colabora] | [Siguiente](CaudalesMaximos.md) |
 |--------------------------------|--------------------------------------|--------------------------------------------------------------------------------------------------|----------------------------------------------|
 
 <div align="center"><a href="https://enlace-academico.escuelaing.edu.co/psc/FORMULARIO/EMPLOYEE/SA/c/EC_LOCALIZACION_RE.LC_FRM_ADMEDCO_FL.GBL" target="_blank"><img src="https://github.com/rcfdtools/R.TeachingResearchGuide/blob/main/CaseUse/.icons/IconCEHBotonCertificado.png" alt="R.LTWB" width="260" border="0" /></a></div>
