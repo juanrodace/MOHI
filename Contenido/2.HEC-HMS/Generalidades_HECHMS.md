@@ -36,6 +36,7 @@ El objetivo principal de esta actividad es permitir que el estudiante conozca lo
 
 El software para modelación hidrológica (HEC-HMS) está diseñado para simular los procesos hidrológicos en cuencas hidrográficas dendríticas. El software incluye herramientas para desarrollar análisis hidrológicos tradicionales, tales como infiltración, hidrogramas unitarios y tránsito hidrológico. HEC-HMS incluye los procedimientos necesarios para realizar simulaciones continuas en el tiempo, en las que se incluyen: evapotranspiración, deshielo y estimación de la humedad del suelo. También tiene herramientas avanzadas para la simulación de la escorrentía especializada utilizando procesos de transformación de escorrentía lineal a sistemas distribuidos.
 
+
 ## HEC-HMS. Historia
 
 El algoritmo de programación que domina el HEC-HMS y su interface gráfica fue elaborado por "US Army Corps of Engineer". Los inicios de este software datan de más de 30 años, el cual fue elaborado a partir de la experiencia de profesionales e ingenieros expertos en simulación hidrológica. 
@@ -81,6 +82,7 @@ A medida que el usuario va desarrollando las diferentes actividades presentadas 
 ### Principales Herramientas
 
 Para que el usuario se vaya familiarizando con el uso de los principales íconos que se usarán en el software, a continuación se presenta una tabla resumen con la descripción general de los principales íconos de la barra de herramientas y menus 
+
 
 | Herramienta/ícono                                     | Descripción                                                                                                                                                                                                                                                                                                     |
 |--------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

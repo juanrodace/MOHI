@@ -15,6 +15,11 @@ Profesor del Centro de Estudios Hidráulicos<br>
 
 Un Sistema de Información Geográfica (SIG) se puede describir como un conjunto de herramientas o componentes que permiten recopilar, almacenar, procesar, analizar y representar información y/o datos geográficos. En otras palabras, un SIG es una herramienta que integra información espacial y atributiva para crear un contexto más completo y comprensible de la realidad.
 
+<div align="center">
+<br>
+<img alt="MOHI" src=".img/SIG.svg" width="800px"><br>
+</div>
+
 ### Componentes 
 
 Un SIG generalmente se componen de software, hardware, datos geográficos y personal capacitado para operar y mantener el sistema. 
@@ -50,6 +55,11 @@ El potencial de los SIG es bastante amplio, donde podemos resaltar los siguiente
 ## Aplicación de los SIG
 
 Los SIG se han vuelto cada vez más populares en los últimos años debido a la creciente disponibilidad de datos geográficos y la mejora de la tecnología, potenciando la toma de decisiones informadas sobre el uso del espacio y los recursos. Hoy en día se utilizan en una amplia gama de industrias, incluidas el gobierno, la empresa privada y la educación. Así mismo, se aplican a diversos campos como el urbanismo, topografía, ingeniería, gestión del medio ambiente, agricultura, gestión del riesgo, arquitectura, navegación entre otros. 
+
+<div align="center">
+<br>
+<img alt="MOHI" src=".img/GISApplied.png" width="800px"><br>
+</div>
 
 - Planificación urbana: los planificadores urbanos utilizan los SIG para diseñar y gestionar el desarrollo urbano, incluyendo infraestructuras, zonas residenciales, parques, calles y servicios públicos. Pueden usar los SIG para identificar áreas que están subdesarrolladas o que están en riesgo de inundaciones.
 
@@ -99,7 +109,7 @@ Existen diferentes tipos de herramientas SIG según su funcionalidad, plataforma
 | Versión | Descripción                                                    |                    Autor                    | Horas |
 |:-------:|:---------------------------------------------------------------|:-------------------------------------------:|:-----:|
 | 2023.08 | Versión inicial, definición de estructura general y contenido. | [juanrodace](https://github.com/juanrodace) |  1.0  |
-| 2023.08 | Inclusión de conceptos, esquemas y ejemplos.                   | [juanrodace](https://github.com/juanrodace) |  2.0  |
+| 2023.08 | Inclusión de conceptos, esquemas y ejemplos.                   | [juanrodace](https://github.com/juanrodace) |  3.0  |
 
 | [:arrow_backward:Anterior](Readme.md) | [:house: Inicio](../../Readme.md) | [:beginner: Ayuda](https://github.com/juanrodace/MOHI/discussions) | [Siguiente:arrow_forward:](Fundamentos.md) |
 |---------------------------------------|-----------------------------------|--------------------------------------------------------------------|--------------------------------------------|
