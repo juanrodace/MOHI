@@ -3,7 +3,7 @@
 # Caudales Máximos e hidrogramas de escorrentía directa utilizando HEC-HMS
 
 <div align="center">
-  <img src="../.icons/HMS.png" width="200px">
+  <img src="../.icons/HMS.png" width="150px">
 </div>
 
 <div align="center">
