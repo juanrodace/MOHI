@@ -99,7 +99,7 @@ Un sistema de proyección de coordenadas es un conjunto de reglas y fórmulas ma
 
 <div align="center">
 <br>
-<img alt="MOHI" src=".img/ComparisonCartographySurfaceDevelopment.svg" width="1000px"><br>
+<img alt="MOHI" src=".img/ComparisonCartographySurfaceDevelopment.svg" width="700px"><br>
 Comparación de proyecciones de mapas cilíndricos, cónicos y azimutales tangentes y secantes.<br>
 <sub><i>Tomado de Comparison of tangent and secant cylindrical, conic and azimuthal map projections with standard parallels shown in red by CMG Lee. User:Cmglee, US government, Clindberg, Palosirkka. 2019.</i></sub><br>
 </div>
@@ -206,7 +206,7 @@ ___
 | Versión | Descripción                                                    |                    Autor                    | Horas |
 |:-------:|:---------------------------------------------------------------|:-------------------------------------------:|:-----:|
 | 2023.08 | Versión inicial, definición de estructura general y contenido. | [juanrodace](https://github.com/juanrodace) |  1.0  |
-| 2023.08 | Inclusión de conceptos, esquemas y ejemplos.                   | [juanrodace](https://github.com/juanrodace) |  3.0  |
+| 2023.08 | Inclusión de conceptos, esquemas y ejemplos.                   | [juanrodace](https://github.com/juanrodace) |  4.0  |
 
 | [:arrow_backward:Anterior](Conceptos.md) | [:house: Inicio](../../Readme.md) | [:beginner: Ayuda](https://github.com/juanrodace/MOHI/discussions) | [Siguiente:arrow_forward:](QGIS.md) |
 |------------------------------------------|-----------------------------------|--------------------------------------------------------------------|-------------------------------------|
