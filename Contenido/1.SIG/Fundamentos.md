@@ -36,7 +36,8 @@ La latitud es la medida angular de la distancia al norte o al sur del ecuador de
 <div align="center">
 <br>
 <img alt="MOHI" src=".img/SistemaCoordenadas.png" width="400px"><br>
-<sub>Esta imagen muestra cómo se determinan la latitud y la longitud utilizando el sistema de grados decimales.</sub>[^2]<br> 
+Esta imagen muestra cómo se determinan la latitud y la longitud utilizando el sistema de grados decimales.<br> 
+<sub><i>Tomado de Preparation for Orienteering at the Priory. Geospatial Field Methods Couse. 2014.</i></sub><br>
 </div>
 
 La forma teórica que convencionalmente se utiliza para definir la Tierra es el Geoide qué se define teóricamente a partir del nivel medio de los mares. Debido a su forma irregular y para la definición de una forma geométrica que pueda ser resuelta matemáticamente de forma simple se utilizan los conceptos de esfera y elipsoide.
@@ -47,8 +48,9 @@ La forma teórica que convencionalmente se utiliza para definir la Tierra es el 
 <div align="center">
 <br>
 <img alt="MOHI" src=".img/Geoide.jpg" width="350px"><br>
-<sub>Relaciones geométricas entre la superficie topográfica de la Tierra, 
-el geoide y el elipsoide, necesarias para una cartografía de precisión.</sub>[^1]<br> 
+Relaciones geométricas entre la superficie topográfica de la Tierra, 
+el geoide y el elipsoide, necesarias para una cartografía de precisión.<br>
+<sub><i>Tomado de Albireo Topografía y Geomática. Topografía geoide y elipsoide. http://www.albireotopografia.es </i></sub><br>
 </div>
 
 Existen varios sistemas de coordenadas geográficas que se utilizan en todo el mundo para representar ubicaciones en la Tierra. En la siguiente tabla se presentan algunos los más comunes.
@@ -98,7 +100,8 @@ Un sistema de proyección de coordenadas es un conjunto de reglas y fórmulas ma
 <div align="center">
 <br>
 <img alt="MOHI" src=".img/ComparisonCartographySurfaceDevelopment.svg" width="1000px"><br>
-<sub>Comparación de proyecciones de mapas cilíndricos, cónicos y azimutales tangentes y secantes.[^3]</sub>
+Comparación de proyecciones de mapas cilíndricos, cónicos y azimutales tangentes y secantes.<br>
+<sub><i>Tomado de Comparison of tangent and secant cylindrical, conic and azimuthal map projections with standard parallels shown in red by CMG Lee. User:Cmglee, US government, Clindberg, Palosirkka. 2019.</i></sub><br>
 </div>
 
 No existe una proyección perfecta que sea adecuada para todas las situaciones, por lo que la elección depende de las necesidades específicas y los compromisos entre diferentes tipos de distorsiones.
@@ -107,7 +110,7 @@ No existe una proyección perfecta que sea adecuada para todas las situaciones, 
 
 ### Sistema de coordenadas MAGNA-SIRGAS
 
-Mediante resolución No. 068 de 2005 se adoptó como único datum oficial de Colombia el Marco Geocéntrico Nacional de Referencia - MAGNA, que por estar referida a SIRGAS, se denomina convencionalmente **MAGNA-SRIGAS**. El Instituto Geográfico Agustín Codazzi (IGAC), entidad gubernamental encargada de los sistemas geodésicos nacionales de referencia, promueve la adopción de MAGNA-SIRGAS como sistema de referencia oficial del país, en reemplazo del Datum BOGOTÁ, definido en 1941. **MAGNA-SIRGAS** garantiza la compatibilidad de las coordenadas colombianas con las técnicas espaciales de posicionamiento, por ejemplo los sistemas GNSS (Global Navigation Satellite Systems), y con conjuntos internacionales de datos georreferenciados. Los parámetros del sistea de coordenadas se presentan en la siguiente tabla.
+Mediante resolución No. 068 de 2005 se adoptó como único datum oficial de Colombia el Marco Geocéntrico Nacional de Referencia - MAGNA, que por estar referida a SIRGAS, se denomina convencionalmente **MAGNA-SRIGAS**. El Instituto Geográfico Agustín Codazzi (IGAC), entidad gubernamental encargada de los sistemas geodésicos nacionales de referencia, promueve la adopción de MAGNA-SIRGAS como sistema de referencia oficial del país, en reemplazo del Datum BOGOTÁ, definido en 1941. **MAGNA-SIRGAS** garantiza la compatibilidad de las coordenadas colombianas con las técnicas espaciales de posicionamiento, por ejemplo los sistemas GNSS (Global Navigation Satellite Systems), y con conjuntos internacionales de datos georreferenciados. Los parámetros del sistema de coordenadas se presentan en la siguiente tabla.
 
 <div align="center">
 
@@ -135,17 +138,34 @@ El sistema de proyección Transversa de Mercator Secante es un tipo de proyecci�
 
 <div align="center">
 <br>
-<img alt="MOHI" src=".img/TM-Secante.jpg" width="400px">
+<img alt="MOHI" src=".img/TM-Secante.jpg" width="400px"><br>
+Sistema de proyección Transversa de Mercator Secante.<br>
+<sub><i>Tomado de Comparison of tangent and secant forms of Mercator map projections with standard parallels shown in red by CMG Lee. User:Cmglee, US government, Clindberg, Palosirkka. 2019.</i></sub><br>
 </div>
-
-<p align="center">Sistema de proyección Transversa de Mercator Secante. [^4^][4]</p>
-
-
-
 
 En Colombia, el establecimiento de las condiciones técnicas mínimas que deben tener los productos básicos de cartografía oficial, han sido definidos de conformidad con lo dispuesto por la Resolución 471 del 14 de mayo de 2020 y la posterior Resolución 529 del 05 de junio de 2020, emitidas por el Instituto Geográfico Agustín Codazzi - IGAC, o la norma que la modifique y sustituya. Para ello y para garantizar la homogeneidad y continuidad en la representación de los elementos del territorio, así como facilitar los trabajos relacionados con la gestión de coordenadas en el país. En tal sentido, los proyectos, obras o actividades, sujetos al licenciamiento ambiental, deben ajustar su información geográfica a los lineamientos establecidos en la referida normatividad, para la evaluación y seguimiento de los estudios ambientales y/o presentación de los Informes de Cumplimiento Ambiental.
 
-El sistema de proyección cartográfico para Colombia, con un **único origen**, consiste en una proyección cartográfica Transversa de Mercator Secante, cuyos parámetros están establecidos en el literal i Sistema de Referencia del artículo 4 de la resolución 471 de 2020, los cuales pueden configurarse en software especializado para procesamiento de información geográfica.
+El sistema de proyección cartográfico para Colombia, con un **único origen**, consiste en una proyección cartográfica Transversa de Mercator Secante, cuyos parámetros están establecidos en el literal 'i' Sistema de Referencia del artículo 4 de la resolución 471 de 2020, los cuales pueden configurarse en software especializado para procesamiento de información geográfica. Los parámetros del sistema se presentan en la siguiente tabla.
+
+El sistema de proyección EPSG 9377 es el sistema de proyección cartográfica oficial para Colombia, que se basa en el sistema de referencia geodésico MAGNA-SIRGAS y en la proyección transversal de Mercator. Los parámetros del sistema de proyección son los siguientes⁵⁴:
+
+| Parámetro                  |                  Valor                   |
+|----------------------------|:----------------------------------------:|
+| EPSG code                  |                   9377                   |
+| Nombre                     |      MAGNA-SIRGAS / Origen-Nacional      |
+| Proyección                 |     Transversa de Mercartor Secante      |
+| Datum                      | Marco Geocentrico Nacional de Referencia |
+| Elipsoide                  |                 GRS 1980                 |
+| Latitud de origen          |                    4°                    |
+| Meridiano central          |                   -73°                   |
+| Falso este                 |                5000000 m                 |
+| Falso norte                |                2000000 m                 |
+| Factor de escala           |                  0.9992                  |
+| Unidad                     |                  metro                   |
+
+Este sistema de proyección facilita la integración de una única base de datos en coordenadas planas para todo el territorio y, permite representaciones desde escalas mayores 1:1000 hasta escalas regionales 1:1500000 usando una única proyección. Así mismo, promueve la interoperabilidad y uso de la información geográfica del país en los diferentes niveles territoriales y 
+minimiza problemas de áreas de traslape entre regiones. Con ayuda de la herramienta QGIS podemos visualizar la información del sistema de coordenadas.
+
 
 ```
 PROJCS["MAGNA-SIRGAS_Origen-Nacional",
@@ -172,8 +192,8 @@ ___
 ### Referencias
 - References and Projection Used in the Colombian Cartograph. Serrato A., Pedro Karin. Perspectiva geográfica. 2009. 
 - Cylindrical Projection: Mercator, Transverse Mercator and Miller. GISGeograpghy, _https://gisgeography.com_. 2022.
-- 
-- 
+- Resolución No. 471 de 2020. Instituto Geográfico Agustín Codazzi - IGAC. Mayo 2020.
+- Georreferenciación y sistemas de proyección de coordenadas. TSIG. Aguilar P., William. 2022.
 
 ### Control de versiones
 
@@ -187,13 +207,4 @@ ___
 
 _MOHI es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](../../License.md)._
 
-_¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [juanrodace](https://github.com/juanrodace) en GitHub._ 
-
-
-[^1]: Albireo Topografía y Geomática. Topogradía geoide y elipsoide. _http://www.albireotopografia.es_
-
-[^2]: Preparation for Orienteering at the Priory. Geospatial Field Methods Couse. 2014.
-
-[^3]: Comparison of tangent and secant cylindrical, conic and azimuthal map projections with standard parallels shown in red by CMG Lee. mglee, US government, Clindberg, Palosirkka. 2019.
-
-[^4^][4]:Comparison of tangent and secant forms of Mercator map projections with standard parallels shown in red by CMG Lee. [Cmglee](https://commons.wikimedia.org/wiki/User:Cmglee), US government, Clindberg, Palosirkka. 2019.
+_¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [juanrodace](https://github.com/juanrodace) en GitHub._
