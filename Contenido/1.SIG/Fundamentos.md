@@ -121,13 +121,19 @@ La utilización del sistema **MAGNA-SIRGAS** está directamente relacionada con 
 <img alt="MOHI" src=".img/MAGNA-SIRGAS.jpg" width="800px"><br>
 </div>
 
-### Sistema de proyección Gauss – Krüger
+### Sistema de proyección único Transversa de Mercator Secante
 
-El sistema de proyección Gauss-Krüger es una proyección cartográfica transversal utilizada para representar áreas geográficas en mapas. Es especialmente adecuada para regiones de tamaño moderado o pequeño en latitudes medias. Fue desarrollada por los matemáticos alemanes Carl Friedrich Gauss y Johann Heinrich Louis Krüger en el siglo XIX. La característica principal de esta proyección es que divide la Tierra en múltiples zonas, cada una de las cuales se proyecta utilizando una proyección cilíndrica transversa de Gauss. Cada zona tiene su propio meridiano central, y la deformación es mínima en torno a ese meridiano. 
+>CAMBIAR!! El sistema de proyección Gauss-Krüger es una proyección cartográfica transversal utilizada para representar áreas geográficas en mapas. Es especialmente adecuada para regiones de tamaño moderado o pequeño en latitudes medias. Fue desarrollada por los matemáticos alemanes Carl Friedrich Gauss y Johann Heinrich Louis Krüger en el siglo XIX. La característica principal de esta proyección es que divide la Tierra en múltiples zonas, cada una de las cuales se proyecta utilizando una proyección cilíndrica transversa de Gauss. Cada zona tiene su propio meridiano central, y la deformación es mínima en torno a ese meridiano. <div align="center">
+<br>
+<img alt="MOHI" src=".img/Gauss-Kruger.jpg" width="400px"><br>
+<sub>Sistema de proyección cartografica Gauss-Krüger.</sub>[^3]<br> 
+</div>
 
+En Colombia, el establecimiento de las condiciones técnicas mínimas que deben tener los productos básicos de cartografía oficial, han sido definidos de conformidad con lo dispuesto por la Resolución 471 del 14 de mayo de 2020 y la posterior Resolución 529 del 05 de junio de 2020, emitidas por el Instituto Geográfico Agustín Codazzi - IGAC, o la norma que la modifique y sustituya. Para ello y para garantizar la homogeneidad y continuidad en la representación de los elementos del territorio, así como facilitar los trabajos relacionados con la gestión de coordenadas en el país. En tal sentido, los proyectos, obras o actividades, sujetos al licenciamiento ambiental, deben ajustar su información geográfica a los lineamientos establecidos en la referida normatividad, para la evaluación y seguimiento de los estudios ambientales y/o presentación de los Informes de Cumplimiento Ambiental.
 
+El sistema de proyección cartográfico para Colombia, con un **único origen**, consiste en una proyección cartográfica Transversa de Mercator Secante, cuyos parámetros están establecidos en el literal i Sistema de Referencia del artículo 4 de la resolución 471 de 2020, los cuales pueden configurarse en software especializado para procesamiento de información geográfica.
 
-En Colombia, el origen principal de coordenadas Gauss–Krüger se definió en la pilastra sur del observatorio Astronómico de Bogotá, asignándole los valores N= 1000000 m y E= 1000000 m. Los orígenes complementarios se han establecido a 3º y 6º de longitud al este y oeste de dicho punto. Este sistema se utiliza para la elaboración de cartografía a escalas menores que 1: 1.500.000, donde se proyecta la totalidad del territorio nacional. También se utiliza para cartografía a escalas entre 1: 10.000 y 1: 500.000 de las zonas pobladas comprendidas en la zona de 3º correspondiente.
+> PROJCS["MAGNA_Colombia_Origen_Unico",GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",5000000.0],PARAMETER["False_Northing",2000000.0],PARAMETER["Central_Meridian",-73.0],PARAMETER["Scale_Factor",0.9992],PARAMETER["Latitude_Of_Origin",4.0],UNIT["Meter",1.0]]
 
 ## Tipos de datos
 
@@ -148,3 +154,4 @@ _¡Encontraste útil este repositorio!, apoya su difusión marcando este reposit
 
 [^1]: http://www.albireotopografia.es/wp-content/uploads/2015/01/Topografia-geoide-y-elipsoide.jpg
 [^2]: Preparation for Orienteering at the Priory. Geospatial Field Methods Couse. 2014.
+[^3]: Aspectos prácticos de la adopción del marco geoccéntrico nacional de referencia MAGNA_SIRGAS como Dátum oficial de Colombia. Sánchez, Laura. IGAC. 2004.
