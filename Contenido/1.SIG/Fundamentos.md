@@ -135,11 +135,12 @@ El sistema de proyección Transversa de Mercator Secante es un tipo de proyecci�
 
 <div align="center">
 <br>
-<img alt="MOHI" src=".img/TM-Secante.jpg" width="400px"><br>
-<sub>Sistema de proyección Transversa de Mercator Secante.</sub><br> 
-</div>
+<img alt="MOHI" src=".img/TM-Secante.jpg" width="400px"><br></div>
+<p style="text-align:center">
+<sub>Sistema de proyección Transversa de Mercator Secante.</sub> [^4^][4] <br> 
+</p>
 
-[^4]
+
 
 En Colombia, el establecimiento de las condiciones técnicas mínimas que deben tener los productos básicos de cartografía oficial, han sido definidos de conformidad con lo dispuesto por la Resolución 471 del 14 de mayo de 2020 y la posterior Resolución 529 del 05 de junio de 2020, emitidas por el Instituto Geográfico Agustín Codazzi - IGAC, o la norma que la modifique y sustituya. Para ello y para garantizar la homogeneidad y continuidad en la representación de los elementos del territorio, así como facilitar los trabajos relacionados con la gestión de coordenadas en el país. En tal sentido, los proyectos, obras o actividades, sujetos al licenciamiento ambiental, deben ajustar su información geográfica a los lineamientos establecidos en la referida normatividad, para la evaluación y seguimiento de los estudios ambientales y/o presentación de los Informes de Cumplimiento Ambiental.
 
