@@ -83,7 +83,7 @@ Aunque el grupo original EPSG ya no está activo, sus estándares y códigos sig
 |    27700    | OSGB 1936 / British National Grid       | Sistema de coordenadas utilizado en el Reino Unido.                                                    |
 |    32718    | WGS 84 / UTM zona 18 sur                | Sistema de coordenadas UTM para la zona 18 en el hemisferio sur.                                       |
 
-### Sistema de proeycción de coordenadas
+### Sistema de proyección de coordenadas
 
 Un sistema de proyección de coordenadas es un conjunto de reglas y fórmulas matemáticas que se utilizan para representar la superficie curva de la Tierra en un plano bidimensional, como un mapa. Debido a que la Tierra es tridimensional y curva, es necesario aplicar una proyección para representar su forma en un mapa plano, lo que puede resultar en distorsiones en áreas, formas, distancias o direcciones. Los sistemas de proyección son esenciales para la cartografía y la representación precisa de la información geográfica en un formato utilizable. Existen muchas proyecciones diferentes, cada una con sus propias características y aplicaciones específicas. Algunos tipos comunes de sistemas de proyección de coordenadas incluyen:
 
@@ -92,6 +92,14 @@ Un sistema de proyección de coordenadas es un conjunto de reglas y fórmulas ma
 - Proyecciones cónicas: En estas proyecciones, los puntos se proyectan desde la superficie de la Tierra sobre un cono imaginario que se coloca sobre el globo. Ejemplos incluyen la proyección de Albers y la proyección de Lambert cónica conforme.
 
 - Proyecciones pseudocilíndricas: Estas proyecciones buscan un equilibrio entre la distorsión de forma y área. Ejemplos incluyen la proyección de Mollweide y la proyección de Robinson.
+
+
+
+<div align="center">
+<br>
+<img alt="MOHI" src=".img/ComparisonCartographySurfaceDevelopment.svg" width="1000px"><br>
+<sub>Comparación de proyecciones de mapas cilíndricos, cónicos y azimutales tangentes y secantes.[^3]</sub>
+</div>
 
 No existe una proyección perfecta que sea adecuada para todas las situaciones, por lo que la elección depende de las necesidades específicas y los compromisos entre diferentes tipos de distorsiones.
 
@@ -123,20 +131,47 @@ La utilización del sistema **MAGNA-SIRGAS** está directamente relacionada con 
 
 ### Sistema de proyección único Transversa de Mercator Secante
 
->CAMBIAR!! El sistema de proyección Gauss-Krüger es una proyección cartográfica transversal utilizada para representar áreas geográficas en mapas. Es especialmente adecuada para regiones de tamaño moderado o pequeño en latitudes medias. Fue desarrollada por los matemáticos alemanes Carl Friedrich Gauss y Johann Heinrich Louis Krüger en el siglo XIX. La característica principal de esta proyección es que divide la Tierra en múltiples zonas, cada una de las cuales se proyecta utilizando una proyección cilíndrica transversa de Gauss. Cada zona tiene su propio meridiano central, y la deformación es mínima en torno a ese meridiano. <div align="center">
+El sistema de proyección Transversa de Mercator Secante es un tipo de proyección cartográfica que se usa para representar regiones alargadas en dirección norte-sur. Esta proyección se basa en un cilindro que corta la Tierra en dos meridianos, creando una distorsión mínima en el área de interés. Esta proyección cartográfica es de tipo conforme, que prioriza ángulos garantizando así que un ángulo formado entre dos líneas sobre la superficie terrestre se conserve luego de aplicarse la proyección. Utiliza como superficie de referencia el área de un cilindro transverso, secante a la esfera, la escala de representación varía en función de la longitud y el parámetro de escala.
+
+<div align="center">
 <br>
-<img alt="MOHI" src=".img/Gauss-Kruger.jpg" width="400px"><br>
-<sub>Sistema de proyección cartografica Gauss-Krüger.</sub>[^3]<br> 
+<img alt="MOHI" src=".img/TM-Secante.jpg" width="400px"><br>
+<sub>Sistema de proyección Transversa de Mercator Secante.</sub><br> 
 </div>
+
+[^4]
 
 En Colombia, el establecimiento de las condiciones técnicas mínimas que deben tener los productos básicos de cartografía oficial, han sido definidos de conformidad con lo dispuesto por la Resolución 471 del 14 de mayo de 2020 y la posterior Resolución 529 del 05 de junio de 2020, emitidas por el Instituto Geográfico Agustín Codazzi - IGAC, o la norma que la modifique y sustituya. Para ello y para garantizar la homogeneidad y continuidad en la representación de los elementos del territorio, así como facilitar los trabajos relacionados con la gestión de coordenadas en el país. En tal sentido, los proyectos, obras o actividades, sujetos al licenciamiento ambiental, deben ajustar su información geográfica a los lineamientos establecidos en la referida normatividad, para la evaluación y seguimiento de los estudios ambientales y/o presentación de los Informes de Cumplimiento Ambiental.
 
 El sistema de proyección cartográfico para Colombia, con un **único origen**, consiste en una proyección cartográfica Transversa de Mercator Secante, cuyos parámetros están establecidos en el literal i Sistema de Referencia del artículo 4 de la resolución 471 de 2020, los cuales pueden configurarse en software especializado para procesamiento de información geográfica.
 
-> PROJCS["MAGNA_Colombia_Origen_Unico",GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",5000000.0],PARAMETER["False_Northing",2000000.0],PARAMETER["Central_Meridian",-73.0],PARAMETER["Scale_Factor",0.9992],PARAMETER["Latitude_Of_Origin",4.0],UNIT["Meter",1.0]]
+```
+PROJCS["MAGNA-SIRGAS_Origen-Nacional",
+    GEOGCS["GCS_MAGNA",
+        DATUM["D_MAGNA",
+            SPHEROID["GRS_1980",6378137.0,298.257222101]],
+        PRIMEM["Greenwich",0.0],
+        UNIT["Degree",0.0174532925199433]],
+    PROJECTION["Transverse_Mercator"],
+    PARAMETER["False_Easting",5000000.0],
+    PARAMETER["False_Northing",2000000.0],
+    PARAMETER["Central_Meridian",-73.0],
+    PARAMETER["Scale_Factor",0.9992],
+    PARAMETER["Latitude_Of_Origin",4.0],
+    UNIT["Meter",1.0]]
+    
+```
 
 ## Tipos de datos
 
+
+___
+
+### Referencias
+- References and Projection Used in the Colombian Cartograph. Serrato A., Pedro Karin. Perspectiva geográfica. 2009. 
+- Cylindrical Projection: Mercator, Transverse Mercator and Miller. GISGeograpghy, _https://gisgeography.com_. 2022.
+- 
+- 
 
 ### Control de versiones
 
@@ -152,6 +187,11 @@ _MOHI es de uso libre para fines académicos, conoce nuestra licencia, cláusula
 
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [juanrodace](https://github.com/juanrodace) en GitHub._ 
 
-[^1]: http://www.albireotopografia.es/wp-content/uploads/2015/01/Topografia-geoide-y-elipsoide.jpg
+
+[^1]: Albireo Topografía y Geomática. Topogradía geoide y elipsoide. _http://www.albireotopografia.es_
+
 [^2]: Preparation for Orienteering at the Priory. Geospatial Field Methods Couse. 2014.
-[^3]: Aspectos prácticos de la adopción del marco geoccéntrico nacional de referencia MAGNA_SIRGAS como Dátum oficial de Colombia. Sánchez, Laura. IGAC. 2004.
+
+[^3]: Comparison of tangent and secant cylindrical, conic and azimuthal map projections with standard parallels shown in red by CMG Lee. mglee, US government, Clindberg, Palosirkka. 2019.
+
+[^4]:Comparison of tangent and secant forms of Mercator map projections with standard parallels shown in red by CMG Lee. [Cmglee](https://commons.wikimedia.org/wiki/User:Cmglee), US government, Clindberg, Palosirkka. 2019.
