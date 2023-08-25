@@ -135,10 +135,11 @@ El sistema de proyección Transversa de Mercator Secante es un tipo de proyecci�
 
 <div align="center">
 <br>
-<img alt="MOHI" src=".img/TM-Secante.jpg" width="400px"><br></div>
-<p style="text-align:center">
-<sub>Sistema de proyección Transversa de Mercator Secante.</sub> [^4^][4] <br> 
-</p>
+<img alt="MOHI" src=".img/TM-Secante.jpg" width="400px">
+</div>
+
+<p align="center">Sistema de proyección Transversa de Mercator Secante. [^4^][4]</p>
+
 
 
 
@@ -195,4 +196,4 @@ _¡Encontraste útil este repositorio!, apoya su difusión marcando este reposit
 
 [^3]: Comparison of tangent and secant cylindrical, conic and azimuthal map projections with standard parallels shown in red by CMG Lee. mglee, US government, Clindberg, Palosirkka. 2019.
 
-[^4]:Comparison of tangent and secant forms of Mercator map projections with standard parallels shown in red by CMG Lee. [Cmglee](https://commons.wikimedia.org/wiki/User:Cmglee), US government, Clindberg, Palosirkka. 2019.
+[^4^][4]:Comparison of tangent and secant forms of Mercator map projections with standard parallels shown in red by CMG Lee. [Cmglee](https://commons.wikimedia.org/wiki/User:Cmglee), US government, Clindberg, Palosirkka. 2019.
