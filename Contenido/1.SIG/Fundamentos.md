@@ -128,8 +128,7 @@ Mediante resolución No. 068 de 2005 se adoptó como único datum oficial de Col
 La utilización del sistema **MAGNA-SIRGAS** está directamente relacionada con la definición de una superficie de referencia vertical (geoide) que permita obtener alturas clásicas (referidas al nivel medio del mar) a partir de información GPS. El Geoide en Colombia se ha determinado mediante la técnica remove/restore, la cual permite relacionar las características regionales (longitudes de onda larga) del campo de gravedad, expresadas en un Modelo Geopotencial Global (MGG), y sus detalles (longitudes de onda corta), obtenidos a través de la evaluación local del modelo físico matemático de Strokes (o Molodensky). Con ayuda de la herramienta QGIS podemos visualizar la información del sistema de coordenadas.
 
 <div align="center">
-<br>
-<img alt="MOHI" src=".img/MAGNA-SIRGAS.jpg" width="800px"><br>
+<br><img alt="MOHI" src=".img/MAGNA-SIRGAS.jpg" width="800px"><br>
 </div>
 
 ### Sistema de proyección único Transversa de Mercator Secante
@@ -166,6 +165,9 @@ El sistema de proyección EPSG 9377 es el sistema de proyección cartográfica o
 Este sistema de proyección facilita la integración de una única base de datos en coordenadas planas para todo el territorio y, permite representaciones desde escalas mayores 1:1000 hasta escalas regionales 1:1500000 usando una única proyección. Así mismo, promueve la interoperabilidad y uso de la información geográfica del país en los diferentes niveles territoriales y 
 minimiza problemas de áreas de traslape entre regiones. Con ayuda de la herramienta QGIS podemos visualizar la información del sistema de coordenadas.
 
+<div align="center">
+<br><img alt="MOHI" src=".img/EPSG_9377.jpg" width="700px"><br>
+</div>
 
 ```
 PROJCS["MAGNA-SIRGAS_Origen-Nacional",
@@ -187,9 +189,13 @@ PROJCS["MAGNA-SIRGAS_Origen-Nacional",
 ## Tipos de datos
 
 
+
+
 ___
 
 ### Referencias
+- LibroSIG: prendiendo a manejar los SIG en la gestión ambiental. Mancebo, S.; Ortega, E.;Martín, L.; Valentín, A. Madrid, España. 2009.  
+- Sistemas de Información Geográfica. Olaya, Victor. Creative Commons Atribucion. 2012.
 - References and Projection Used in the Colombian Cartograph. Serrato A., Pedro Karin. Perspectiva geográfica. 2009. 
 - Cylindrical Projection: Mercator, Transverse Mercator and Miller. GISGeograpghy, _https://gisgeography.com_. 2022.
 - Resolución No. 471 de 2020. Instituto Geográfico Agustín Codazzi - IGAC. Mayo 2020.

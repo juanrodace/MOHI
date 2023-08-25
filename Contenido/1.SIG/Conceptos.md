@@ -103,6 +103,14 @@ Existen diferentes tipos de herramientas SIG según su funcionalidad, plataforma
 
 - **Herramientas para sensores remotos**: Algunas herramientas SIG se especializan en el procesamiento y análisis de imágenes satelitales y otros datos obtenidos mediante sensores remotos, como el caso de ENVI, Ilwis y ERDAS Imagine.
 
+---
+
+### Referencias
+- GIS Applications for Water, Wastewater, and Stormwater Systems. Shamsi, U.M.Taylor & Francis Group. 2005.
+- LibroSIG: prendiendo a manejar los SIG en la gestión ambiental. Mancebo, S.; Ortega, E.;Martín, L.; Valentín, A. Madrid, España. 2009.  
+- Sistemas de Información Geográfica. Olaya, Victor. Creative Commons Atribucion. 2012.
+- Getting Started with ArcGIS. Booth and Mitchell. ESRI. 2001
+
 
 ### Control de versiones
 
