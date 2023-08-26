@@ -137,7 +137,7 @@ El sistema de proyección Transversa de Mercator Secante es un tipo de proyecci�
 
 <div align="center">
 <br>
-<img alt="MOHI" src=".img/TM-Secante.jpg" width="400px"><br>
+<img alt="MOHI" src=".img/TM-Secante.jpg" width="500px"><br>
 Sistema de proyección Transversa de Mercator Secante.<br>
 <sub><i>Tomado de Comparison of tangent and secant forms of Mercator map projections with standard parallels shown in red by CMG Lee. User:Cmglee, US government, Clindberg, Palosirkka. 2019.</i></sub><br>
 </div>
@@ -199,7 +199,8 @@ La codificación de datos geográficos empleados en un SIG proviene de dos tipos
 Utiliza elementos o entidades de tipo punto, línea o polígono para la representación geográfica. Este tipo de datos se denomina discreto debido a que cada uno de ellos es independiente del otro. Por ejemplo un punto puede representar un pozo de inspección de alcantarillado, una línea un tramo de tubería o conducto, y un polígono el área de una subcuenca. 
 
 <div align="center">
-<br><img alt="MOHI" src=".img/Vectorial.png" width="800px"><br>
+<br><img alt="MOHI" src=".img/Vectorial.png" width="700px"><br>
+<br>
 </div>
 
 Los datos asociados a un elemento geográfico vectorial contenidos en los registros, pueden ser: 
@@ -213,7 +214,7 @@ Los datos asociados a un elemento geográfico vectorial contenidos en los regist
 - **Objetos**: archivos adjuntos, imágenes, hipervínculos, etc.
 
 <div align="center">
-<br><img alt="MOHI" src=".img/Vectorial_Datos.png" width="800px"><br>
+<br><img alt="MOHI" src=".img/Vectorial_Datos.png" width="850px"><br>
 </div>
 
 ### Representación raster
@@ -221,7 +222,7 @@ Los datos asociados a un elemento geográfico vectorial contenidos en los regist
 Se basa en una unidad fundamental llamada celda o píxel, los cuales definen toda una capa de información. Este tipo de datos se denomina continuo debido a que los valores son agrupados en celdas. Un ejemplo son las imágenes satelitales a partir de las cuales se pueden interpretar el valor de elevación y precipitación, temperatura, acidez en suelos, entre otros.
 
 <div align="center">
-<br><img alt="MOHI" src=".img/Raster.jpg" width="700px"><br>
+<br><img alt="MOHI" src=".img/Raster.jpg" width="650px"><br>
 </div>
 
 ### Formatos de Almacenamiento
