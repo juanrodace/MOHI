@@ -186,10 +186,67 @@ PROJCS["MAGNA-SIRGAS_Origen-Nacional",
     
 ```
 
-## Tipos de datos
+## Codificación y tipos de datos
+
+La codificación de datos geográficos empleados en un SIG proviene de dos tipos de representaciones: vectorial y raster.
+
+### Representación vectorial
+
+Utiliza elementos o entidades de tipo punto, línea o polígono para la representación geográfica. Este tipo de datos se denomina discreto debido a que cada uno de ellos es independiente del otro. Por ejemplo un punto puede representar un pozo de inspección de alcantarillado, una línea un tramo de tubería o conducto, y un polígono el área de una subcuenca. 
+
+<div align="center">
+<br><img alt="MOHI" src=".img/Vectorial.png" width="800px"><br>
+</div>
+
+Los datos asociados a un elemento geográfico vectorial contenidos en los registros, pueden ser: 
+
+- **Geométricos**: Tipo de elemento vectorial como Punto, Punto 3D, Línea, Línea 3D, Polígono, Polígono 3D.
+
+- **Numéricos**: Tipo Binario o boolean (1 – 0), tipo fecha o date (Ej: 2010/06/01), enteros o integer (Ej:100) y reales simple o double (Ej:100 – 23.49). Son identificables fácilmente en la tabla de atributos debido a que el valor almacenado en el campo se alinea a la derecha. OID o ObjectID es un campo de sistema que se indexa de 0 a n en archivos de formas shapefile y de 1 a n en GDB o bases de datos geográficas de ArcGIS.
+
+- **Texto (string)**: cadenas de caracteres usados para descripciones nominales o de cualidades de un elemento dentro de un registro.
+
+- **Objetos**: archivos adjuntos, imágenes, hipervínculos, etc.
+
+<div align="center">
+<br><img alt="MOHI" src=".img/Vectorial_Datos.png" width="800px"><br>
+</div>
+
+### Representación raster
+
+Se basa en una unidad fundamental llamada celda o píxel, los cuales definen toda una capa de información. Este tipo de datos se denomina continuo debido a que los valores son agrupados en celdas. Un ejemplo son las imágenes satelitales a partir de las cuales se pueden interpretar el valor de elevación y precipitación, temperatura, acidez en suelos, entre otros.
 
 
 
+### Formatos de Almacenamiento
+
+- **Shapefile**: Archivo de formas nativo desarrollado por Esri que es utilizado por herramientas comerciales y de dominio público. Es el formato estándar para intercambio de información geográfica entre las diferentes plataformas. Cada cobertura o capa geográfica requiere de un sistema de proyección de coordenadas, no posee reglas topológicas directas y el formato de base de datos para almacenar atributos es dBase .dbf. Se compone de cuatro archivos:
+  - (.dbf): Base o tabla de datos de atributos.
+  - (.prj): Atributos de proyección geográfica. 
+  - (.shp): Archivo de vectores.
+  - (.shx): Archivo de índices.
+
+
+- **KML/KMZ:** Formato utilizado para visualizar datos en aplicaciones de Google Earth. KML (Keyhole Markup Language) almacena datos de geometría y atributos, mientras que KMZ es un archivo comprimido que contiene datos KML y recursos relacionados.
+
+
+- **DWG/DXF:**: Formatos utilizados en diseño asistido por computadora (CAD), pero también pueden contener información geoespacial. Son comunes en la industria de la ingeniería y la construcción.
+
+
+- **GeoTIFF (.tif):** Formato de imagen raster georreferenciada que puede contener datos de elevación, imágenes aéreas, mapas topográficos y más.
+ 
+
+- **ASCII:**
+
+
+- **Geodatabase**: Base de datos geográfica que integra para cada conjunto de datos o Dataset, un único sistema de proyección de coordenadas, contiene reglas topológicas definidas, dominios y permite almacenar grandes volúmenes de información de forma eficiente y ágil que pueden ser editados simultáneamente por varios usuarios. Existen Geodatabases personales (.mdb PostgreSQL
+postgis) y corporativas (.gdb, oracle).
+
+
+- **NetCDF:** Formato utilizado para datos multidimensionales, como datos climáticos y oceánicos, que se pueden analizar y visualizar en SIG.
+
+
+- **LAS/LAZ:** Formato utilizado para datos de nubes de puntos LiDAR (Light Detection and Ranging).
 
 ___
 
