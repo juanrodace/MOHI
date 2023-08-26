@@ -146,7 +146,9 @@ En Colombia, el establecimiento de las condiciones técnicas mínimas que deben 
 
 El sistema de proyección cartográfico para Colombia, con un **único origen**, consiste en una proyección cartográfica Transversa de Mercator Secante, cuyos parámetros están establecidos en el literal 'i' Sistema de Referencia del artículo 4 de la resolución 471 de 2020, los cuales pueden configurarse en software especializado para procesamiento de información geográfica. Los parámetros del sistema se presentan en la siguiente tabla.
 
-El sistema de proyección EPSG 9377 es el sistema de proyección cartográfica oficial para Colombia, que se basa en el sistema de referencia geodésico MAGNA-SIRGAS y en la proyección transversal de Mercator. Los parámetros del sistema de proyección son los siguientes⁵⁴:
+El sistema de proyección EPSG 9377 es el sistema de proyección cartográfica oficial para Colombia, que se basa en el sistema de referencia geodésico MAGNA-SIRGAS y en la proyección transversal de Mercator. Los parámetros del sistema de proyección son los siguientes:
+
+<div align="center">
 
 | Parámetro                  |                  Valor                   |
 |----------------------------|:----------------------------------------:|
@@ -161,6 +163,8 @@ El sistema de proyección EPSG 9377 es el sistema de proyección cartográfica o
 | Falso norte                |                2000000 m                 |
 | Factor de escala           |                  0.9992                  |
 | Unidad                     |                  metro                   |
+
+</div>
 
 Este sistema de proyección facilita la integración de una única base de datos en coordenadas planas para todo el territorio y, permite representaciones desde escalas mayores 1:1000 hasta escalas regionales 1:1500000 usando una única proyección. Así mismo, promueve la interoperabilidad y uso de la información geográfica del país en los diferentes niveles territoriales y 
 minimiza problemas de áreas de traslape entre regiones. Con ayuda de la herramienta QGIS podemos visualizar la información del sistema de coordenadas.
@@ -216,7 +220,9 @@ Los datos asociados a un elemento geográfico vectorial contenidos en los regist
 
 Se basa en una unidad fundamental llamada celda o píxel, los cuales definen toda una capa de información. Este tipo de datos se denomina continuo debido a que los valores son agrupados en celdas. Un ejemplo son las imágenes satelitales a partir de las cuales se pueden interpretar el valor de elevación y precipitación, temperatura, acidez en suelos, entre otros.
 
-
+<div align="center">
+<br><img alt="MOHI" src=".img/Raster.jpg" width="700px"><br>
+</div>
 
 ### Formatos de Almacenamiento
 
