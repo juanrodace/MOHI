@@ -114,6 +114,47 @@ carpeta con el nombre "Qmax" en la carpeta documentos.
   <img src="Imagenes/FiguraHECHMS_28.PNG" width="700px"> 
 </div>
 
+Una vez creada la carpeta en la ruta, se creará un documento en blanco. 
+Para realizar esto, en la barra de "herramientas y menús", buscar el botón "nuevo"
+Al dar clic en este botón se abrirá una nueva ventana, la cual solicitará el nombre del proyecto,
+el cual corresponderá al nombre de la cuenca, la ubicación del archivo y el sistema de unidades. 
+En la siguiente figura se presenta lo mencionado.
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_29.PNG" width="700px"> 
+</div>
+
+Para este ejemplo, llamaremos "Ejercicio 1" el archivo principal de HEC - HMS.
+La ruta donde se guardará el archivo corresponderá a la carpeta que acabamos de crear 
+y el sistema de unidades corresponderá al sistema métrico o sistema internacional.
+
+En la siguiente figura se presenta lo mencionado.
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_30.PNG" width="700px"> 
+</div>
+
+Al realizar esto, se creará una carpeta con el mismo nombre del archivo en la barra de 
+"exploración de cuenca". En la barra de estado (parte superior del software) se verá la ruta
+de guardado del archivo principal.
+
+En la siguiente figura se presenta lo mencionado.
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_31.PNG" width="700px"> 
+</div>
+
+Al abrir la carpeta donde se guardó el archivo, el usuario podrá notar que se crearon subcarpetas y otros archivos 
+aparentemente en blanco y con distintas extensiones.
+Estas subcarpetas y archivos corresponden a todos los archivos que HEC-HMS 
+requiere para funcionar adecuadamente.
+
+En la siguiente figura se presenta lo mencionado.
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_32.PNG" width="700px"> 
+</div>
+
 ## Características morfométricas y modelo lluvias escorrentía. Definición en HEC-HMS
 
 #### Tipo, uso de suelo y condición de humedad antecedente. Número de curva (CN)
