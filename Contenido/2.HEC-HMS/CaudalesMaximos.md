@@ -102,6 +102,17 @@ Para la estimación del tiempo de concentración de cada subcuenca utilice la ec
 
 ## Creación de un nuevo documento en HEC-HMS
 
+Una vez se ha instalado el software y se han aceptado todas las condiciones, 
+se recomienda crear una carpeta sin caracteres especiales, tales como:
+"%,&,*;$,#,´,+,-,/,?,¡" entre otros. Adicionalmente la ruta de la carpeta
+debe ser lo más corta posible. 
+
+En la siguiente figura se presenta un ejemplo de lo mencionado. Se ha creado una
+carpeta con el nombre "Qmax" en la carpeta documentos.
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_28.PNG" width="700px"> 
+</div>
 
 ## Características morfométricas y modelo lluvias escorrentía. Definición en HEC-HMS
 
