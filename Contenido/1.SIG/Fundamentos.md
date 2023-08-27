@@ -36,7 +36,8 @@ La latitud es la medida angular de la distancia al norte o al sur del ecuador de
 <div align="center">
 <br>
 <img alt="MOHI" src=".img/SistemaCoordenadas.png" width="400px"><br>
-<sub>Esta imagen muestra cómo se determinan la latitud y la longitud utilizando el sistema de grados decimales.</sub>[^2]<br> 
+Esta imagen muestra cómo se determinan la latitud y la longitud utilizando el sistema de grados decimales.<br> 
+<sub><i>Tomado de Preparation for Orienteering at the Priory. Geospatial Field Methods Couse. 2014.</i></sub><br>
 </div>
 
 La forma teórica que convencionalmente se utiliza para definir la Tierra es el Geoide qué se define teóricamente a partir del nivel medio de los mares. Debido a su forma irregular y para la definición de una forma geométrica que pueda ser resuelta matemáticamente de forma simple se utilizan los conceptos de esfera y elipsoide.
@@ -47,8 +48,9 @@ La forma teórica que convencionalmente se utiliza para definir la Tierra es el 
 <div align="center">
 <br>
 <img alt="MOHI" src=".img/Geoide.jpg" width="350px"><br>
-<sub>Relaciones geométricas entre la superficie topográfica de la Tierra, 
-el geoide y el elipsoide, necesarias para una cartografía de precisión.</sub>[^1]<br> 
+Relaciones geométricas entre la superficie topográfica de la Tierra, 
+el geoide y el elipsoide, necesarias para una cartografía de precisión.<br>
+<sub><i>Tomado de Albireo Topografía y Geomática. Topografía geoide y elipsoide. http://www.albireotopografia.es </i></sub><br>
 </div>
 
 Existen varios sistemas de coordenadas geográficas que se utilizan en todo el mundo para representar ubicaciones en la Tierra. En la siguiente tabla se presentan algunos los más comunes.
@@ -83,7 +85,7 @@ Aunque el grupo original EPSG ya no está activo, sus estándares y códigos sig
 |    27700    | OSGB 1936 / British National Grid       | Sistema de coordenadas utilizado en el Reino Unido.                                                    |
 |    32718    | WGS 84 / UTM zona 18 sur                | Sistema de coordenadas UTM para la zona 18 en el hemisferio sur.                                       |
 
-### Sistema de proeycción de coordenadas
+### Sistema de proyección de coordenadas
 
 Un sistema de proyección de coordenadas es un conjunto de reglas y fórmulas matemáticas que se utilizan para representar la superficie curva de la Tierra en un plano bidimensional, como un mapa. Debido a que la Tierra es tridimensional y curva, es necesario aplicar una proyección para representar su forma en un mapa plano, lo que puede resultar en distorsiones en áreas, formas, distancias o direcciones. Los sistemas de proyección son esenciales para la cartografía y la representación precisa de la información geográfica en un formato utilizable. Existen muchas proyecciones diferentes, cada una con sus propias características y aplicaciones específicas. Algunos tipos comunes de sistemas de proyección de coordenadas incluyen:
 
@@ -93,13 +95,22 @@ Un sistema de proyección de coordenadas es un conjunto de reglas y fórmulas ma
 
 - Proyecciones pseudocilíndricas: Estas proyecciones buscan un equilibrio entre la distorsión de forma y área. Ejemplos incluyen la proyección de Mollweide y la proyección de Robinson.
 
+
+
+<div align="center">
+<br>
+<img alt="MOHI" src=".img/ComparisonCartographySurfaceDevelopment.svg" width="700px"><br>
+Comparación de proyecciones de mapas cilíndricos, cónicos y azimutales tangentes y secantes.<br>
+<sub><i>Tomado de Comparison of tangent and secant cylindrical, conic and azimuthal map projections with standard parallels shown in red by CMG Lee. User:Cmglee, US government, Clindberg, Palosirkka. 2019.</i></sub><br>
+</div>
+
 No existe una proyección perfecta que sea adecuada para todas las situaciones, por lo que la elección depende de las necesidades específicas y los compromisos entre diferentes tipos de distorsiones.
 
 ## Georeferenciación en Colombia
 
 ### Sistema de coordenadas MAGNA-SIRGAS
 
-Mediante resolución No. 068 de 2005 se adoptó como único datum oficial de Colombia el Marco Geocéntrico Nacional de Referencia - MAGNA, que por estar referida a SIRGAS, se denomina convencionalmente **MAGNA-SRIGAS**. El Instituto Geográfico Agustín Codazzi (IGAC), entidad gubernamental encargada de los sistemas geodésicos nacionales de referencia, promueve la adopción de MAGNA-SIRGAS como sistema de referencia oficial del país, en reemplazo del Datum BOGOTÁ, definido en 1941. **MAGNA-SIRGAS** garantiza la compatibilidad de las coordenadas colombianas con las técnicas espaciales de posicionamiento, por ejemplo los sistemas GNSS (Global Navigation Satellite Systems), y con conjuntos internacionales de datos georreferenciados. Los parámetros del sistea de coordenadas se presentan en la siguiente tabla.
+Mediante resolución No. 068 de 2005 se adoptó como único datum oficial de Colombia el Marco Geocéntrico Nacional de Referencia - MAGNA, que por estar referida a SIRGAS, se denomina convencionalmente **MAGNA-SRIGAS**. El Instituto Geográfico Agustín Codazzi (IGAC), entidad gubernamental encargada de los sistemas geodésicos nacionales de referencia, promueve la adopción de MAGNA-SIRGAS como sistema de referencia oficial del país, en reemplazo del Datum BOGOTÁ, definido en 1941. **MAGNA-SIRGAS** garantiza la compatibilidad de las coordenadas colombianas con las técnicas espaciales de posicionamiento, por ejemplo los sistemas GNSS (Global Navigation Satellite Systems), y con conjuntos internacionales de datos georreferenciados. Los parámetros del sistema de coordenadas se presentan en la siguiente tabla.
 
 <div align="center">
 
@@ -117,41 +128,153 @@ Mediante resolución No. 068 de 2005 se adoptó como único datum oficial de Col
 La utilización del sistema **MAGNA-SIRGAS** está directamente relacionada con la definición de una superficie de referencia vertical (geoide) que permita obtener alturas clásicas (referidas al nivel medio del mar) a partir de información GPS. El Geoide en Colombia se ha determinado mediante la técnica remove/restore, la cual permite relacionar las características regionales (longitudes de onda larga) del campo de gravedad, expresadas en un Modelo Geopotencial Global (MGG), y sus detalles (longitudes de onda corta), obtenidos a través de la evaluación local del modelo físico matemático de Strokes (o Molodensky). Con ayuda de la herramienta QGIS podemos visualizar la información del sistema de coordenadas.
 
 <div align="center">
-<br>
-<img alt="MOHI" src=".img/MAGNA-SIRGAS.jpg" width="800px"><br>
+<br><img alt="MOHI" src=".img/MAGNA-SIRGAS.jpg" width="800px"><br>
 </div>
 
 ### Sistema de proyección único Transversa de Mercator Secante
 
->CAMBIAR!! El sistema de proyección Gauss-Krüger es una proyección cartográfica transversal utilizada para representar áreas geográficas en mapas. Es especialmente adecuada para regiones de tamaño moderado o pequeño en latitudes medias. Fue desarrollada por los matemáticos alemanes Carl Friedrich Gauss y Johann Heinrich Louis Krüger en el siglo XIX. La característica principal de esta proyección es que divide la Tierra en múltiples zonas, cada una de las cuales se proyecta utilizando una proyección cilíndrica transversa de Gauss. Cada zona tiene su propio meridiano central, y la deformación es mínima en torno a ese meridiano. <div align="center">
+El sistema de proyección Transversa de Mercator Secante es un tipo de proyección cartográfica que se usa para representar regiones alargadas en dirección norte-sur. Esta proyección se basa en un cilindro que corta la Tierra en dos meridianos, creando una distorsión mínima en el área de interés. Esta proyección cartográfica es de tipo conforme, que prioriza ángulos garantizando así que un ángulo formado entre dos líneas sobre la superficie terrestre se conserve luego de aplicarse la proyección. Utiliza como superficie de referencia el área de un cilindro transverso, secante a la esfera, la escala de representación varía en función de la longitud y el parámetro de escala.
+
+<div align="center">
 <br>
-<img alt="MOHI" src=".img/Gauss-Kruger.jpg" width="400px"><br>
-<sub>Sistema de proyección cartografica Gauss-Krüger.</sub>[^3]<br> 
+<img alt="MOHI" src=".img/TM-Secante.jpg" width="500px"><br>
+Sistema de proyección Transversa de Mercator Secante.<br>
+<sub><i>Tomado de Comparison of tangent and secant forms of Mercator map projections with standard parallels shown in red by CMG Lee. User:Cmglee, US government, Clindberg, Palosirkka. 2019.</i></sub><br>
 </div>
 
 En Colombia, el establecimiento de las condiciones técnicas mínimas que deben tener los productos básicos de cartografía oficial, han sido definidos de conformidad con lo dispuesto por la Resolución 471 del 14 de mayo de 2020 y la posterior Resolución 529 del 05 de junio de 2020, emitidas por el Instituto Geográfico Agustín Codazzi - IGAC, o la norma que la modifique y sustituya. Para ello y para garantizar la homogeneidad y continuidad en la representación de los elementos del territorio, así como facilitar los trabajos relacionados con la gestión de coordenadas en el país. En tal sentido, los proyectos, obras o actividades, sujetos al licenciamiento ambiental, deben ajustar su información geográfica a los lineamientos establecidos en la referida normatividad, para la evaluación y seguimiento de los estudios ambientales y/o presentación de los Informes de Cumplimiento Ambiental.
 
-El sistema de proyección cartográfico para Colombia, con un **único origen**, consiste en una proyección cartográfica Transversa de Mercator Secante, cuyos parámetros están establecidos en el literal i Sistema de Referencia del artículo 4 de la resolución 471 de 2020, los cuales pueden configurarse en software especializado para procesamiento de información geográfica.
+El sistema de proyección cartográfico para Colombia, con un **único origen**, consiste en una proyección cartográfica Transversa de Mercator Secante, cuyos parámetros están establecidos en el literal 'i' Sistema de Referencia del artículo 4 de la resolución 471 de 2020, los cuales pueden configurarse en software especializado para procesamiento de información geográfica. Los parámetros del sistema se presentan en la siguiente tabla.
 
-> PROJCS["MAGNA_Colombia_Origen_Unico",GEOGCS["GCS_MAGNA",DATUM["D_MAGNA",SPHEROID["GRS_1980",6378137.0,298.257222101]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]],PROJECTION["Transverse_Mercator"],PARAMETER["False_Easting",5000000.0],PARAMETER["False_Northing",2000000.0],PARAMETER["Central_Meridian",-73.0],PARAMETER["Scale_Factor",0.9992],PARAMETER["Latitude_Of_Origin",4.0],UNIT["Meter",1.0]]
+El sistema de proyección EPSG 9377 es el sistema de proyección cartográfica oficial para Colombia, que se basa en el sistema de referencia geodésico MAGNA-SIRGAS y en la proyección transversal de Mercator. Los parámetros del sistema de proyección son los siguientes:
 
-## Tipos de datos
+<div align="center">
 
+| Parámetro                  |                  Valor                   |
+|----------------------------|:----------------------------------------:|
+| EPSG code                  |                   9377                   |
+| Nombre                     |      MAGNA-SIRGAS / Origen-Nacional      |
+| Proyección                 |     Transversa de Mercartor Secante      |
+| Datum                      | Marco Geocentrico Nacional de Referencia |
+| Elipsoide                  |                 GRS 1980                 |
+| Latitud de origen          |                    4°                    |
+| Meridiano central          |                   -73°                   |
+| Falso este                 |                5000000 m                 |
+| Falso norte                |                2000000 m                 |
+| Factor de escala           |                  0.9992                  |
+| Unidad                     |                  metro                   |
+
+</div>
+
+Este sistema de proyección facilita la integración de una única base de datos en coordenadas planas para todo el territorio y, permite representaciones desde escalas mayores 1:1000 hasta escalas regionales 1:1500000 usando una única proyección. Así mismo, promueve la interoperabilidad y uso de la información geográfica del país en los diferentes niveles territoriales y 
+minimiza problemas de áreas de traslape entre regiones. Con ayuda de la herramienta QGIS podemos visualizar la información del sistema de coordenadas.
+
+<div align="center">
+<br><img alt="MOHI" src=".img/EPSG_9377.jpg" width="700px"><br>
+</div>
+
+```
+PROJCS["MAGNA-SIRGAS_Origen-Nacional",
+    GEOGCS["GCS_MAGNA",
+        DATUM["D_MAGNA",
+            SPHEROID["GRS_1980",6378137.0,298.257222101]],
+        PRIMEM["Greenwich",0.0],
+        UNIT["Degree",0.0174532925199433]],
+    PROJECTION["Transverse_Mercator"],
+    PARAMETER["False_Easting",5000000.0],
+    PARAMETER["False_Northing",2000000.0],
+    PARAMETER["Central_Meridian",-73.0],
+    PARAMETER["Scale_Factor",0.9992],
+    PARAMETER["Latitude_Of_Origin",4.0],
+    UNIT["Meter",1.0]]
+    
+```
+
+## Codificación y tipos de datos
+
+La codificación de datos geográficos empleados en un SIG proviene de dos tipos de representaciones: vectorial y raster.
+
+### Representación vectorial
+
+Utiliza elementos o entidades de tipo punto, línea o polígono para la representación geográfica. Este tipo de datos se denomina discreto debido a que cada uno de ellos es independiente del otro. Por ejemplo un punto puede representar un pozo de inspección de alcantarillado, una línea un tramo de tubería o conducto, y un polígono el área de una subcuenca. 
+
+<div align="center">
+<br><img alt="MOHI" src=".img/Vectorial.png" width="700px"><br>
+<br>
+</div>
+
+Los datos asociados a un elemento geográfico vectorial contenidos en los registros, pueden ser: 
+
+- **Geométricos**: Tipo de elemento vectorial como Punto, Punto 3D, Línea, Línea 3D, Polígono, Polígono 3D.
+
+- **Numéricos**: Tipo Binario o boolean (1 – 0), tipo fecha o date (Ej: 2010/06/01), enteros o integer (Ej:100) y reales simple o double (Ej:100 – 23.49). Son identificables fácilmente en la tabla de atributos debido a que el valor almacenado en el campo se alinea a la derecha. OID o ObjectID es un campo de sistema que se indexa de 0 a n en archivos de formas shapefile y de 1 a n en GDB o bases de datos geográficas de ArcGIS.
+
+- **Texto (string)**: cadenas de caracteres usados para descripciones nominales o de cualidades de un elemento dentro de un registro.
+
+- **Objetos**: archivos adjuntos, imágenes, hipervínculos, etc.
+
+<div align="center">
+<br><img alt="MOHI" src=".img/Vectorial_Datos.png" width="850px"><br>
+</div>
+
+### Representación raster
+
+Se basa en una unidad fundamental llamada celda o píxel, los cuales definen toda una capa de información. Este tipo de datos se denomina continuo debido a que los valores son agrupados en celdas. Un ejemplo son las imágenes satelitales a partir de las cuales se pueden interpretar el valor de elevación y precipitación, temperatura, acidez en suelos, entre otros.
+
+<div align="center">
+<br><img alt="MOHI" src=".img/Raster.jpg" width="650px"><br>
+</div>
+
+### Formatos de Almacenamiento
+
+- **Shapefile**: Archivo de formas nativo desarrollado por Esri que es utilizado por herramientas comerciales y de dominio público. Es el formato estándar para intercambio de información geográfica entre las diferentes plataformas. Cada cobertura o capa geográfica requiere de un sistema de proyección de coordenadas, no posee reglas topológicas directas y el formato de base de datos para almacenar atributos es dBase .dbf. Se compone de cuatro archivos:
+  - (.dbf): Base o tabla de datos de atributos.
+  - (.prj): Atributos de proyección geográfica. 
+  - (.shp): Archivo de vectores.
+  - (.shx): Archivo de índices.
+
+
+- **KML/KMZ:** Formato utilizado para visualizar datos en aplicaciones de Google Earth. KML (Keyhole Markup Language) almacena datos de geometría y atributos, mientras que KMZ es un archivo comprimido que contiene datos KML y recursos relacionados.
+
+
+- **DWG/DXF:**: Formatos utilizados en diseño asistido por computadora (CAD), pero también pueden contener información geoespacial. Son comunes en la industria de la ingeniería y la construcción.
+
+
+- **GeoTIFF (.tif):** Formato de imagen raster georreferenciada que puede contener datos de elevación, imágenes aéreas, mapas topográficos y más.
+ 
+
+- **ASCII:**
+
+
+- **Geodatabase**: Base de datos geográfica que integra para cada conjunto de datos o Dataset, un único sistema de proyección de coordenadas, contiene reglas topológicas definidas, dominios y permite almacenar grandes volúmenes de información de forma eficiente y ágil que pueden ser editados simultáneamente por varios usuarios. Existen Geodatabases personales (.mdb PostgreSQL
+postgis) y corporativas (.gdb, oracle).
+
+
+- **NetCDF:** Formato utilizado para datos multidimensionales, como datos climáticos y oceánicos, que se pueden analizar y visualizar en SIG.
+
+
+- **LAS/LAZ:** Formato utilizado para datos de nubes de puntos LiDAR (Light Detection and Ranging).
+
+___
+
+### Referencias
+- LibroSIG: prendiendo a manejar los SIG en la gestión ambiental. Mancebo, S.; Ortega, E.;Martín, L.; Valentín, A. Madrid, España. 2009.  
+- Sistemas de Información Geográfica. Olaya, Victor. Creative Commons Atribucion. 2012.
+- References and Projection Used in the Colombian Cartograph. Serrato A., Pedro Karin. Perspectiva geográfica. 2009. 
+- Cylindrical Projection: Mercator, Transverse Mercator and Miller. GISGeograpghy, _https://gisgeography.com_. 2022.
+- Resolución No. 471 de 2020. Instituto Geográfico Agustín Codazzi - IGAC. Mayo 2020.
+- Georreferenciación y sistemas de proyección de coordenadas. TSIG. Aguilar P., William. 2022.
 
 ### Control de versiones
 
 | Versión | Descripción                                                    |                    Autor                    | Horas |
 |:-------:|:---------------------------------------------------------------|:-------------------------------------------:|:-----:|
 | 2023.08 | Versión inicial, definición de estructura general y contenido. | [juanrodace](https://github.com/juanrodace) |  1.0  |
-| 2023.08 | Inclusión de conceptos, esquemas y ejemplos.                   | [juanrodace](https://github.com/juanrodace) |  3.0  |
+| 2023.08 | Inclusión de conceptos, esquemas y ejemplos.                   | [juanrodace](https://github.com/juanrodace) |  4.0  |
 
 | [:arrow_backward:Anterior](Conceptos.md) | [:house: Inicio](../../Readme.md) | [:beginner: Ayuda](https://github.com/juanrodace/MOHI/discussions) | [Siguiente:arrow_forward:](QGIS.md) |
 |------------------------------------------|-----------------------------------|--------------------------------------------------------------------|-------------------------------------|
 
 _MOHI es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](../../License.md)._
 
-_¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [juanrodace](https://github.com/juanrodace) en GitHub._ 
-
-[^1]: http://www.albireotopografia.es/wp-content/uploads/2015/01/Topografia-geoide-y-elipsoide.jpg
-[^2]: Preparation for Orienteering at the Priory. Geospatial Field Methods Couse. 2014.
-[^3]: Aspectos prácticos de la adopción del marco geoccéntrico nacional de referencia MAGNA_SIRGAS como Dátum oficial de Colombia. Sánchez, Laura. IGAC. 2004.
+_¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [juanrodace](https://github.com/juanrodace) en GitHub._
