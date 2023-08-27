@@ -157,6 +157,11 @@ En la siguiente figura se presenta lo mencionado.
 
 ## Características morfométricas y modelo lluvias escorrentía. Definición en HEC-HMS
 
+Una vez creado el archivo principal, se deben crear las subcuencas que definen el sistema
+hidrológico de la cuenca principal (subcuencas y la red fluvial).
+
+Para realizar esto no crearemos el espacio de trabajo que corresponderá a la cuenca principal. 
+
 #### Tipo, uso de suelo y condición de humedad antecedente. Número de curva (CN)
 
 #### Tiempo de retardo (Tlag).
@@ -187,7 +192,7 @@ _MOHI es de uso libre para fines académicos, conoce nuestra licencia, cláusula
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [AndresOtalora92](https://github.com/AndresOtalora92?tab=repositories) en GitHub._
 
 
-| [Anterior](Generalidades_HECHMS) | [:house: Inicio](../../../Readme.md) | [:beginner: Ayuda / Colabora] | [Siguiente]() |
+| [Anterior](Generalidades_HECHMS) | [:house: Inicio](../../../Readme.md) | [:beginner: Ayuda / Colabora] | [Siguiente](CaudalesMedios.md) |
 |--------------------------------|--------------------------------------|--------------------------------------------------------------------------------------------------|----------------------------------------------|
 
 <div align="center"><a href="https://enlace-academico.escuelaing.edu.co/psc/FORMULARIO/EMPLOYEE/SA/c/EC_LOCALIZACION_RE.LC_FRM_ADMEDCO_FL.GBL" target="_blank"><img src="https://github.com/rcfdtools/R.TeachingResearchGuide/blob/main/CaseUse/.icons/IconCEHBotonCertificado.png" alt="R.LTWB" width="260" border="0" /></a></div>
