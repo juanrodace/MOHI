@@ -118,7 +118,7 @@ carpeta con el nombre "Qmax" en la carpeta documentos.
 
 #### Tipo, uso de suelo y condición de humedad antecedente. Número de curva (CN)
 
-#### Tiempo de retardo (Tlag)
+#### Tiempo de retardo (Tlag).
 
 #### Modelo lluvia escorrentía y caudal base.
 
