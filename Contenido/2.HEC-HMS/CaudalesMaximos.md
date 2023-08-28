@@ -102,12 +102,143 @@ Para la estimación del tiempo de concentración de cada subcuenca utilice la ec
 
 ## Creación de un nuevo documento en HEC-HMS
 
+Una vez se ha instalado el software y se han aceptado todas las condiciones, 
+se recomienda crear una carpeta sin caracteres especiales, tales como:
+"%,&,*;$,#,´,+,-,/,?,¡" entre otros. Adicionalmente la ruta de la carpeta
+debe ser lo más corta posible. 
+
+En la siguiente figura se presenta un ejemplo de lo mencionado. Se ha creado una
+carpeta con el nombre "Qmax" en la carpeta documentos.
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_28.PNG" width="700px"> 
+</div>
+
+Una vez creada la carpeta en la ruta, se creará un documento en blanco. 
+Para realizar esto, en la barra de "herramientas y menús", buscar el botón "nuevo"
+Al dar clic en este botón se abrirá una nueva ventana, la cual solicitará el nombre del proyecto,
+el cual corresponderá al nombre de la cuenca, la ubicación del archivo y el sistema de unidades. 
+En la siguiente figura se presenta lo mencionado.
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_29.PNG" width="700px"> 
+</div>
+
+Para este ejemplo, llamaremos "Ejercicio 1" el archivo principal de HEC - HMS.
+La ruta donde se guardará el archivo corresponderá a la carpeta que acabamos de crear 
+y el sistema de unidades corresponderá al sistema métrico o sistema internacional.
+
+En la siguiente figura se presenta lo mencionado.
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_30.PNG" width="700px"> 
+</div>
+
+Al realizar esto, se creará una carpeta con el mismo nombre del archivo en la barra de 
+"exploración de cuenca". En la barra de estado (parte superior del software) se verá la ruta
+de guardado del archivo principal.
+
+En la siguiente figura se presenta lo mencionado.
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_31.PNG" width="700px"> 
+</div>
+
+Al abrir la carpeta donde se guardó el archivo, el usuario podrá notar que se crearon subcarpetas y otros archivos 
+aparentemente en blanco y con distintas extensiones.
+Estas subcarpetas y archivos corresponden a todos los archivos que HEC-HMS 
+requiere para funcionar adecuadamente.
+
+En la siguiente figura se presenta lo mencionado.
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_32.PNG" width="700px"> 
+</div>
 
 ## Características morfométricas y modelo lluvias escorrentía. Definición en HEC-HMS
 
+Una vez creado el archivo principal, se deben crear las subcuencas que definen el sistema
+hidrológico de la cuenca principal (subcuencas y la red fluvial).
+
+Para realizar esto, inicialmente crearemos el espacio de trabajo que corresponderá a la cuenca principal. 
+En la barra de herramientas y menús, damos clic en "Components" y en la subcategoría "Basic Model Manager"
+
+En la siguiente figura se presenta lo mencionado:
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_33.PNG" width="700px"> 
+</div>
+
+Se abrirá un ventana, en la cual seleccionaremos la opción "New". Se abrirá una pequeña ventana
+la cual solicitará el nombre de la cuenca. Para este caso, el nombre elegido es "Cuenca1"
+
+En la siguiente figura se presenta lo mencionado:
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_34.PNG" width="700px"> 
+</div>
+
+Al realizar esto, en la barra de exploración de la cuenca, se creará un ícono que representa la cuenca principal. 
+Adicionamente la zona o "ventana de mapa" cambiará de color gris a color blanco.
+
+En la siguiente figura se presenta lo mencionado:
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_35.PNG" width="700px"> 
+</div>
+
+Ahora, con la cuenca creada, se deberán definir las subcuencas. Para realizar esto, en la barra de herramientas y menús , 
+seleccionaremos la ópción "Subbasin Creation Tool", tal como se presentan en la siguiente figura:
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_36.PNG" width="700px"> 
+</div>
+
+Al dar clic en el botón "Subbasin Creation Tool" se debe picar sobre la ventana de mapa en el lugar deseado.
+Para conocer la distribución aproximada de cada subcuenca (ubicación donde se debe picar) en la cuenca principal, 
+se debe analizar con calma la figura definida en el ejercicio.
+
+Una vez se pique sobre la ventana del mapa, se abrirá una ventana que solicita el nombre de la subcuenca. Para este
+caso se definirán el mismo nombre indicado en el ejercicio: "Subcuenca1".
+
+Se repetirá este procedimiento para cada una de las subcuencas que definen el problema.
+
+La ventana de dibujo del mapa se debe ver similar al presentado en la siguiente figura:
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_37.PNG" width="700px"> 
+</div>
+
+Ahora, crearemos el punto de control donde descargarán todas las aguas de las subcuencas. Este punto corresponderá al 
+punto final de la cuenca. 
+
+Para realizar, esto nos dirigimos a la barra de herramientas y menús,
+seleccionamos el botón "Create a New Sink Element", posteriormente se debe picar sobre la ventana de dibujo del mapa 
+en el lugar que el usuario desee, en este caso, la zona más aguas abajo de la cuenca.
+
+Se abrirá una nueva ventana, la cual solicitará el nombre del elemento. Para este caso, se seleccionará
+como nombre "PuntoControl", tal como se presenta en las siguientes figuras:
+
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_38.PNG" width="700px"> 
+</div>
+
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_39.PNG" width="700px"> 
+</div>
+
+Una vez realizado este procedimiento, la ventana de dibujo del mapa se debe ver similar al presentado en la 
+siguiente figura:
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_40.PNG" width="700px"> 
+</div>
+
 #### Tipo, uso de suelo y condición de humedad antecedente. Número de curva (CN)
 
-#### Tiempo de retardo (Tlag)
+#### Tiempo de retardo (Tlag).
 
 #### Modelo lluvia escorrentía y caudal base.
 
@@ -135,8 +266,8 @@ _MOHI es de uso libre para fines académicos, conoce nuestra licencia, cláusula
 _¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [AndresOtalora92](https://github.com/AndresOtalora92?tab=repositories) en GitHub._
 
 
-| [Anterior](Generalidades_HECHMS) | [:house: Inicio](../../../Readme.md) | [:beginner: Ayuda / Colabora] | [Siguiente]() |
-|--------------------------------|--------------------------------------|--------------------------------------------------------------------------------------------------|----------------------------------------------|
+| [Anterior](Generalidades_HECHMS) | [:house: Inicio](../../Readme.md) | [:beginner: Ayuda / Colabora] | [Siguiente](CaudalesMedios.md) |
+|--------------------------------|-----------------------------------|--------------------------------------------------------------------------------------------------|----------------------------------------------|
 
 <div align="center"><a href="https://enlace-academico.escuelaing.edu.co/psc/FORMULARIO/EMPLOYEE/SA/c/EC_LOCALIZACION_RE.LC_FRM_ADMEDCO_FL.GBL" target="_blank"><img src="https://github.com/rcfdtools/R.TeachingResearchGuide/blob/main/CaseUse/.icons/IconCEHBotonCertificado.png" alt="R.LTWB" width="260" border="0" /></a></div>
 
