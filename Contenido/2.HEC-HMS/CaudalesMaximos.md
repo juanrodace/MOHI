@@ -236,6 +236,87 @@ siguiente figura:
   <img src="Imagenes/FiguraHECHMS_40.PNG" width="700px"> 
 </div>
 
+
+Ahora, se crearán los puntos de unión de las corrientes que coinciden en un punto (corrientes que continuan sobre 
+el cauce principal). Para realizar esto, en la barra de herramientas y menús, seleccionar el botón "Juction Creation Tool".
+Una vez se pica sobre este botón, se debe picar sobre la ventana de dibujo, en la zona indicada por el ejercicio.
+Posteriormente, se abrirá una ventana que solicitará el nombre del elemento. Para el primer elemento (primer nodo)
+se definirá como nombre "PuntoA". 
+
+En la siguiente figura se presenta lo mencionado.
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_41.PNG" width="700px"> 
+</div>
+
+Este procedimiento se debe realizar para el siguiente nodo (PuntoB). 
+Una vez realizado este procedimiento, la ventana de dibujo del mapa se debe ver similar al presentado en la 
+siguiente figura:
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_42.PNG" width="700px"> 
+</div>
+
+Al picar sobre el ícono de la "Cuenca1", se desplegará los íconos que representan las subcuencas, los nodos y el punto
+final de la cuenca o punto de control, tal como se presenta en la siguiente figura.
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_43.PNG" width="700px"> 
+</div>
+
+Ahora, se debe definir el punto aguas abajo de cada elemento. Un punto aguas abajo puede corresponder a otro elemento.
+Por ejemplo, la subcuenca 1, según el ejercicio, descarga al punto de unión "PuntoA". Para realizar esto, despliegue, 
+desde el ícono de "Subcuenca1", en el elemento "Subbasin", en la harremienta "DownStream" y seleccionar el punto 
+"PuntoA"
+
+En la siguiente figura se presenta lo mencionado:
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_44.PNG" width="700px"> 
+</div>
+
+Al realizar esto, en la ventana de dibujo del mapa, debe aparecer una línea simbólica que representa la descarga de un
+elemento a otro, tal como se presentan en la siguiente figura:
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_45.PNG" width="700px"> 
+</div>
+
+Debe repetirse este procedimiento para cada una de las subcuencas.
+En la siguiente figura se presenta el resultado de este procedimento:
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_46.PNG" width="700px"> 
+</div>
+
+Ahora, considerando el tránsito hidráulico del cauce principal desde los puntos de unión, se debe crear un tramo de 
+cauce. Para realizar esto, en la barra de herramientas y menús, seleccionar el botón "Reach Creation Tool". Se deberá
+picar el elemento que inicia el tramo y posteriormente el elemento final. 
+
+En la siguiente figura se presenta lo mencionado:
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_47.PNG" width="700px"> 
+</div>
+
+Para el primer tramo, se picará el elemento "PuntoA "y el elemento "PuntoB".
+Una vez se realiza esto, se abrirá una  ventana que solicitará el nombre. Para el primer tramo, se ha seleccionado el 
+nombre "TramoAB". 
+
+En la siguiente figura se presenta el resultado:
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_48.PNG" width="700px"> 
+</div>
+
+Se debe repetir el procedimiento para el tramo que inicia desde el Punto B hasta el punto de control. 
+
+Al finalizar este paso, la ventana de dibujo de la cuenca, se debe parecer a la presentada en la siguiente figura:
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_49.PNG" width="700px"> 
+</div>
+
 #### Tipo, uso de suelo y condición de humedad antecedente. Número de curva (CN)
 
 #### Tiempo de retardo (Tlag).
