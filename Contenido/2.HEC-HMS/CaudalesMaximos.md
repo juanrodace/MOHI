@@ -236,6 +236,7 @@ siguiente figura:
   <img src="Imagenes/FiguraHECHMS_40.PNG" width="700px"> 
 </div>
 
+
 Ahora, se crearán los puntos de unión de las corrientes que coinciden en un punto (corrientes que continuan sobre 
 el cauce principal). Para realizar esto, en la barra de herramientas y menús, seleccionar el botón "Juction Creation Tool".
 Una vez se pica sobre este botón, se debe picar sobre la ventana de dibujo, en la zona indicada por el ejercicio.
