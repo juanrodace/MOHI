@@ -160,7 +160,81 @@ En la siguiente figura se presenta lo mencionado.
 Una vez creado el archivo principal, se deben crear las subcuencas que definen el sistema
 hidrológico de la cuenca principal (subcuencas y la red fluvial).
 
-Para realizar esto no crearemos el espacio de trabajo que corresponderá a la cuenca principal. 
+Para realizar esto, inicialmente crearemos el espacio de trabajo que corresponderá a la cuenca principal. 
+En la barra de herramientas y menús, damos clic en "Components" y en la subcategoría "Basic Model Manager"
+
+En la siguiente figura se presenta lo mencionado:
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_33.PNG" width="700px"> 
+</div>
+
+Se abrirá un ventana, en la cual seleccionaremos la opción "New". Se abrirá una pequeña ventana
+la cual solicitará el nombre de la cuenca. Para este caso, el nombre elegido es "Cuenca1"
+
+En la siguiente figura se presenta lo mencionado:
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_34.PNG" width="700px"> 
+</div>
+
+Al realizar esto, en la barra de exploración de la cuenca, se creará un ícono que representa la cuenca principal. 
+Adicionamente la zona o "ventana de mapa" cambiará de color gris a color blanco.
+
+En la siguiente figura se presenta lo mencionado:
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_35.PNG" width="700px"> 
+</div>
+
+Ahora, con la cuenca creada, se deberán definir las subcuencas. Para realizar esto, en la barra de herramientas y menús , 
+seleccionaremos la ópción "Subbasin Creation Tool", tal como se presentan en la siguiente figura:
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_36.PNG" width="700px"> 
+</div>
+
+Al dar clic en el botón "Subbasin Creation Tool" se debe picar sobre la ventana de mapa en el lugar deseado.
+Para conocer la distribución aproximada de cada subcuenca (ubicación donde se debe picar) en la cuenca principal, 
+se debe analizar con calma la figura definida en el ejercicio.
+
+Una vez se pique sobre la ventana del mapa, se abrirá una ventana que solicita el nombre de la subcuenca. Para este
+caso se definirán el mismo nombre indicado en el ejercicio: "Subcuenca1".
+
+Se repetirá este procedimiento para cada una de las subcuencas que definen el problema.
+
+La ventana de dibujo del mapa se debe ver similar al presentado en la siguiente figura:
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_37.PNG" width="700px"> 
+</div>
+
+Ahora, crearemos el punto de control donde descargarán todas las aguas de las subcuencas. Este punto corresponderá al 
+punto final de la cuenca. 
+
+Para realizar, esto nos dirigimos a la barra de herramientas y menús,
+seleccionamos el botón "Create a New Sink Element", posteriormente se debe picar sobre la ventana de dibujo del mapa 
+en el lugar que el usuario desee, en este caso, la zona más aguas abajo de la cuenca.
+
+Se abrirá una nueva ventana, la cual solicitará el nombre del elemento. Para este caso, se seleccionará
+como nombre "PuntoControl", tal como se presenta en las siguientes figuras:
+
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_38.PNG" width="700px"> 
+</div>
+
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_39.PNG" width="700px"> 
+</div>
+
+Una vez realizado este procedimiento, la ventana de dibujo del mapa se debe ver similar al presentado en la 
+siguiente figura:
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_40.PNG" width="700px"> 
+</div>
 
 #### Tipo, uso de suelo y condición de humedad antecedente. Número de curva (CN)
 
