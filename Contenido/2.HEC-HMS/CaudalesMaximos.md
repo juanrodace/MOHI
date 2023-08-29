@@ -317,7 +317,36 @@ Al finalizar este paso, la ventana de dibujo de la cuenca, se debe parecer a la 
   <img src="Imagenes/FiguraHECHMS_49.PNG" width="700px"> 
 </div>
 
+Con las subcuencas creadas en la ventana de dibujo del mapa, el punto de control definido, las descargas o puntos aguas abajo y los tramos de tránsito trazados, se dispone a definir el área de drenaje de cada cuenca y las características del modelo lluvia-escorrentía definido. 
+
+Para realizar esto, en la ventana de exploración de la cuenca, se debe seleccionar una de las subcuencas y en la parte inferior, en la ventana de componentes, seleccionar la categoría "Subbasin" y realizar los siguientes cambios:
+
+a. Área (km²): Corresponde al área de la subcuenca definido en el ejercicio
+<div
+
+</div>
+
+b. Loss Method: Método utilizado para determinar las abstracciones inicial de la lluvia bruta. En este caso, seleccionar el método "SCS Curve Number"
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_50.PNG" width="700px"> 
+</div>
+
+c. Transform Method: Método utilizado para realizar la transformación de la lluvia (hietograma) a escorrentía superficial (hidrograma de escorrentía directa). En este caso, seleccionar el método "SCS Unit Hydrograph" que corresponde al método del hidrograma unitario del Cuerpo de Ingenieros de los Estados Unidos.
+
+d. BaseFlow Method: Corresponde al caudal base o caudal aportado por el flujo subsuperficial y que no corresponde a la lluvia definida para la estimación del caudal. Para este caso, se asumirá que no existe caudal base o que es despreciable frente a la magnitud de los caudales máximos. 
+
+En la siguiente figura se presenta el resumen de lo mencionado:
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_50.PNG" width="700px"> 
+</div>
+
+Se debe repetir el procedimiento para todas las subcuencas, llenado el espacio de "Área(km²)" con el valor respectivo definido en el ejercicio base. 
+
 #### Tipo, uso de suelo y condición de humedad antecedente. Número de curva (CN)
+
+Teniendo en cuenta que el método para la estimación de las abstracc
 
 #### Tiempo de retardo (Tlag).
 
