@@ -16,7 +16,7 @@ A continuación encuentras el contenido detallado de la sección.
 |---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Conceptos Básicos.](Conceptos.md)                  | Concepto general de los sistemas de información geográfica (SIG), aplicación, utilidad y funciones. Tipos de herramientas SIG.                                                       |
 | [Fundamentos Generales.](Fundamentos.md)            | Georreferenciación y sistemas de coordenadas. Tipos de datos y codificación. Formatos, registros y atributos.                                                                        |
-| [QGIS. Generalidades, usos y estructura.](QGIS.md)  | Introducción a la herramienta QGIS y ArcGIS. Estructura, ventanas, funciones. Visualización, simbología, manipulación gráficas, formatos y desarrollo de gráficas a partir de datos. |
+| [QGIS. Generalidades, usos y estructura.](QGIS.md)  | Introducción a la herramienta QGIS. Estructura, ventanas, funciones. Visualización, simbología, manipulación gráficas, formatos y desarrollo de gráficas a partir de datos. |
 | [QGIS. Herramientas de geoprocesamiento.](QGIS2.md) | Algunas funciones espaciales o de geoprocesamiento de las herramientas SIG. Aplicación en QGIS.                                                                                      |
 
 ##

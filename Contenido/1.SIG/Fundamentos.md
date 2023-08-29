@@ -243,17 +243,22 @@ Se basa en una unidad fundamental llamada celda o píxel, los cuales definen tod
 - **GeoTIFF (.tif):** Formato de imagen raster georreferenciada que puede contener datos de elevación, imágenes aéreas, mapas topográficos y más.
  
 
-- **ASCII:**
-
-
-- **Geodatabase**: Base de datos geográfica que integra para cada conjunto de datos o Dataset, un único sistema de proyección de coordenadas, contiene reglas topológicas definidas, dominios y permite almacenar grandes volúmenes de información de forma eficiente y ágil que pueden ser editados simultáneamente por varios usuarios. Existen Geodatabases personales (.mdb PostgreSQL
-postgis) y corporativas (.gdb, oracle).
+- **ASCII:** El formato ASCII (American Standard Code for Information Interchange) es un estándar de codificación de caracteres utilizado para representar texto y otros datos legibles por humanos en forma de números. En el contexto de los Sistemas de Información Geográfica (SIG), el formato ASCII se utiliza a menudo para representar datos tabulares, datos de elevación y otros tipos de información geoespacial en un formato legible por humanos.
 
 
 - **NetCDF:** Formato utilizado para datos multidimensionales, como datos climáticos y oceánicos, que se pueden analizar y visualizar en SIG.
 
 
 - **LAS/LAZ:** Formato utilizado para datos de nubes de puntos LiDAR (Light Detection and Ranging).
+
+
+- **Geodatabase**: Base de datos geográfica que integra para cada conjunto de datos o Dataset, un único sistema de proyección de coordenadas, contiene reglas topológicas definidas, dominios y permite almacenar grandes volúmenes de información de forma eficiente y ágil que pueden ser editados simultáneamente por varios usuarios. Existen Geodatabases personales (.mdb PostgreSQL
+postgis) y corporativas (.gdb, oracle).
+
+<div align="center">
+  <br><img alt="MOHI" src=".img/Geodatabase.png" width="650px"><br>
+<br><img alt="MOHI" src=".img/Geodatabase2.png" width="650px"><br>
+</div>
 
 ___
 
@@ -270,7 +275,7 @@ ___
 | Versión | Descripción                                                    |                    Autor                    | Horas |
 |:-------:|:---------------------------------------------------------------|:-------------------------------------------:|:-----:|
 | 2023.08 | Versión inicial, definición de estructura general y contenido. | [juanrodace](https://github.com/juanrodace) |  1.0  |
-| 2023.08 | Inclusión de conceptos, esquemas y ejemplos.                   | [juanrodace](https://github.com/juanrodace) |  4.0  |
+| 2023.08 | Inclusión de conceptos, esquemas y ejemplos.                   | [juanrodace](https://github.com/juanrodace) |  5.0  |
 
 | [:arrow_backward:Anterior](Conceptos.md) | [:house: Inicio](../../Readme.md) | [:beginner: Ayuda](https://github.com/juanrodace/MOHI/discussions) | [Siguiente:arrow_forward:](QGIS.md) |
 |------------------------------------------|-----------------------------------|--------------------------------------------------------------------|-------------------------------------|
