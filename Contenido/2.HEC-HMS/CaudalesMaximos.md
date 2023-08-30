@@ -346,7 +346,31 @@ Se debe repetir el procedimiento para todas las subcuencas, llenado el espacio d
 
 #### Tipo, uso de suelo y condición de humedad antecedente. Número de curva (CN)
 
-Teniendo en cuenta que el método para la estimación de las abstracc
+Teniendo en cuenta que el método utilizado para la estimación de las abstracciones iniciales(encharcamiento e infiltración en la cuenca) se basa en el Número de Curva (CN) desarrollado por el Cuerpo de Ingenieros de los Estados Unidos. Es necesario definir y seleccionar este número a partir de las características de la cobertura, tipo de suelo y uso del  suelo de la cuenca.
+
+En términos simples, el Número de Curva (CN) corresponde a un valor entre 0 y 100, que indica la capacidad de retención del suelo o la capacidad de dejar pasar la escorrentía. Entre mayor es el coeficiente CN, más alta es la capacidad del suelo a permitir escurrir. Un CN 100 es perfectamente liso e impermeable. Un CN de 0 es un orificio de altura infinita, que no permite escurrir nada, todo lo "atrapa".
+
+El CN depende de diferentes factores, tales como el tipo de suelo, el uso del suelo (cobertura vegetal) y la condición de humedad antecedente. Estos conceptos están fuera del alcance del curso, pero es apropiado que el lector conozca los conceptos básicos antes de ingresar la información en el modelo y en el programa.
+
+En el caso del ejercicio, el valor del CN de cada subcuenca ya está definido. Queda pendiente "ajustarlo" por la condición de humedad. Un CN tipo II, corresponde a una zona con humedad media. Un CN tipo I, corresponde a una zona propensa a épocas de estiaje (poca humedad y bajas precipitaciones). Un CN tipo III, corresponde a zona con alta humedad.
+
+El enunciado del ejercicio menciona un suelo tipo II e indica las condiciones de humedad. Para ajustar el CN, se deben aplicar las siguientes ecuaciones:
+
+##### CN_i
+
+<div align="center"> 
+$CN_{i}=\frac{4.2*CN_{ii}}{10-0.058*CN_{ii}}$ 
+</div>
+
+##### CN_iii
+
+<div align="center"> 
+$CN_{i}=\frac{23*CN_{ii}}{10+0.13*CN_{ii}}$ 
+</div>
+
+<br> 
+
+</br>
 
 #### Tiempo de retardo (Tlag).
 
