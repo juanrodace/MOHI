@@ -373,39 +373,33 @@ El enunciado del ejercicio menciona un suelo tipo II e indica las condiciones de
 
 <br> 
  
-
 </br>
 
 Antes de ingresar los valores del CN al programa, se dispondrá a definir los valores "corregidos" y definitivos de cada cuenca:
 
-**Subcuenca 1 (humedad normal):**
+Subcuenca 1 (humedad normal):
 
 CN=80
 
-**Subcuenca 2 (condición seca):**
-
-<br> 
-
-</br>
+Subcuenca 2 (condición seca):
 
 <div align="Left">
   <img src="Imagenes/FiguraHECHMS_54.PNG" width="200px"> 
 </div>
 
-**Subcuenca 3 (condición húmedad):**
-
-<br> 
-
-</br>
+Subcuenca 3 (condición húmedad):
 
 <div align="Left">
   <img src="Imagenes/FiguraHECHMS_53.PNG" width="200px"> 
 </div>
 
-**Subcuenca 4 (humedad normal):**
+Subcuenca 4 (humedad normal):
 
 CN=89
 
+<br> 
+ 
+</br>
 Para realizar esto, en la ventana de exploración de la cuenca, se debe seleccionar una de las subcuencas y en la parte inferior, en la ventana de componentes, seleccionar la categoría "Loss" y en la ópción "Curve Number", escribir el valor del CN que corresponda. Para nuestras cuencas se tiene que:
 
 #### Tiempo de concentración y tiempo de retardo en la cuenca (Tlag).
