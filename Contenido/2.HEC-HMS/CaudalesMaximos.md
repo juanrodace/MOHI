@@ -306,7 +306,7 @@ nombre "TramoAB".
 En la siguiente figura se presenta el resultado:
 
 <div align="center">
-  <img src="Imagenes/FiguraHECHMS_48.PNG" width="700px"> 
+  <img src="Imagenes/FiguraHECHMS_48.PNG" width="900px"> 
 </div>
 
 Se debe repetir el procedimiento para el tramo que inicia desde el Punto B hasta el punto de control. 
@@ -314,7 +314,7 @@ Se debe repetir el procedimiento para el tramo que inicia desde el Punto B hasta
 Al finalizar este paso, la ventana de dibujo de la cuenca, se debe parecer a la presentada en la siguiente figura:
 
 <div align="center">
-  <img src="Imagenes/FiguraHECHMS_49.PNG" width="700px"> 
+  <img src="Imagenes/FiguraHECHMS_49.PNG" width="900px"> 
 </div>
 
 Con las subcuencas creadas en la ventana de dibujo del mapa, el punto de control definido, las descargas o puntos aguas abajo y los tramos de tránsito trazados, se dispone a definir el área de drenaje de cada cuenca y las características del modelo lluvia-escorrentía definido. 
@@ -331,7 +331,7 @@ a. Área (km²): Corresponde al área de la subcuenca definido en el ejercicio
 b. Loss Method: Método utilizado para determinar las abstracciones inicial de la lluvia bruta. En este caso, seleccionar el método "SCS Curve Number"
 
 <div align="center">
-  <img src="Imagenes/FiguraHECHMS_50.PNG" width="700px"> 
+  <img src="Imagenes/FiguraHECHMS_50.PNG" width="900px"> 
 </div>
 
 c. Transform Method: Método utilizado para realizar la transformación de la lluvia (hietograma) a escorrentía superficial (hidrograma de escorrentía directa). En este caso, seleccionar el método "SCS Unit Hydrograph" que corresponde al método del hidrograma unitario del Cuerpo de Ingenieros de los Estados Unidos.
@@ -341,7 +341,7 @@ d. BaseFlow Method: Corresponde al caudal base o caudal aportado por el flujo su
 En la siguiente figura se presenta el resumen de lo mencionado:
 
 <div align="center">
-  <img src="Imagenes/FiguraHECHMS_50.PNG" width="700px"> 
+  <img src="Imagenes/FiguraHECHMS_50.PNG" width="900px"> 
 </div>
 
 Se debe repetir el procedimiento para todas las subcuencas, llenado el espacio de "Área(km²)" con el valor respectivo definido en el ejercicio base. 
@@ -400,7 +400,7 @@ CN=89
 Para realizar esto, en la ventana de exploración de la cuenca, se debe seleccionar una de las subcuencas y en la parte inferior, en la ventana de componentes, seleccionar la categoría "Loss" y en la opción "Curve Number", escribir el valor del CN que corresponda. Para nuestras cuencas se tiene que:
 
 <div align="Center">
-  <img src="Imagenes/FiguraHECHMS_55.PNG" width="700px"> 
+  <img src="Imagenes/FiguraHECHMS_55.PNG" width="900px"> 
 </div>
 
 Repita este procedimiento para todas las subcuencas del proyecto.
@@ -449,7 +449,7 @@ Calculando estos valores para las cuatro subcuencas, se tiene que:
 Para realizar esto, en la ventana de exploración de la cuenca, se debe seleccionar una de las subcuencas y en la parte inferior, en la ventana de componentes, seleccionar la categoría "Transform" y en la opción "Lag Time (min)", escribir el valor del Tlag que corresponda. Para nuestras cuencas se tiene que:
 
 <div align="Center">
-  <img src="Imagenes/FiguraHECHMS_58.PNG" width="700px"> 
+  <img src="Imagenes/FiguraHECHMS_58.PNG" width="900px"> 
 </div>
 
 Repita este procedimiento para todas las subcuencas del proyecto.
@@ -475,13 +475,13 @@ En la siguiente tabla y para efectos prácticos, se han definido estos términos
 Para realizar esto, en la ventana de exploración de la cuenca, se debe seleccionar uno de los tramos trazados y en la parte inferior, en la ventana de componentes, seleccionar la categoría "Reach" y en la opción "Routing Method" seleccionar la opción "Muskingum". En la siguiente figura se presenta lo mencionado:
 
 <div align="Center">
-  <img src="Imagenes/FiguraHECHMS_59.PNG" width="700px"> 
+  <img src="Imagenes/FiguraHECHMS_59.PNG" width="900px"> 
 </div>
 
 Posteriormente, en la ventana de componentes, seleccionar la categoría "Routing" y en la opción "Muskingum K" y en la opción "Muskingum X", escribir los valores respectivos:
 
 <div align="Center">
-  <img src="Imagenes/FiguraHECHMS_60.PNG" width="700px"> 
+  <img src="Imagenes/FiguraHECHMS_60.PNG" width="900px"> 
 </div>
 
 ## Definición de los parámetros hidrológicos. Definición en HEC-HMS
@@ -495,32 +495,32 @@ HEC-HMS agrupa las lluvias en paquetes que denomina "Metereología". Para la def
 En la barra de herramientas y menús, seleccionar la opción "Components", seleccionar la categoría "Meteorologic Model Manager", tal como se presenta en la siguiente figura:
 
 <div align="Center">
-  <img src="Imagenes/FiguraHECHMS_61.PNG" width="700px"> 
+  <img src="Imagenes/FiguraHECHMS_61.PNG" width="900px"> 
 </div>
 
 
 Al realizar esto, se desplegará una ventana. En esta ventana se debe seleccionar la opción "New". Se abrirá una nueva ventana, en la cual se solicitará el nombre, escriba para este ejemplo "Pe_5", tal como se presenta en la siguiente figura:
 
 <div align="Center">
-  <img src="Imagenes/FiguraHECHMS_62.PNG" width="700px"> 
+  <img src="Imagenes/FiguraHECHMS_62.PNG" width="900px"> 
 </div>
 
 Una vez se acepte el nombre, se creará en la ventana de exploración de la cuenca una carpeta denominada "Meteorologic Model" que al ser desplegada, se abrirá el archivo creado "Pe_5", tal como se presenta en la siguiente figura:
 
 <div align="Center">
-  <img src="Imagenes/FiguraHECHMS_63.PNG" width="700px"> 
+  <img src="Imagenes/FiguraHECHMS_63.PNG" width="900px"> 
 </div>
 
 Ahora se debe definir como se ingresarán los valores de la lluvia, que para este caso corresponderá a un hietograma. Para realizar esto, en la ventana de exploración de la cuenca, se debe seleccionar el modelo de lluvia creado (Pe_5) y en la parte inferior, en la ventana de componentes, seleccionar la categoría "Meteorologic Model" y en la opción "Precipitation", seleccionar la opción "Specified Hyetograph", tal como se presenta en la siguiente figura:
 
 <div align="Center">
-  <img src="Imagenes/FiguraHECHMS_64.PNG" width="700px"> 
+  <img src="Imagenes/FiguraHECHMS_64.PNG" width="900px"> 
 </div>
 
 En la opción "Basin" definir "yes". Este procedimiento permite que el programa utilice las lluvias (hietogramas) que se crearán para cada subcuenca. Lo mencionado se presenta en la siguiente figura.
 
 <div align="Center">
-  <img src="Imagenes/FiguraHECHMS_65.PNG" width="700px"> 
+  <img src="Imagenes/FiguraHECHMS_65.PNG" width="900px"> 
 </div>
 
 ## Creación y definición de la lluvia en las subcuencas
