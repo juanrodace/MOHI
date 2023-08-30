@@ -382,14 +382,21 @@ Antes de ingresar los valores del CN al programa, se dispondrá a definir los va
 
 CN=80
 
-
 **Subcuenca 2 (condición seca):**
+
+<br> 
+
+</br>
 
 <div align="Left">
   <img src="Imagenes/FiguraHECHMS_54.PNG" width="200px"> 
 </div>
 
 **Subcuenca 3 (condición húmedad):**
+
+<br> 
+
+</br>
 
 <div align="Left">
   <img src="Imagenes/FiguraHECHMS_53.PNG" width="200px"> 
