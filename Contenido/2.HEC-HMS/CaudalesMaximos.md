@@ -317,9 +317,63 @@ Al finalizar este paso, la ventana de dibujo de la cuenca, se debe parecer a la 
   <img src="Imagenes/FiguraHECHMS_49.PNG" width="700px"> 
 </div>
 
+Con las subcuencas creadas en la ventana de dibujo del mapa, el punto de control definido, las descargas o puntos aguas abajo y los tramos de tránsito trazados, se dispone a definir el área de drenaje de cada cuenca y las características del modelo lluvia-escorrentía definido. 
+
+Para realizar esto, en la ventana de exploración de la cuenca, se debe seleccionar una de las subcuencas y en la parte inferior, en la ventana de componentes, seleccionar la categoría "Subbasin" y realizar los siguientes cambios:
+
+a. Área (km²): Corresponde al área de la subcuenca definido en el ejercicio
+<div
+
+</div>
+
+b. Loss Method: Método utilizado para determinar las abstracciones inicial de la lluvia bruta. En este caso, seleccionar el método "SCS Curve Number"
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_50.PNG" width="700px"> 
+</div>
+
+c. Transform Method: Método utilizado para realizar la transformación de la lluvia (hietograma) a escorrentía superficial (hidrograma de escorrentía directa). En este caso, seleccionar el método "SCS Unit Hydrograph" que corresponde al método del hidrograma unitario del Cuerpo de Ingenieros de los Estados Unidos.
+
+d. BaseFlow Method: Corresponde al caudal base o caudal aportado por el flujo subsuperficial y que no corresponde a la lluvia definida para la estimación del caudal. Para este caso, se asumirá que no existe caudal base o que es despreciable frente a la magnitud de los caudales máximos. 
+
+En la siguiente figura se presenta el resumen de lo mencionado:
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_50.PNG" width="700px"> 
+</div>
+
+Se debe repetir el procedimiento para todas las subcuencas, llenado el espacio de "Área(km²)" con el valor respectivo definido en el ejercicio base. 
+
 #### Tipo, uso de suelo y condición de humedad antecedente. Número de curva (CN)
 
-#### Tiempo de retardo (Tlag).
+Teniendo en cuenta que el método utilizado para la estimación de las abstracciones iniciales(encharcamiento e infiltración en la cuenca) se basa en el Número de Curva (CN) desarrollado por el Cuerpo de Ingenieros de los Estados Unidos. Es necesario definir y seleccionar este número a partir de las características de la cobertura, tipo de suelo y uso del  suelo de la cuenca.
+
+En términos simples, el Número de Curva (CN) corresponde a un valor entre 0 y 100, que indica la capacidad de retención del suelo o la capacidad de dejar pasar la escorrentía. Entre mayor es el coeficiente CN, más alta es la capacidad del suelo a permitir escurrir. Un CN 100 es perfectamente liso e impermeable. Un CN de 0 es un orificio de altura infinita, que no permite escurrir nada, todo lo "atrapa".
+
+El CN depende de diferentes factores, tales como el tipo de suelo, el uso del suelo (cobertura vegetal) y la condición de humedad antecedente. Estos conceptos están fuera del alcance del curso, pero es apropiado que el lector conozca los conceptos básicos antes de ingresar la información en el modelo y en el programa.
+
+En el caso del ejercicio, el valor del CN de cada subcuenca ya está definido. Queda pendiente "ajustarlo" por la condición de humedad. Un CN tipo II, corresponde a una zona con humedad media. Un CN tipo I, corresponde a una zona propensa a épocas de estiaje (poca humedad y bajas precipitaciones). Un CN tipo III, corresponde a zona con alta humedad.
+
+El enunciado del ejercicio menciona un suelo tipo II e indica las condiciones de humedad. Para ajustar el CN, se deben aplicar las siguientes ecuaciones:
+
+##### CN_i
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_51.PNG" width="200px"> 
+</div>
+
+
+##### CN_iii
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_52.PNG" width="200px"> 
+</div>
+
+<br> 
+
+</br>
+
+#### Tiempo de concentración y tiempo de retardo en la cuenca (Tlag).
 
 #### Modelo lluvia escorrentía y caudal base.
 
