@@ -637,7 +637,7 @@ Finalmente, damos clic en la opción "Table" y diligenciamos la lluvia, teniendo
 El resultado debe verse similar al presentado en la siguiente figura:
 
 <div align="Center">
-  <img src="Imagenes/FiguraHECHMS_73.PNG" width="900px"> 
+  <img src="Imagenes/FiguraHECHMS_73.PNG" width="400px"> 
 </div>
 
 
