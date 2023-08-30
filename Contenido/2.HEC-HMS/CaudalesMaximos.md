@@ -358,9 +358,9 @@ El enunciado del ejercicio menciona un suelo tipo II e indica las condiciones de
 
 ##### CN_i
 
-<div align="center"> 
-$CN_{i}=\frac{4.2*CN_{ii}}{10-0.058*CN_{ii}}$ 
-</div>
+
+$CN_{i}=\frac{4.2*CN_{ii}}{10-0.058*CN_{ii}}$
+
 
 ##### CN_iii
 
@@ -372,7 +372,7 @@ $CN_{i}=\frac{23*CN_{ii}}{10+0.13*CN_{ii}}$
 
 </br>
 
-#### Tiempo de retardo (Tlag).
+#### Tiempo de concentración y tiempo de retardo en la cuenca (Tlag).
 
 #### Modelo lluvia escorrentía y caudal base.
 
