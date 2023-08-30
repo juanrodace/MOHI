@@ -400,7 +400,7 @@ CN=89
 <br> 
  
 </br>
-Para realizar esto, en la ventana de exploración de la cuenca, se debe seleccionar una de las subcuencas y en la parte inferior, en la ventana de componentes, seleccionar la categoría "Loss" y en la ópción "Curve Number", escribir el valor del CN que corresponda. Para nuestras cuencas se tiene que:
+Para realizar esto, en la ventana de exploración de la cuenca, se debe seleccionar una de las subcuencas y en la parte inferior, en la ventana de componentes, seleccionar la categoría "Loss" y en la opción "Curve Number", escribir el valor del CN que corresponda. Para nuestras cuencas se tiene que:
 
 #### Tiempo de concentración y tiempo de retardo en la cuenca (Tlag).
 
