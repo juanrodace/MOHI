@@ -358,14 +358,15 @@ El enunciado del ejercicio menciona un suelo tipo II e indica las condiciones de
 
 ##### CN_i
 
-
-$$CN_{i}=\frac{4.2*CN_{ii}}{10-0.058*CN_{ii}}$$
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_51.PNG" width="200px"> 
+</div>
 
 
 ##### CN_iii
 
-<div align="center"> 
-$CN_{i}=\frac{23*CN_{ii}}{10+0.13*CN_{ii}}$ 
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_52.PNG" width="200px"> 
 </div>
 
 <br> 
