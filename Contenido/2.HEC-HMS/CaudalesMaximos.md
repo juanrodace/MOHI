@@ -612,7 +612,7 @@ Repetimos este procedimiento para todas las subcuencas. El resultado debe verse 
   <img src="Imagenes/FiguraHECHMS_70.PNG" width="900px"> 
 </div>
 
-Ahora diligenciaremos estos nuevos elementos creado con la  lluvia defina en los cuadros anteriores (cuadros con la precipitación para cada subcuenca)
+Ahora diligenciaremos estos nuevos elementos creado con la lluvia defina en los cuadros anteriores (cuadros con la precipitación para cada subcuenca).
 
 Damos clic en uno de los elementos de lluvía, por ejemplo en "Pe_subcuenca_1", seleccionamos en la opción "Time Series Game" buscamos la opción "Units" y seleccionamos "Incremental Milimeters" y en la opción "Time interval" seleccionamos "15 minutes"
 
