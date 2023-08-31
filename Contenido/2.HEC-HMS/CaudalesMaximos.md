@@ -306,7 +306,7 @@ nombre "TramoAB".
 En la siguiente figura se presenta el resultado:
 
 <div align="center">
-  <img src="Imagenes/FiguraHECHMS_48.PNG" width="900px"> 
+  <img src="Imagenes/FiguraHECHMS_48.PNG" width="700px"> 
 </div>
 
 Se debe repetir el procedimiento para el tramo que inicia desde el Punto B hasta el punto de control. 
@@ -314,7 +314,7 @@ Se debe repetir el procedimiento para el tramo que inicia desde el Punto B hasta
 Al finalizar este paso, la ventana de dibujo de la cuenca, se debe parecer a la presentada en la siguiente figura:
 
 <div align="center">
-  <img src="Imagenes/FiguraHECHMS_49.PNG" width="900px"> 
+  <img src="Imagenes/FiguraHECHMS_49.PNG" width="700px"> 
 </div>
 
 Con las subcuencas creadas en la ventana de dibujo del mapa, el punto de control definido, las descargas o puntos aguas abajo y los tramos de tránsito trazados, se dispone a definir el área de drenaje de cada cuenca y las características del modelo lluvia-escorrentía definido. 
@@ -322,16 +322,14 @@ Con las subcuencas creadas en la ventana de dibujo del mapa, el punto de control
 Para realizar esto, en la ventana de exploración de la cuenca, se debe seleccionar una de las subcuencas y en la parte inferior, en la ventana de componentes, seleccionar la categoría "Subbasin" y realizar los siguientes cambios:
 
 a. Área (km²): Corresponde al área de la subcuenca definido en el ejercicio
-
-<div>
-
+<div
 
 </div>
 
 b. Loss Method: Método utilizado para determinar las abstracciones inicial de la lluvia bruta. En este caso, seleccionar el método "SCS Curve Number"
 
 <div align="center">
-  <img src="Imagenes/FiguraHECHMS_50.PNG" width="900px"> 
+  <img src="Imagenes/FiguraHECHMS_50.PNG" width="700px"> 
 </div>
 
 c. Transform Method: Método utilizado para realizar la transformación de la lluvia (hietograma) a escorrentía superficial (hidrograma de escorrentía directa). En este caso, seleccionar el método "SCS Unit Hydrograph" que corresponde al método del hidrograma unitario del Cuerpo de Ingenieros de los Estados Unidos.
@@ -341,7 +339,7 @@ d. BaseFlow Method: Corresponde al caudal base o caudal aportado por el flujo su
 En la siguiente figura se presenta el resumen de lo mencionado:
 
 <div align="center">
-  <img src="Imagenes/FiguraHECHMS_50.PNG" width="900px"> 
+  <img src="Imagenes/FiguraHECHMS_50.PNG" width="700px"> 
 </div>
 
 Se debe repetir el procedimiento para todas las subcuencas, llenado el espacio de "Área(km²)" con el valor respectivo definido en el ejercicio base. 
@@ -372,119 +370,16 @@ El enunciado del ejercicio menciona un suelo tipo II e indica las condiciones de
 </div>
 
 <br> 
- 
+
 </br>
 
-Antes de ingresar los valores del CN al programa, se dispondrá a definir los valores "corregidos" y definitivos de cada cuenca:
+#### Tiempo de concentración y tiempo de retardo en la cuenca (Tlag).
 
-Subcuenca 1 (humedad normal):
+#### Modelo lluvia escorrentía y caudal base.
 
-CN=80
-
-Subcuenca 2 (condición seca):
-
-<div align="Center">
-  <img src="Imagenes/FiguraHECHMS_54.PNG" width="200px"> 
-</div>
-
-Subcuenca 3 (condición húmedad):
-
-<div align="Center">
-  <img src="Imagenes/FiguraHECHMS_53.PNG" width="200px"> 
-</div>
-
-Subcuenca 4 (humedad normal):
-
-CN=89
-
-Para realizar esto, en la ventana de exploración de la cuenca, se debe seleccionar una de las subcuencas y en la parte inferior, en la ventana de componentes, seleccionar la categoría "Loss" y en la opción "Curve Number", escribir el valor del CN que corresponda. Para nuestras cuencas se tiene que:
-
-<div align="Center">
-  <img src="Imagenes/FiguraHECHMS_55.PNG" width="900px"> 
-</div>
-
-Repita este procedimiento para todas las subcuencas del proyecto.
-
-#### Tiempo de concentración (Tc) y tiempo de retardo en la cuenca (Tlag)
-
-El tiempo de concentración corresponde al tiempo que tarda la gota que cae en la parte más alejada en una cuenca en llegar al punto de control de dicha cuenca. Existe innumerables ecuaciones para estimar este tiempo de concentración, las cuales depende, principalmente, de las características morfométricas de la cuenca.
-
-El tiempo de retardo (Tlag), corresponde a la diferencia, en tiempo, de la ocurrencia del centroide de la lluvia y el caudal pico del hidrograma generado por la lluvia. 
-
-Las ecuaciones y su explicación están fuera del alcance de este curso, pero para efectos prácticos a continuación se presentan las ecuaciones más utilizadas para estimar el tiempo de concentración (Tc) y el tiempo de retardo (Tlag):
-
-**Ecuación de Kirpich para Tc:**
-
-<div align="Center">
-  <img src="Imagenes/FiguraHECHMS_56.PNG" width="200px"> 
-</div>
-
-Donde:
-
-Tc: Tiempo de concentración de la hoya hidrográfica, en min.
-
-L: Longitud del cauce principal, en km.
-
-S: Pendiente total del cauce principal, igual a la caída total entre la longitud del cauce principal, en m/m
-
-**Ecuación de SCS para Tlag:**
-
-<div align="Center">
-  <img src="Imagenes/FiguraHECHMS_57.PNG" width="120px"> 
-</div>
-
-Donde:
-
-Tc: Tiempo de concentración de la hoya hidrográfica, en min.
-
-Calculando estos valores para las cuatro subcuencas, se tiene que:
-
-| Subcuenca | Longitud cauce principal (km) | Pendiente Media de la corriente (m/m)| Tc (min) | Tlag(min) | 
-|:---------:|:-----------------------------:|:-----------------------------:|:--------:|:---------:|
-|     1     |              3.5              |              0.008857              |  68.61   |   41.17   | 
-|     2     |              2.8              |             0.001000              |  125.60  |   75.36   |
-|     3     |              5.0              |              0.001905              |  153.15  |   91.89   |
-|     4     |              8.0              |              0.001000              |  281.87  |  169.12   | 
-
-Para realizar esto, en la ventana de exploración de la cuenca, se debe seleccionar una de las subcuencas y en la parte inferior, en la ventana de componentes, seleccionar la categoría "Transform" y en la opción "Lag Time (min)", escribir el valor del Tlag que corresponda. Para nuestras cuencas se tiene que:
-
-<div align="Center">
-  <img src="Imagenes/FiguraHECHMS_58.PNG" width="900px"> 
-</div>
-
-Repita este procedimiento para todas las subcuencas del proyecto.
-
-### Tránsito hidrológico. Tránsito de la onda en tramo de cauces
-
-Un tránsito hidrológico corresponde al análisis de la variación del caudal en un tramo de canal o corriente debido al almacenamiento temoral y cambio de la velocidad debido a las características geométricas del recorrido. 
-
-Uno de los métodos más utilizados por su sencillos es el método de "Muskingum". El detalle de esta metodología está fuera del alcance de este curso, pero en términos simples, el método realiza el tránsito de la ona de la creciente (tránsito el hidrograma de entrada para calcular un hidrograma de salida) a partior dell tiempo de viaje medio de la onda (k) y el almacenamiento temporal en el canal defino por un factor adimensional (X).
-
-En la siguiente tabla y para efectos prácticos, se han definido estos términos para los tramos "A-B" y B-Punto de Control" de la cuenca del ejercicio guía.
-
-
-<div align="Center">
-
-|       Tramo        | K (hr) | X()  | 
-|:------------------:|:------:|:----:|
-|        A-B         |  1.5   | 0.3  |   
-| B-Punto de control |  2.0   | 0.38 |  
-
-</div>
-
-Para realizar esto, en la ventana de exploración de la cuenca, se debe seleccionar uno de los tramos trazados y en la parte inferior, en la ventana de componentes, seleccionar la categoría "Reach" y en la opción "Routing Method" seleccionar la opción "Muskingum". En la siguiente figura se presenta lo mencionado:
-
-<div align="Center">
-  <img src="Imagenes/FiguraHECHMS_59.PNG" width="900px"> 
-</div>
-
-Posteriormente, en la ventana de componentes, seleccionar la categoría "Routing" y en la opción "Muskingum K" y en la opción "Muskingum X", escribir los valores respectivos:
-
-<div align="Center">
-  <img src="Imagenes/FiguraHECHMS_60.PNG" width="900px"> 
-</div>
 
 ## Definición de los parámetros hidrológicos. Definición en HEC-HMS
+
 
 Una vez cargada toda la información geométrica, se dispone a carga la lluvia para un periodo de retorno definido. En esta caso, cada subcuenca tiene un evento de lluvia (aguacero) con diferente magnitud (intensidad) y diferente duración, pero con la misma frecuencia de ocurrencia (5 años). 
 
@@ -649,6 +544,7 @@ Una vez realizado esto, debe asignarse a cada subcuenca, la lluvia respectiva. P
   <img src="Imagenes/FiguraHECHMS_74.PNG" width="900px"> 
 </div>
 
+## Definición de la lluvia en las subcuencas
 
 ## Definición de los parámetros de la ejecución
 
