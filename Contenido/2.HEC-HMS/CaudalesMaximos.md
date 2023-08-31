@@ -616,7 +616,7 @@ Ahora diligenciaremos estos nuevos elementos creado con la lluvia defina en los 
 
 Damos clic en uno de los elementos de lluvía, por ejemplo en "Pe_subcuenca_1", seleccionamos en la opción "Time Series Game" buscamos la opción "Units" y seleccionamos "Incremental Milimeters" y en la opción "Time interval" seleccionamos "15 minutes".
 
-El resultado debe verse similar al presentado en la siguiente figura:
+El resultado debe verse similar al presentado en la siguiente figura.
 
 <div align="Center">
   <img src="Imagenes/FiguraHECHMS_71.PNG" width="900px"> 
