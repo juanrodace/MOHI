@@ -606,7 +606,7 @@ Al realizar este procedimiento, en la ventana de exploración de la cuenca, se c
   <img src="Imagenes/FiguraHECHMS_69.PNG" width="900px"> 
 </div>
 
-Repetimos este procedimiento para todas las subcuencas. El resultado debe verse similar al presentado en la siguiente figura:
+Repetimos este procedimiento para todas las subcuencas. El resultado debe verse similar al presentado en la siguiente figura: 
 
 <div align="Center">
   <img src="Imagenes/FiguraHECHMS_70.PNG" width="900px"> 
