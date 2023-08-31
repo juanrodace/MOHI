@@ -380,7 +380,169 @@ El enunciado del ejercicio menciona un suelo tipo II e indica las condiciones de
 
 ## Definición de los parámetros hidrológicos. Definición en HEC-HMS
 
-### Lluvia de diseño. Hietograma.
+
+Una vez cargada toda la información geométrica, se dispone a carga la lluvia para un periodo de retorno definido. En esta caso, cada subcuenca tiene un evento de lluvia (aguacero) con diferente magnitud (intensidad) y diferente duración, pero con la misma frecuencia de ocurrencia (5 años). 
+
+HEC-HMS agrupa las lluvias en paquetes que denomina "Metereología". Para la definición de los hietogramas que corresponderán a los aguaceros para cada cuenca, inicialmente se debe crear el elemento "Metereorologia", posteriormente carga los hietogramas y finalmente asociar cada lluvia a la respectiva subcuenca. 
+
+### Modelo de metereología. 
+
+En la barra de herramientas y menús, seleccionar la opción "Components", seleccionar la categoría "Meteorologic Model Manager", tal como se presenta en la siguiente figura:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_61.PNG" width="900px"> 
+</div>
+
+
+Al realizar esto, se desplegará una ventana. En esta ventana se debe seleccionar la opción "New". Se abrirá una nueva ventana, en la cual se solicitará el nombre, escriba para este ejemplo "Pe_5", tal como se presenta en la siguiente figura:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_62.PNG" width="900px"> 
+</div>
+
+Una vez se acepte el nombre, se creará en la ventana de exploración de la cuenca una carpeta denominada "Meteorologic Model" que al ser desplegada, se abrirá el archivo creado "Pe_5", tal como se presenta en la siguiente figura:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_63.PNG" width="900px"> 
+</div>
+
+Ahora se debe definir como se ingresarán los valores de la lluvia, que para este caso corresponderá a un hietograma. Para realizar esto, en la ventana de exploración de la cuenca, se debe seleccionar el modelo de lluvia creado (Pe_5) y en la parte inferior, en la ventana de componentes, seleccionar la categoría "Meteorologic Model" y en la opción "Precipitation", seleccionar la opción "Specified Hyetograph", tal como se presenta en la siguiente figura:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_64.PNG" width="900px"> 
+</div>
+
+En la opción "Basin" definir "yes". Este procedimiento permite que el programa utilice las lluvias (hietogramas) que se crearán para cada subcuenca. Lo mencionado se presenta en la siguiente figura.
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_65.PNG" width="900px"> 
+</div>
+
+## Creación y definición de la lluvia en las subcuencas
+
+Con el modelo de metereología creado y definido para la cuenca principal, es siguiente paso corresponde a crear los aguaceros para cada subcuenca a partir de un hietograma. En las siguientes figuras se presentan los hietogramas para cada una de las subcuencas:
+
+Nota: la generación de hietogramas o tormentas de diseño, están fuera del alcance de este curso, por tanto, los valores que definidos a continuación son meramente académicos y para efectos prácticos del ejercicio.
+
+**Hietograma de la subcuenca 1:**
+
+| Duración (min) | Precipitación (mm) | 
+|----------------|:-------------------|
+| 0              | 0                  | 
+| 15             | 30                 | 
+| 30             | 40                 | 
+| 45             | 40                 | 
+| 60             | 30                 | 
+| 75             | 18                 | 
+
+**Hietograma de la subcuenca 2:**
+
+
+| Duración (min) | Precipitación (mm) | 
+|----------------|:-------------------|
+| 0              | 0                  | 
+| 15             | 35                 | 
+| 30             | 45                 | 
+| 45             | 48                 | 
+| 60             | 32                 | 
+| 75             | 18                 | 
+
+
+**Hietograma de la subcuenca 3:**
+
+
+| Duración (min) | Precipitación (mm) | 
+|----------------|:-------------------|
+| 0              | 0                  | 
+| 15             | 28                 | 
+| 30             | 29                 | 
+| 45             | 32                 | 
+| 60             | 32                 | 
+| 75             | 30                 | 
+
+**Hietograma de la subcuenca 4:**
+
+
+| Duración (min) | Precipitación (mm) | 
+|----------------|:-------------------|
+| 0              | 0                  | 
+| 15             | 35                 | 
+| 30             | 40                 | 
+| 45             | 40                 | 
+| 60             | 35                 | 
+| 75             | 11                 | 
+
+Con esta información ya es posible crear los aguaceros o hietogramas de lluvias intensas en HEC-HMS.
+
+Para realizar estos, nos dirigimos a la barra de herramientas y menús, damos clic en "Components" y en la opción "Time series data manager", tal como se presenta en la siguiente figura:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_66.PNG" width="900px"> 
+</div>
+
+Paso seguido, se debe seleccionar la opción "Precipitation Gage" tal como se presenta en la siguiente figura:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_67.PNG" width="900px"> 
+</div>
+
+
+Damos clic en "New" y definimos un nombre del aguacero. Para el aguacero que corresponde a la primera subcuenca se escogerá el nombre "P_subcuenca_1" tal como se presenta en la figura:
+
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_68.PNG" width="900px"> 
+</div>
+
+
+Al realizar este procedimiento, en la ventana de exploración de la cuenca, se creará una carpeta denominada "Time-Series data", que al ser desplegada se abrirá el archivo de lluvia creado. 
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_69.PNG" width="900px"> 
+</div>
+
+Repetimos este procedimiento para todas las subcuencas. El resultado debe verse similar al presentado en la siguiente figura: 
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_70.PNG" width="900px"> 
+</div>
+
+Ahora diligenciaremos estos nuevos elementos creado con la lluvia defina en los cuadros anteriores (cuadros con la precipitación para cada subcuenca).
+
+Damos clic en uno de los elementos de lluvía, por ejemplo en "Pe_subcuenca_1", seleccionamos en la opción "Time Series Game" buscamos la opción "Units" y seleccionamos "Incremental Milimeters" y en la opción "Time interval" seleccionamos "15 minutes".
+
+El resultado debe verse similar al presentado en la siguiente figura.
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_71.PNG" width="900px"> 
+</div>
+
+
+Como siguiente paso, seleccionamos en la opción "Time Window" y definimos el tiempo de inicio y el tiempo final de nuestro hietograma (tener presente que el aguacero tarda 75 min o lo que es lo mismo, 1 hora y 15 minutos). Pero como sabemos que el hidrograma de salida durará más tiempo que la lluvia, es necesario definir un intervalo más amplio, por ejemplo 10 horas. Como la lluvia dura solo 75 min, el resto del tiempo se asumirá una lluvia de magnitud cero.
+
+El resultado debe verse similar al presentado en la siguiente figura:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_72.PNG" width="900px"> 
+</div>
+
+
+Finalmente, damos clic en la opción "Table" y diligenciamos la lluvia, teniendo presente que, después de los 75 min (1 hora y 15 min) se definirán aguaceros de 0 mm.
+
+El resultado debe verse similar al presentado en la siguiente figura:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_73.PNG" width="300px"> 
+</div>
+
+
+Repetir el anterior procedimiento para todas las lluvias.
+
+Una vez realizado esto, debe asignarse a cada subcuenca, la lluvia respectiva. Para realizar esto, damos clic en "Metereologic Model", abrimos la carpeta donde está la opción "Specified Hyetograph". Al realizar esto, se abrirá una ventana que solicitará, para cada subcuenca,la respectiva lluvia. El resultado de la asignación de la lluvia en cada subcuenca se presenta a continuación:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_74.PNG" width="900px"> 
+</div>
 
 ## Definición de la lluvia en las subcuencas
 
