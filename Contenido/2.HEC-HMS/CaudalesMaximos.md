@@ -306,7 +306,7 @@ nombre "TramoAB".
 En la siguiente figura se presenta el resultado:
 
 <div align="center">
-  <img src="Imagenes/FiguraHECHMS_48.PNG" width="900px"> 
+  <img src="Imagenes/FiguraHECHMS_48.PNG" width="700px"> 
 </div>
 
 Se debe repetir el procedimiento para el tramo que inicia desde el Punto B hasta el punto de control. 
@@ -314,7 +314,7 @@ Se debe repetir el procedimiento para el tramo que inicia desde el Punto B hasta
 Al finalizar este paso, la ventana de dibujo de la cuenca, se debe parecer a la presentada en la siguiente figura:
 
 <div align="center">
-  <img src="Imagenes/FiguraHECHMS_49.PNG" width="900px"> 
+  <img src="Imagenes/FiguraHECHMS_49.PNG" width="700px"> 
 </div>
 
 Con las subcuencas creadas en la ventana de dibujo del mapa, el punto de control definido, las descargas o puntos aguas abajo y los tramos de tránsito trazados, se dispone a definir el área de drenaje de cada cuenca y las características del modelo lluvia-escorrentía definido. 
@@ -322,16 +322,14 @@ Con las subcuencas creadas en la ventana de dibujo del mapa, el punto de control
 Para realizar esto, en la ventana de exploración de la cuenca, se debe seleccionar una de las subcuencas y en la parte inferior, en la ventana de componentes, seleccionar la categoría "Subbasin" y realizar los siguientes cambios:
 
 a. Área (km²): Corresponde al área de la subcuenca definido en el ejercicio
-
-<div>
-
+<div
 
 </div>
 
 b. Loss Method: Método utilizado para determinar las abstracciones inicial de la lluvia bruta. En este caso, seleccionar el método "SCS Curve Number"
 
 <div align="center">
-  <img src="Imagenes/FiguraHECHMS_50.PNG" width="900px"> 
+  <img src="Imagenes/FiguraHECHMS_50.PNG" width="700px"> 
 </div>
 
 c. Transform Method: Método utilizado para realizar la transformación de la lluvia (hietograma) a escorrentía superficial (hidrograma de escorrentía directa). En este caso, seleccionar el método "SCS Unit Hydrograph" que corresponde al método del hidrograma unitario del Cuerpo de Ingenieros de los Estados Unidos.
@@ -341,7 +339,7 @@ d. BaseFlow Method: Corresponde al caudal base o caudal aportado por el flujo su
 En la siguiente figura se presenta el resumen de lo mencionado:
 
 <div align="center">
-  <img src="Imagenes/FiguraHECHMS_50.PNG" width="900px"> 
+  <img src="Imagenes/FiguraHECHMS_50.PNG" width="700px"> 
 </div>
 
 Se debe repetir el procedimiento para todas las subcuencas, llenado el espacio de "Área(km²)" con el valor respectivo definido en el ejercicio base. 
@@ -372,283 +370,19 @@ El enunciado del ejercicio menciona un suelo tipo II e indica las condiciones de
 </div>
 
 <br> 
- 
+
 </br>
 
-Antes de ingresar los valores del CN al programa, se dispondrá a definir los valores "corregidos" y definitivos de cada cuenca:
+#### Tiempo de concentración y tiempo de retardo en la cuenca (Tlag).
 
-Subcuenca 1 (humedad normal):
+#### Modelo lluvia escorrentía y caudal base.
 
-CN=80
-
-Subcuenca 2 (condición seca):
-
-<div align="Center">
-  <img src="Imagenes/FiguraHECHMS_54.PNG" width="200px"> 
-</div>
-
-Subcuenca 3 (condición húmedad):
-
-<div align="Center">
-  <img src="Imagenes/FiguraHECHMS_53.PNG" width="200px"> 
-</div>
-
-Subcuenca 4 (humedad normal):
-
-CN=89
-
-Para realizar esto, en la ventana de exploración de la cuenca, se debe seleccionar una de las subcuencas y en la parte inferior, en la ventana de componentes, seleccionar la categoría "Loss" y en la opción "Curve Number", escribir el valor del CN que corresponda. Para nuestras cuencas se tiene que:
-
-<div align="Center">
-  <img src="Imagenes/FiguraHECHMS_55.PNG" width="900px"> 
-</div>
-
-Repita este procedimiento para todas las subcuencas del proyecto.
-
-#### Tiempo de concentración (Tc) y tiempo de retardo en la cuenca (Tlag)
-
-El tiempo de concentración corresponde al tiempo que tarda la gota que cae en la parte más alejada en una cuenca en llegar al punto de control de dicha cuenca. Existe innumerables ecuaciones para estimar este tiempo de concentración, las cuales depende, principalmente, de las características morfométricas de la cuenca.
-
-El tiempo de retardo (Tlag), corresponde a la diferencia, en tiempo, de la ocurrencia del centroide de la lluvia y el caudal pico del hidrograma generado por la lluvia. 
-
-Las ecuaciones y su explicación están fuera del alcance de este curso, pero para efectos prácticos a continuación se presentan las ecuaciones más utilizadas para estimar el tiempo de concentración (Tc) y el tiempo de retardo (Tlag):
-
-**Ecuación de Kirpich para Tc:**
-
-<div align="Center">
-  <img src="Imagenes/FiguraHECHMS_56.PNG" width="200px"> 
-</div>
-
-Donde:
-
-Tc: Tiempo de concentración de la hoya hidrográfica, en min.
-
-L: Longitud del cauce principal, en km.
-
-S: Pendiente total del cauce principal, igual a la caída total entre la longitud del cauce principal, en m/m
-
-**Ecuación de SCS para Tlag:**
-
-<div align="Center">
-  <img src="Imagenes/FiguraHECHMS_57.PNG" width="120px"> 
-</div>
-
-Donde:
-
-Tc: Tiempo de concentración de la hoya hidrográfica, en min.
-
-Calculando estos valores para las cuatro subcuencas, se tiene que:
-
-| Subcuenca | Longitud cauce principal (km) | Pendiente Media de la corriente (m/m)| Tc (min) | Tlag(min) | 
-|:---------:|:-----------------------------:|:-----------------------------:|:--------:|:---------:|
-|     1     |              3.5              |              0.008857              |  68.61   |   41.17   | 
-|     2     |              2.8              |             0.001000              |  125.60  |   75.36   |
-|     3     |              5.0              |              0.001905              |  153.15  |   91.89   |
-|     4     |              8.0              |              0.001000              |  281.87  |  169.12   | 
-
-Para realizar esto, en la ventana de exploración de la cuenca, se debe seleccionar una de las subcuencas y en la parte inferior, en la ventana de componentes, seleccionar la categoría "Transform" y en la opción "Lag Time (min)", escribir el valor del Tlag que corresponda. Para nuestras cuencas se tiene que:
-
-<div align="Center">
-  <img src="Imagenes/FiguraHECHMS_58.PNG" width="900px"> 
-</div>
-
-Repita este procedimiento para todas las subcuencas del proyecto.
-
-### Tránsito hidrológico. Tránsito de la onda en tramo de cauces
-
-Un tránsito hidrológico corresponde al análisis de la variación del caudal en un tramo de canal o corriente debido al almacenamiento temoral y cambio de la velocidad debido a las características geométricas del recorrido. 
-
-Uno de los métodos más utilizados por su sencillos es el método de "Muskingum". El detalle de esta metodología está fuera del alcance de este curso, pero en términos simples, el método realiza el tránsito de la ona de la creciente (tránsito el hidrograma de entrada para calcular un hidrograma de salida) a partior dell tiempo de viaje medio de la onda (k) y el almacenamiento temporal en el canal defino por un factor adimensional (X).
-
-En la siguiente tabla y para efectos prácticos, se han definido estos términos para los tramos "A-B" y B-Punto de Control" de la cuenca del ejercicio guía.
-
-
-<div align="Center">
-
-|       Tramo        | K (hr) | X()  | 
-|:------------------:|:------:|:----:|
-|        A-B         |  1.5   | 0.3  |   
-| B-Punto de control |  2.0   | 0.38 |  
-
-</div>
-
-Para realizar esto, en la ventana de exploración de la cuenca, se debe seleccionar uno de los tramos trazados y en la parte inferior, en la ventana de componentes, seleccionar la categoría "Reach" y en la opción "Routing Method" seleccionar la opción "Muskingum". En la siguiente figura se presenta lo mencionado:
-
-<div align="Center">
-  <img src="Imagenes/FiguraHECHMS_59.PNG" width="900px"> 
-</div>
-
-Posteriormente, en la ventana de componentes, seleccionar la categoría "Routing" y en la opción "Muskingum K" y en la opción "Muskingum X", escribir los valores respectivos:
-
-<div align="Center">
-  <img src="Imagenes/FiguraHECHMS_60.PNG" width="900px"> 
-</div>
 
 ## Definición de los parámetros hidrológicos. Definición en HEC-HMS
 
-Una vez cargada toda la información geométrica, se dispone a carga la lluvia para un periodo de retorno definido. En esta caso, cada subcuenca tiene un evento de lluvia (aguacero) con diferente magnitud (intensidad) y diferente duración, pero con la misma frecuencia de ocurrencia (5 años). 
+### Lluvia de diseño. Hietograma.
 
-HEC-HMS agrupa las lluvias en paquetes que denomina "Metereología". Para la definición de los hietogramas que corresponderán a los aguaceros para cada cuenca, inicialmente se debe crear el elemento "Metereorologia", posteriormente carga los hietogramas y finalmente asociar cada lluvia a la respectiva subcuenca. 
-
-### Modelo de metereología. 
-
-En la barra de herramientas y menús, seleccionar la opción "Components", seleccionar la categoría "Meteorologic Model Manager", tal como se presenta en la siguiente figura:
-
-<div align="Center">
-  <img src="Imagenes/FiguraHECHMS_61.PNG" width="900px"> 
-</div>
-
-
-Al realizar esto, se desplegará una ventana. En esta ventana se debe seleccionar la opción "New". Se abrirá una nueva ventana, en la cual se solicitará el nombre, escriba para este ejemplo "Pe_5", tal como se presenta en la siguiente figura:
-
-<div align="Center">
-  <img src="Imagenes/FiguraHECHMS_62.PNG" width="900px"> 
-</div>
-
-Una vez se acepte el nombre, se creará en la ventana de exploración de la cuenca una carpeta denominada "Meteorologic Model" que al ser desplegada, se abrirá el archivo creado "Pe_5", tal como se presenta en la siguiente figura:
-
-<div align="Center">
-  <img src="Imagenes/FiguraHECHMS_63.PNG" width="900px"> 
-</div>
-
-Ahora se debe definir como se ingresarán los valores de la lluvia, que para este caso corresponderá a un hietograma. Para realizar esto, en la ventana de exploración de la cuenca, se debe seleccionar el modelo de lluvia creado (Pe_5) y en la parte inferior, en la ventana de componentes, seleccionar la categoría "Meteorologic Model" y en la opción "Precipitation", seleccionar la opción "Specified Hyetograph", tal como se presenta en la siguiente figura:
-
-<div align="Center">
-  <img src="Imagenes/FiguraHECHMS_64.PNG" width="900px"> 
-</div>
-
-En la opción "Basin" definir "yes". Este procedimiento permite que el programa utilice las lluvias (hietogramas) que se crearán para cada subcuenca. Lo mencionado se presenta en la siguiente figura.
-
-<div align="Center">
-  <img src="Imagenes/FiguraHECHMS_65.PNG" width="900px"> 
-</div>
-
-## Creación y definición de la lluvia en las subcuencas
-
-Con el modelo de metereología creado y definido para la cuenca principal, es siguiente paso corresponde a crear los aguaceros para cada subcuenca a partir de un hietograma. En las siguientes figuras se presentan los hietogramas para cada una de las subcuencas:
-
-Nota: la generación de hietogramas o tormentas de diseño, están fuera del alcance de este curso, por tanto, los valores que definidos a continuación son meramente académicos y para efectos prácticos del ejercicio.
-
-**Hietograma de la subcuenca 1:**
-
-| Duración (min) | Precipitación (mm) | 
-|----------------|:-------------------|
-| 0              | 0                  | 
-| 15             | 30                 | 
-| 30             | 40                 | 
-| 45             | 40                 | 
-| 60             | 30                 | 
-| 75             | 18                 | 
-
-**Hietograma de la subcuenca 2:**
-
-
-| Duración (min) | Precipitación (mm) | 
-|----------------|:-------------------|
-| 0              | 0                  | 
-| 15             | 35                 | 
-| 30             | 45                 | 
-| 45             | 48                 | 
-| 60             | 32                 | 
-| 75             | 18                 | 
-
-
-**Hietograma de la subcuenca 3:**
-
-
-| Duración (min) | Precipitación (mm) | 
-|----------------|:-------------------|
-| 0              | 0                  | 
-| 15             | 28                 | 
-| 30             | 29                 | 
-| 45             | 32                 | 
-| 60             | 32                 | 
-| 75             | 30                 | 
-
-**Hietograma de la subcuenca 4:**
-
-
-| Duración (min) | Precipitación (mm) | 
-|----------------|:-------------------|
-| 0              | 0                  | 
-| 15             | 35                 | 
-| 30             | 40                 | 
-| 45             | 40                 | 
-| 60             | 35                 | 
-| 75             | 11                 | 
-
-Con esta información ya es posible crear los aguaceros o hietogramas de lluvias intensas en HEC-HMS.
-
-Para realizar estos, nos dirigimos a la barra de herramientas y menús, damos clic en "Components" y en la opción "Time series data manager", tal como se presenta en la siguiente figura:
-
-<div align="Center">
-  <img src="Imagenes/FiguraHECHMS_66.PNG" width="900px"> 
-</div>
-
-Paso seguido, se debe seleccionar la opción "Precipitation Gage" tal como se presenta en la siguiente figura:
-
-<div align="Center">
-  <img src="Imagenes/FiguraHECHMS_67.PNG" width="900px"> 
-</div>
-
-
-Damos clic en "New" y definimos un nombre del aguacero. Para el aguacero que corresponde a la primera subcuenca se escogerá el nombre "P_subcuenca_1" tal como se presenta en la figura:
-
-
-<div align="Center">
-  <img src="Imagenes/FiguraHECHMS_68.PNG" width="900px"> 
-</div>
-
-
-Al realizar este procedimiento, en la ventana de exploración de la cuenca, se creará una carpeta denominada "Time-Series data", que al ser desplegada se abrirá el archivo de lluvia creado. 
-
-<div align="Center">
-  <img src="Imagenes/FiguraHECHMS_69.PNG" width="900px"> 
-</div>
-
-Repetimos este procedimiento para todas las subcuencas. El resultado debe verse similar al presentado en la siguiente figura: 
-
-<div align="Center">
-  <img src="Imagenes/FiguraHECHMS_70.PNG" width="900px"> 
-</div>
-
-Ahora diligenciaremos estos nuevos elementos creado con la lluvia defina en los cuadros anteriores (cuadros con la precipitación para cada subcuenca).
-
-Damos clic en uno de los elementos de lluvía, por ejemplo en "Pe_subcuenca_1", seleccionamos en la opción "Time Series Game" buscamos la opción "Units" y seleccionamos "Incremental Milimeters" y en la opción "Time interval" seleccionamos "15 minutes".
-
-El resultado debe verse similar al presentado en la siguiente figura:
-
-<div align="Center">
-  <img src="Imagenes/FiguraHECHMS_71.PNG" width="900px"> 
-</div>
-
-
-Como siguiente paso, seleccionamos en la opción "Time Window" y definimos el tiempo de inicio y el tiempo final de nuestro hietograma (tener presente que el aguacero tarda 75 min o lo que es lo mismo, 1 hora y 15 minutos). Pero como sabemos que el hidrograma de salida durará más tiempo que la lluvia, es necesario definir un intervalo más amplio, por ejemplo 10 horas. Como la lluvia dura solo 75 min, el resto del tiempo se asumirá una lluvia de magnitud cero.
-
-El resultado debe verse similar al presentado en la siguiente figura:
-
-<div align="Center">
-  <img src="Imagenes/FiguraHECHMS_72.PNG" width="900px"> 
-</div>
-
-
-Finalmente, damos clic en la opción "Table" y diligenciamos la lluvia, teniendo presente que, después de los 75 min (1 hora y 15 min) se definirán aguaceros de 0 mm.
-
-El resultado debe verse similar al presentado en la siguiente figura:
-
-<div align="Center">
-  <img src="Imagenes/FiguraHECHMS_73.PNG" width="400px"> 
-</div>
-
-
-Repetir el anterior procedimiento para todas las lluvias.
-
-Una vez realizado esto, debe asignarse a cada subcuenca, la lluvia respectiva. Para realizar esto, damos clic en "Metereologic Model", abrimos la carpeta donde está la opción "Specified Hyetograph". Al realizar esto, se abrirá una ventana que solicitará, para cada subcuenca,la respectiva lluvia. El resultado de la asignación de la lluvia en cada subcuenca se presenta a continuación:
-
-<div align="Center">
-  <img src="Imagenes/FiguraHECHMS_74.PNG" width="900px"> 
-</div>
-
+## Definición de la lluvia en las subcuencas
 
 ## Definición de los parámetros de la ejecución
 
