@@ -538,13 +538,15 @@ El resultado debe verse similar al presentado en la siguiente figura:
 
 Se debe repetir el procedimiento anterior para todas las lluvias (todas las subcuencas).
 
+## Definición de la lluvia en las subcuencas
+
 Una vez realizado esto, debe asignarse a cada subcuenca, la lluvia respectiva. Para realizar esto, damos clic en "Metereologic Model", abrimos la carpeta donde está la opción "Specified Hyetograph". Al realizar esto, se abrirá una ventana que solicitará, para cada subcuenca,la respectiva lluvia. El resultado de la asignación de la lluvia en cada subcuenca se presenta a continuación:
 
 <div align="Center">
   <img src="Imagenes/FiguraHECHMS_74.PNG" width="900px"> 
 </div>
 
-## Definición de la lluvia en las subcuencas
+
 
 ## Definición de los parámetros de la ejecución
 
