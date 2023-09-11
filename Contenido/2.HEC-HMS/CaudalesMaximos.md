@@ -507,7 +507,8 @@ Repetimos este procedimiento para todas las subcuencas. El resultado debe verse 
   <img src="Imagenes/FiguraHECHMS_70.PNG" width="900px"> 
 </div>
 
-Ahora diligenciaremos estos nuevos elementos creado con la lluvia defina en los cuadros anteriores (cuadros con la precipitación para cada subcuenca).
+Ahora diligenciaremos estos nuevos elementos a partir de la lluvia defina en los cuadros anteriores (cuadros con la precipitación para cada subcuenca).
+
 
 Damos clic en uno de los elementos de lluvía, por ejemplo en "Pe_subcuenca_1", seleccionamos en la opción "Time Series Game" buscamos la opción "Units" y seleccionamos "Incremental Milimeters" y en la opción "Time interval" seleccionamos "15 minutes".
 
@@ -518,7 +519,8 @@ El resultado debe verse similar al presentado en la siguiente figura.
 </div>
 
 
-Como siguiente paso, seleccionamos en la opción "Time Window" y definimos el tiempo de inicio y el tiempo final de nuestro hietograma (tener presente que el aguacero tarda 75 min o lo que es lo mismo, 1 hora y 15 minutos). Pero como sabemos que el hidrograma de salida durará más tiempo que la lluvia, es necesario definir un intervalo más amplio, por ejemplo 10 horas. Como la lluvia dura solo 75 min, el resto del tiempo se asumirá una lluvia de magnitud cero.
+Como siguiente paso, seleccionamos en la opción "Time Window" y definimos el tiempo de inicio y el tiempo final de nuestro hietograma (se debe tener presente que el aguacero tarda 75 min o lo que es lo mismo, 1 hora y 15 minutos). Como se conoce que el hidrograma de salida durará más tiempo que la lluvia, es necesario definir un intervalo más amplio, por ejemplo 10 horas. Como la lluvia dura solo 75 min, el resto del tiempo se asumirá una lluvia de magnitud cero.
+
 
 El resultado debe verse similar al presentado en la siguiente figura:
 
@@ -527,7 +529,8 @@ El resultado debe verse similar al presentado en la siguiente figura:
 </div>
 
 
-Finalmente, damos clic en la opción "Table" y diligenciamos la lluvia, teniendo presente que, después de los 75 min (1 hora y 15 min) se definirán aguaceros de 0 mm.
+Finalmente, se debe dar clic en la opción "Table", posteriormente se diligencia la lluvia, teniendo presente que, después de los 75 min (1 hora y 15 min) se definirán aguaceros de 0 mm.
+
 
 El resultado debe verse similar al presentado en la siguiente figura:
 
@@ -536,27 +539,118 @@ El resultado debe verse similar al presentado en la siguiente figura:
 </div>
 
 
-Repetir el anterior procedimiento para todas las lluvias.
-
-Una vez realizado esto, debe asignarse a cada subcuenca, la lluvia respectiva. Para realizar esto, damos clic en "Metereologic Model", abrimos la carpeta donde está la opción "Specified Hyetograph". Al realizar esto, se abrirá una ventana que solicitará, para cada subcuenca,la respectiva lluvia. El resultado de la asignación de la lluvia en cada subcuenca se presenta a continuación:
-
-<div align="Center">
-  <img src="Imagenes/FiguraHECHMS_74.PNG" width="900px"> 
-</div>
-
-## Definición de la lluvia en las subcuencas
+Se debe repetir el procedimiento anterior para todas las lluvias (todas las subcuencas).
 
 ## Definición de los parámetros de la ejecución
 
-## Elaboración de una corrida
+Con los parámetros morfométricos de cada subcuenca y las características de las corrientes (tramos de corriente), de la descarga (punto de control) y de la lluvia (incluyendo la "metereología"), ya es posible definir los parámetros para la ejecución del modelo.
+
+Debido a que el método utiliza el hidrograma unitario adimensional del SCS, el software HEC-HMS requiere definir intervalos de modelación (dt) con el objetivo de aplicar este hidrograma a la lluvia efectiva. Para una adecuada estabilidad numérica del modelo computacional, se recomienda que el "dt" de la modelación sea inferior al intervalo del hietograma de la lluvia en cada subcuenca. 
+
+Para este ejercicio, teniendo en cuenta que el intervalo de los hietogramas son de 15 min, se asumirá un intervalo de modelación (dt) de 1.0 min. 
+
+Para definir esta condición de modelación en el software, nos dirigimos a la barra de "herramientas y menús", en la categoría "Components", seleccionamos "Creat Component" y damos clic en la subcategoría "Control Specifcation", tal como se presenta en la siguiente figura:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_75.PNG" width="900px"> 
+</div>
+
+Al realizar esto, se abrirá una ventana que solicitará el nombre del "Control". Para este caso, se dejará el nombre por defecto y que corresponde a "Control 1", tal como se presenta en la siguiente figura:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_76.PNG" width="900px"> 
+</div>
+
+Al realizar esto se creará un nuevo objeto en la ventana de exploración de la cuenca, tal como se presenta en la siguiente figura:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_77.PNG" width="900px"> 
+</div> 
+
+Finalmente, se debe ingresar los valores correspondientes al inicio de la modelación (fecha y hora), el final de la modelación (fecha y hora) y el intervalo (dt) de la modelación, tal como se presenta en la siguiente figura:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_78.PNG" width="900px"> 
+</div> 
+
+
+## Elaboración de una secuencia de modelación ("run")
+
+Con el "Control" creado, el último procedimiento antes de ejecutar el modelo es crear un "run" o "secuencia de modelación". Para realizar esto, nos dirigimos a la barra de "herramientas y menús", en la categoría "Compute", seleccionar "Create Compute" y en seleccionar la subcategoría "Simulation Run", tal como se presenta en la siguiente figura:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_79.PNG" width="900px"> 
+</div> 
+
+Al realizar esto, se abrirá una nueva ventana que preguntará, a partir de 4 pasos, las características del modelo. Las características se asocian a los objetos que se modelarán. Para este caso, el modelo solicitará: El nombre del "run", la cuenca principal, la agrupación de lluvias (metereología) y el control. Para nuestro ejercicio, las ventanas se verán así:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_80.PNG" width="900px"> 
+</div> 
+
+El último paso para ejecutar el modelo corresponde a "correr" el modelo (ejecutar la secuencia de modelación). Para realizar esto, nos dirigimos nuevamente a la barra de "herramientas y menús". En la barra principal, en el primer "scroll", seleccionar la secuencia de modelación "Run 1", tal como se observa en la siguiente figura:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_81.PNG" width="900px"> 
+</div> 
+
+Finalmente, en el ícono de "la gota que está sobre una explosión" ejecutamos el modelo, tal como se observa en la siguiente figura:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_82.PNG" width="900px"> 
+</div> 
+
+Para verificar que todo esté bien, se recomienda revisar la ventana de texto y leer los posibles comentarios o advertencias generadas por el modelo.
 
 ## Análisis de resultados
+
+Para analizar los resultados, HEC-HMS tiene distintas herramientas, las cuales muestran los resultados como valores puntuales, tablas resumen, tablas detalladas y gráficos. Estas herramientas se encuentran en la barra de "herramientas y menús", en la zona que se resalta en la siguiente figura. 
+
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_83.PNG" width="900px"> 
+</div> 
+
+
+Es posible consultar los resultados de cada elemento creado en la cuenca (subcuencas, tramos de corrientes, puntos de descarga, etc.). Al seleccionar un elemento en la ventana de "visualización del mapa" y posteriormente hacer clic en algunas de las herramientas de presentación de resultados, se abrirá una nueva ventana con el resumen de la información más relevante del objeto seleccionado.
+
+A manera de ejemplo, a continuación se presentan los resultados obtenidos en una de las subcuencas del modelo (subcuenca 1): 
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_84.PNG" width="900px"> 
+</div> 
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_85.PNG" width="900px"> 
+</div> 
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_86.PNG" width="900px"> 
+</div> 
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_83.PNG" width="900px"> 
+</div> 
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_87.PNG" width="900px"> 
+</div> 
+
+Con esta guía de como generar resultados, el usuario ya puede analizar los caudales, las abstracciones, los caudales pico, el tránsito de las crecientes y los diferentes hidrogramas de escorrentía directa de las subcuencas y de la cuenca principal (punto de control) del modelo y tomar decisiones basado en su proyecto o investigación.
+
+
 
 ### Control de versiones
 
 | Versión    | Descripción   | Autor                                      | Horas |
 |------------|:--------------|--------------------------------------------|:-----:|
 | 2023.08.23 | Versión No. 1 | [AndresOtalora92](https://github.com/AndresOtalora92)  |   4   |
+| 2023.08.24 | Versión No. 1 | [AndresOtalora92](https://github.com/AndresOtalora92)  |   3   |
+| 2023.08.25 | Versión No. 1 | [AndresOtalora92](https://github.com/AndresOtalora92)  |   2   |
+| 2023.08.29 | Versión No. 1 | [AndresOtalora92](https://github.com/AndresOtalora92)  |   3   |
+| 2023.08.30 | Versión No. 1 | [AndresOtalora92](https://github.com/AndresOtalora92)  |   6   |
+| 2023.08.31 | Versión No. 1 | [AndresOtalora92](https://github.com/AndresOtalora92)  |   2   |
+| 2023.09.03 | Versión No. 1 | [AndresOtalora92](https://github.com/AndresOtalora92)  |   3   |
 
 _MOHI es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](../../License.md)._
 
