@@ -34,7 +34,11 @@ Los conjuntos de herramientas que utiliza con más frecuencia se pueden converti
 
 Incluso si no están visibles en una barra de herramientas, todas sus herramientas seguirán siendo accesibles a través de los menús. Por ejemplo, si elimina la barra de herramientas <kbd>Proyecto (Project)</kbd> (que contiene el botón Guardar), aún puede guardar su mapa haciendo clic en el menú Proyecto y luego haciendo clic en Guardar.
 
-#### :two: Ventana de capas (Layer list).
+#### :two: Ventana de lista de capas (Layer list).
+
+En la lista Capas se puede ver una lista de todas las capas disponibles en el proyecto. Igualmente, se pueden expandir elementos contraídos _(haciendo clic en la flecha o el símbolo más junto a ellos)_ y le proporcionará más información sobre la apariencia actual de la capa.
+
+Al pasar el cursor sobre la capa, obtendrá información básica como nombre, tipo de geometría, sistema de referencia de coordenadas y la ruta completa de la ubicación en su dispositivo. Al hacer clic derecho en una capa, aparecerá un menú con muchas opciones adicionales.
 
 #### :three: Panel de búsqueda (Browser panel).
 
