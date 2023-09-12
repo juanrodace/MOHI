@@ -30,9 +30,9 @@ En la siguiente imagen, podemos identificar los principales componentes de la ve
 
 #### :one: Barra de herramientas (Toolbars).
 
-Los conjuntos de herramientas que utiliza con más frecuencia se pueden convertir en barras de herramientas para un acceso básico. Por ejemplo, la barra de herramientas <kbd>Proyecto(Project)</kbd> le permite guardar, cargar, imprimir e iniciar un nuevo proyecto. Puede personalizar fácilmente la interfaz para ver solo las herramientas que utiliza con más frecuencia, agregando o eliminando barras de herramientas según sea necesario a través del menú <kbd>Ver(View)</kbd> ► <kbd>Barras de herramientas (Toolbars)</kbd>.
+Los conjuntos de herramientas que utiliza con más frecuencia se pueden convertir en barras de herramientas para un acceso básico. Por ejemplo, la barra de herramientas <kbd><font color = #1E90FF> Proyecto(Project)</font></kbd> le permite guardar, cargar, imprimir e iniciar un nuevo proyecto. Puede personalizar fácilmente la interfaz para ver solo las herramientas que utiliza con más frecuencia, agregando o eliminando barras de herramientas según sea necesario a través del menú <kbd><font color = #1E90FF> Ver(View)</kbd> ► <kbd>Barras de herramientas (Toolbars)</font></kbd>.
 
-Incluso si no están visibles en una barra de herramientas, todas sus herramientas seguirán siendo accesibles a través de los menús. Por ejemplo, si elimina la barra de herramientas <kbd>Proyecto (Project)</kbd> (que contiene el botón Guardar), aún puede guardar su mapa haciendo clic en el menú Proyecto y luego haciendo clic en Guardar.
+Incluso si no están visibles en una barra de herramientas, todas sus herramientas seguirán siendo accesibles a través de los menús. Por ejemplo, si elimina la barra de herramientas <kbd><font color = #1E90FF> Proyecto (Project)</font></kbd> (que contiene el botón Guardar), aún puede guardar su mapa haciendo clic en el menú Proyecto y luego haciendo clic en Guardar.
 
 #### :two: Ventana de lista de capas (Layer list).
 
@@ -44,14 +44,15 @@ Al pasar el cursor sobre la capa, obtendrá información básica como nombre, ti
 
 Es un panel en QGIS que le permite navegar fácilmente en su base de datos. Puede tener acceso a archivos vectoriales comunes _(por ejemplo, archivos ESRI Shapefile o MapInfo)_, bases de datos _(por ejemplo, PostGIS, Oracle, SpatiaLite, GeoPackage o MS SQL Server)_ y conexiones WMS/WFS. También puede ver sus datos de GRASS.
 
-Si ha guardado un proyecto, el Panel del navegador también le brindará acceso rápido a todas las capas almacenadas en la misma ruta del archivo del proyecto en el icono <kbd>Raíz del proyecto (Project Home)</kbd>.
+Si ha guardado un proyecto, el Panel del navegador también le brindará acceso rápido a todas las capas almacenadas en la misma ruta del archivo del proyecto en el icono <kbd><font color = #1E90FF> Raíz del proyecto (Project Home)</font></kbd>.
 
-Además, puede configurar una o varias carpetas como :star: **Favoritos¨**. Para esto, busque la ruta y una vez que haya encontrado la carpeta, haga clic derecho sobre ella y haga clic en <kbd><font color = # 1E90FF> Agregar como favorito (Add as a Favorite)</font></kbd>. Entonces debería poder ver su carpeta en el elemento Favoritos.
+Además, puede configurar una o varias carpetas como :star: **Favoritos¨**. Para esto, busque la ruta y una vez que haya encontrado la carpeta, haga clic derecho sobre ella y haga clic en <kbd><font color = #1E90FF> Agregar como favorito (Add as a Favorite)</font></kbd>. Entonces debería poder ver su carpeta en el elemento Favoritos.
 
 #### :four: Lienzo del mapa (Map Canvas).
 
-- 
+ Aquí es donde se muestra el mapa en sí y donde se cargan las capas. En el lienzo del mapa puedes interactuar con las capas visibles: acercar/alejar, mover el mapa, seleccionar entidades y muchas otras operaciones que veremos en profundidad en las siguientes secciones.
 
+#### :five: Lienzo del mapa (Map Canvas).
 
 ## Almacenamiento
 
