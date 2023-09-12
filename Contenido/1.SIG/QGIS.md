@@ -40,9 +40,16 @@ En la lista Capas se puede ver una lista de todas las capas disponibles en el pr
 
 Al pasar el cursor sobre la capa, obtendrá información básica como nombre, tipo de geometría, sistema de referencia de coordenadas y la ruta completa de la ubicación en su dispositivo. Al hacer clic derecho en una capa, aparecerá un menú con muchas opciones adicionales.
 
-#### :three: Panel de búsqueda (Browser panel).
+#### :three: Panel de búsqueda o navegación (Browser panel).
+
+Es un panel en QGIS que le permite navegar fácilmente en su base de datos. Puede tener acceso a archivos vectoriales comunes _(por ejemplo, archivos ESRI Shapefile o MapInfo)_, bases de datos _(por ejemplo, PostGIS, Oracle, SpatiaLite, GeoPackage o MS SQL Server)_ y conexiones WMS/WFS. También puede ver sus datos de GRASS.
+
+Si ha guardado un proyecto, el Panel del navegador también le brindará acceso rápido a todas las capas almacenadas en la misma ruta del archivo del proyecto en el icono <kbd>Raíz del proyecto (Project Home)</kbd>.
+
+Además, puede configurar una o varias carpetas como :star: **Favoritos¨**. Para esto, busque la ruta y una vez que haya encontrado la carpeta, haga clic derecho sobre ella y haga clic en <kbd><font color = # 1E90FF> Agregar como favorito (Add as a Favorite)</font></kbd>. Entonces debería poder ver su carpeta en el elemento Favoritos.
 
 #### :four: Lienzo del mapa (Map Canvas).
+
 - 
 
 
