@@ -264,8 +264,8 @@ postgis) y corporativas (.gdb, oracle).
 ---
 
 ### Actividad
-1. Consulte que es un archivo con extensión <kbd>.prj</kbd> en SIG. Genere un archivo con esta extensión con base en la información del Sistema de Proyección de Coordenadas Origen Nacacional (EPSG: 9377).
-2. 
+1. Consulte que es un archivo con extensión <kbd>.prj</kbd> en SIG. Genere un archivo con esta extensión con base en la información del Sistema de Proyección de Coordenadas Origen Nacional (EPSG: 9377).
+2. Descargue los archivos que encontrará en las carpetas del curso, utilice alguna herramienta SIG para explorar e identificar la información y tipo de datos de cada uno de los archivos. 
 ___
 
 ### Referencias
