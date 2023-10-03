@@ -117,7 +117,9 @@ A continuación se presentan algunas recomendaciones a considerar para la visual
     - Por atributos.
     - Por cantidades.
     - Gráficos (Data Plotly).
-    - Visualización por escalas.
+
+
+---
 
 ### Actividad
 1. Realiza el mismo proceso de visualización desarrollado y presentado en el ejemplo del caso de estudio por tu propia cuenta.
