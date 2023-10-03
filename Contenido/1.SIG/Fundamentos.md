@@ -260,6 +260,12 @@ postgis) y corporativas (.gdb, oracle).
 <br><img alt="MOHI" src=".img/Geodatabase2.png" width="650px"><br>
 </div>
 
+
+---
+
+### Actividad
+1. Consulte que es un archivo con extensión <kbd>.prj</kbd> en SIG. Genere un archivo con esta extensión con base en la información del Sistema de Proyección de Coordenadas Origen Nacacional (EPSG: 9377).
+2. 
 ___
 
 ### Referencias

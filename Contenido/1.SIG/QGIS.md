@@ -63,3 +63,5 @@ Dentro de esta barra puede acceder a casi todos los objetos de QGIS: capas, cara
 ## Almacenamiento
 
 ## Visualización y consultas
+
+
