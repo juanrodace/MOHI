@@ -46,13 +46,19 @@ Es un panel en QGIS que le permite navegar fácilmente en su base de datos. Pued
 
 Si ha guardado un proyecto, el Panel del navegador también le brindará acceso rápido a todas las capas almacenadas en la misma ruta del archivo del proyecto en el icono <kbd><font color = #1E90FF> Raíz del proyecto (Project Home)</font></kbd>.
 
-Además, puede configurar una o varias carpetas como :star: **Favoritos¨**. Para esto, busque la ruta y una vez que haya encontrado la carpeta, haga clic derecho sobre ella y haga clic en <kbd><font color = #1E90FF> Agregar como favorito (Add as a Favorite)</font></kbd>. Entonces debería poder ver su carpeta en el elemento Favoritos.
+Además, puede configurar una o varias carpetas como :star: **Favoritos**. Para esto, busque la ruta y una vez que haya encontrado la carpeta, haga clic derecho sobre ella y haga clic en <kbd><font color = #1E90FF> Agregar como favorito (Add as a Favorite)</font></kbd>. 
 
 #### :four: Lienzo del mapa (Map Canvas).
 
  Aquí es donde se muestra el mapa en sí y donde se cargan las capas. En el lienzo del mapa puedes interactuar con las capas visibles: acercar/alejar, mover el mapa, seleccionar entidades y muchas otras operaciones que veremos en profundidad en las siguientes secciones.
 
-#### :five: Lienzo del mapa (Map Canvas).
+#### :five: Barra de estado (Status Bar).
+
+Le muestra información sobre el mapa actual. También le permite ajustar la escala del mapa, la rotación del mapa y ver las coordenadas del cursor del mouse en el mapa.
+
+#### :six: Barra de localización (Locator Bar).
+
+Dentro de esta barra puede acceder a casi todos los objetos de QGIS: capas, características de capa, algoritmos, marcadores espaciales, etc. 
 
 ## Almacenamiento
 

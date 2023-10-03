@@ -89,7 +89,7 @@ Los SIG se han vuelto cada vez más populares en los últimos años debido a la 
 
 Existen diferentes tipos de herramientas SIG según su funcionalidad, plataforma y licencia, cada una con sus propias características y enfoques. Algunos de los tipos de herramienta SIG más son:
 
--**Software SIG de escritorio**: son aplicaciones que se instalan en el ordenador y ofrecen una amplia gama de funciones para crear, editar, analizar y compartir datos geográficos. Algunos ejemplos son ArcGIS, QGIS, gvSIG, GRASS GIS, SAGA GIS, entre otros.
+- **Software SIG de escritorio**: son aplicaciones que se instalan en el ordenador y ofrecen una amplia gama de funciones para crear, editar, analizar y compartir datos geográficos. Algunos ejemplos son ArcGIS, QGIS, gvSIG, GRASS GIS, SAGA GIS, entre otros.
 
 - **Complementos SIG en la nube**: son servicios web que se integran con el software SIG de escritorio y permiten acceder a datos, mapas y análisis en línea. Algunos ejemplos son ArcGIS Online, Google Earth Engine, Carto, entre otros.
 
@@ -102,6 +102,20 @@ Existen diferentes tipos de herramientas SIG según su funcionalidad, plataforma
 - **Aplicaciones móviles SIG**: Estas son aplicaciones diseñadas para dispositivos móviles (como teléfonos y tabletas) que permiten a los usuarios recopilar datos geoespaciales en el campo y realizar análisis básicos. Algunos ejemplos son Collector for ArcGIS y Fulcrum.
 
 - **Herramientas para sensores remotos**: Algunas herramientas SIG se especializan en el procesamiento y análisis de imágenes satelitales y otros datos obtenidos mediante sensores remotos, como el caso de ENVI, Ilwis y ERDAS Imagine.
+
+---
+
+### Actividad
+1. SIG en la nube.
+   - Ingrese a [Colombia en Mapas](https://www.colombiaenmapas.gov.co/) del Instituto Geográfico Agustíc Codazzi, explore e identifique por lo menos tres tipos de mapa que podría obtener allí para un proyecto de hidrología o de modelación hidráulica.
+   - Busque y consulte por lo menos tres plataformas SIG en la web que contengan información exclusiva de Colombia. Algunos ejeplos son el IDEAM, EAAB, SGC, 
+2. Sensores remotos e imágenes satelitales.
+   - Ingresa a la página [EarthData](https://urs.earthdata.nasa.gov/users/new?client_id=BO_n7nTIlMljdvU6kRRB3g&redirect_uri=https%3A%2F%2Fauth.asf.alaska.edu%2Flogin&response_type=code&state=https%3A%2F%2Fsearch.asf.alaska.edu) de la NASA y registrate.
+   - Ahora ingresa al portal [Earth Data Search] (https://search.earthdata.nasa.gov/). Ingresa con tu usuario NASA. Luego inicie la busqueda de información **ALOS PALSAR**. 
+   - Agregue algunos filtros como el área de interés, en la zona norte del departamento de Magdalena, Colombia. Y el rango temporal entre el <kbd>01/01/2009</kbd> y el <kbd>30/05/2011</kbd>.
+   - Navegue sobre los resultados mostrados. Seleccione una imagen sobre la Sierra Nevada de Santa Marta y otra al norte en la zona costera. Inicie la descarga de la información para posteriormente generar un Modelo Digital de Terreno.
+   - Extraiga únicamente los archivos con extensión <kbd>.dem.tif</kbd>.
+3. Explora la visualización de datos SIG con la herramienta Google Earth Engine.
 
 ---
 
