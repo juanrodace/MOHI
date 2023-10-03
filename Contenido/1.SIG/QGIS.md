@@ -69,8 +69,80 @@ Dentro de esta barra puede acceder a casi todos los objetos de QGIS: capas, cara
 
 Aquí encuentras la lista de las herramientas de procesamiento integradas en el QGIS, así como las librerías de GDAL, GRASS y SAGA. 
 
-## Almacenamiento
-
 ## Visualización y consultas
 
+A continuación se presentan algunas recomendaciones a considerar para la visualización y consulta de información SIG en QGIS.
 
+- Revise y/o defina el sistema de proyección de coordenadas SCG(CRS).
+- Puedes usar diferentes tipos de simbología, como símbolos únicos, graduados, categóricos o de mapa de calor, para representar tus datos de forma más atractiva y significativa.
+- Puedes unir tus datos de una tabla CSV con una capa espacial usando un campo común, para mostrar tus datos basados en la ubicación.
+- Puedes agregar diferentes tipos de datos desde el menú Capa o desde el panel Navegador, y ajustar la proyección y la escala de tu mapa.
+
+### Caso de estudio
+
+1. Descarga el paquete de datos de la Actividad 2, donde encontrarás:
+
+   - Shapefile tipo polígono de los Departamentos de Colombia, llamado Departamentos.shp.
+   - Shapefile tipo polígono de los Municipios de Colombia, llamado Municipio.shp.
+   - Shapefile de puntos que representa las estaciones hidroclimatológicas de la zona central de Colombia, llamado Estaciones.shp.
+   - Shapefile de puntos que representa las estaciones con estadísticos de temperatura del aire (°C) de la zona
+   central de Colombia, llamado Temperatura.shp
+   - Shapefile de puntos que representa las estaciones con estadísticos de Evaporación (mm) de la zona central de 
+   Colombia, llamado Evaporacion.shp
+   - Shapefile de puntos que representa las estaciones con estadísticos de Precipitación (mm) de la zona central de 
+   Colombia, llamado Precipitacion.shp
+   
+
+2. Cree un nuevo proyecto QGIS.  
+3. Defina sistema de proyección de coordenadas (EPSG:9377).
+3. Cargue las capas Shapefile en QGIS.
+4. Visualice las capas y sus propiedades generales.
+
+<div align="center">
+<br>
+<img alt="MOHI" src=".img/Visualizacion.png" width="700px"><br>
+<sub>Archivos vectoriales suministrados.</sub>
+</div>
+
+5. Visualice los atributos de algunas de las capas.
+6. Cargue la última versión de las capas de cobertura del suelo a través del servicio WMS.
+7. Visualice mapas base desde los servicios de OpenLayers y/o QuickMapServices.
+8. Visualice mapas base como mosaico XYZ. 
+
+    `Use: http://mt0.google.com/vt/lyrs=y&hl=en&x=%7Bx%7D&y=%7By%7D&z=%7Bz%7D&s=Ga`
+9. Instale el plugin **RiverGIS**.
+10. Realice algunas pruebas de visualización y simbología de las capas geográficas.
+    - Rotulación (labels).
+    - Filtro (Query).
+    - Por atributos.
+    - Por cantidades.
+    - Gráficos (Data Plotly).
+    - Visualización por escalas.
+
+### Actividad
+1. Realiza el mismo proceso de visualización desarrollado y presentado en el ejemplo del caso de estudio por tu propia cuenta.
+2. Con base en la información, determina cuál es el municipio más grande y más pequeño del país. 
+3. Con base en la información disponible encuentra cuál es el municipio con mayor precipitación anual. 
+---
+
+### Referencias
+- QGIS Training Manual. QGIS Documentation. 2023.
+- GIS Applications for Water, Wastewater, and Stormwater Systems. Shamsi, U.M.Taylor & Francis Group. 2005.
+- LibroSIG: prendiendo a manejar los SIG en la gestión ambiental. Mancebo, S.; Ortega, E.;Martín, L.; Valentín, A. Madrid, España. 2009.  
+- Sistemas de Información Geográfica. Olaya, Victor. Creative Commons Atribucion. 2012.
+- Getting Started with ArcGIS. Booth and Mitchell. ESRI. 2001
+
+
+### Control de versiones
+
+| Versión | Descripción                                                    |                    Autor                    | Horas |
+|:-------:|:---------------------------------------------------------------|:-------------------------------------------:|:-----:|
+| 2023.09 | Versión inicial, definición de estructura general y contenido. | [juanrodace](https://github.com/juanrodace) |  1.0  |
+| 2023.09 | Inclusión de conceptos, esquemas y ejemplos.                   | [juanrodace](https://github.com/juanrodace) |  2.0  |
+
+| [:arrow_backward:Anterior](Fundamentos.md) | [:house: Inicio](../../Readme.md) | [:beginner: Ayuda](https://github.com/juanrodace/MOHI/discussions) | [Siguiente:arrow_forward:](QGIS2.md) |
+|--------------------------------------------|-----------------------------------|--------------------------------------------------------------------|--------------------------------------|
+
+_MOHI es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](../../License.md)._
+
+_¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [juanrodace](https://github.com/juanrodace) en GitHub._ 
