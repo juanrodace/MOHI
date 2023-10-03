@@ -28,25 +28,30 @@ Algunas de las ventajas de utilizar QGIS como software que integra una gran vari
 
 En la siguiente imagen, podemos identificar los principales componentes de la ventana principal de QGIS. A continuación encuentra una breve descripción para familiarizarse e iniciar a usar y explorar la interfaz QGIS. 
 
+<div align="center">
+<br>
+<img alt="MOHI" src=".img/QGIS_Structure.png" width="800px"><br>
+</div>
+
 #### :one: Barra de herramientas (Toolbars).
 
 Los conjuntos de herramientas que utiliza con más frecuencia se pueden convertir en barras de herramientas para un acceso básico. Por ejemplo, la barra de herramientas <kbd><font color = #1E90FF> Proyecto(Project)</font></kbd> le permite guardar, cargar, imprimir e iniciar un nuevo proyecto. Puede personalizar fácilmente la interfaz para ver solo las herramientas que utiliza con más frecuencia, agregando o eliminando barras de herramientas según sea necesario a través del menú <kbd><font color = #1E90FF> Ver(View)</kbd> ► <kbd>Barras de herramientas (Toolbars)</font></kbd>.
 
 Incluso si no están visibles en una barra de herramientas, todas sus herramientas seguirán siendo accesibles a través de los menús. Por ejemplo, si elimina la barra de herramientas <kbd><font color = #1E90FF> Proyecto (Project)</font></kbd> (que contiene el botón Guardar), aún puede guardar su mapa haciendo clic en el menú Proyecto y luego haciendo clic en Guardar.
 
-#### :two: Ventana de lista de capas (Layer list).
-
-En la lista Capas se puede ver una lista de todas las capas disponibles en el proyecto. Igualmente, se pueden expandir elementos contraídos _(haciendo clic en la flecha o el símbolo más junto a ellos)_ y le proporcionará más información sobre la apariencia actual de la capa.
-
-Al pasar el cursor sobre la capa, obtendrá información básica como nombre, tipo de geometría, sistema de referencia de coordenadas y la ruta completa de la ubicación en su dispositivo. Al hacer clic derecho en una capa, aparecerá un menú con muchas opciones adicionales.
-
-#### :three: Panel de búsqueda o navegación (Browser panel).
+#### :two:  Panel de búsqueda o navegación (Browser panel).
 
 Es un panel en QGIS que le permite navegar fácilmente en su base de datos. Puede tener acceso a archivos vectoriales comunes _(por ejemplo, archivos ESRI Shapefile o MapInfo)_, bases de datos _(por ejemplo, PostGIS, Oracle, SpatiaLite, GeoPackage o MS SQL Server)_ y conexiones WMS/WFS. También puede ver sus datos de GRASS.
 
 Si ha guardado un proyecto, el Panel del navegador también le brindará acceso rápido a todas las capas almacenadas en la misma ruta del archivo del proyecto en el icono <kbd><font color = #1E90FF> Raíz del proyecto (Project Home)</font></kbd>.
 
 Además, puede configurar una o varias carpetas como :star: **Favoritos**. Para esto, busque la ruta y una vez que haya encontrado la carpeta, haga clic derecho sobre ella y haga clic en <kbd><font color = #1E90FF> Agregar como favorito (Add as a Favorite)</font></kbd>. 
+
+#### :three: Ventana de lista de capas (Layer list).
+
+En la lista Capas se puede ver una lista de todas las capas disponibles en el proyecto. Igualmente, se pueden expandir elementos contraídos _(haciendo clic en la flecha o el símbolo más junto a ellos)_ y le proporcionará más información sobre la apariencia actual de la capa.
+
+Al pasar el cursor sobre la capa, obtendrá información básica como nombre, tipo de geometría, sistema de referencia de coordenadas y la ruta completa de la ubicación en su dispositivo. Al hacer clic derecho en una capa, aparecerá un menú con muchas opciones adicionales.
 
 #### :four: Lienzo del mapa (Map Canvas).
 
@@ -59,6 +64,10 @@ Le muestra información sobre el mapa actual. También le permite ajustar la esc
 #### :six: Barra de localización (Locator Bar).
 
 Dentro de esta barra puede acceder a casi todos los objetos de QGIS: capas, características de capa, algoritmos, marcadores espaciales, etc. 
+
+#### :seven: Herramientas de procesamiento (Processing Toolbox).
+
+Aquí encuentras la lista de las herramientas de procesamiento integradas en el QGIS, así como las librerías de GDAL, GRASS y SAGA. 
 
 ## Almacenamiento
 
