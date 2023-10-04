@@ -207,7 +207,8 @@ Los datos asociados a un elemento geográfico vectorial contenidos en los regist
 
 - **Geométricos**: Tipo de elemento vectorial como Punto, Punto 3D, Línea, Línea 3D, Polígono, Polígono 3D.
 
-- **Numéricos**: Tipo Binario o boolean (1 – 0), tipo fecha o date (Ej: 2010/06/01), enteros o integer (Ej:100) y reales simple o double (Ej:100 – 23.49). Son identificables fácilmente en la tabla de atributos debido a que el valor almacenado en el campo se alinea a la derecha. OID o ObjectID es un campo de sistema que se indexa de 0 a n en archivos de formas shapefile y de 1 a n en GDB o bases de datos geográficas de ArcGIS.
+- **Numéricos**: Tipo Binario o boolean (1 – 0), tipo fecha o date (Ej: 2010/06/01), enteros o integer (Ej:100) y reales simple o double (Ej:100 – 23.49). Son identificables fácilmente en la tabla de atributos debido a que el valor almacenado en el campo se alinea a la derecha. 
+  - **OID o ObjectID** es un campo de sistema que se indexa de 0 a n en archivos de formas shapefile y de 1 a n en GDB o bases de datos geográficas de ArcGIS.
 
 - **Texto (string)**: cadenas de caracteres usados para descripciones nominales o de cualidades de un elemento dentro de un registro.
 
@@ -264,8 +265,9 @@ postgis) y corporativas (.gdb, oracle).
 ---
 
 ### Actividad
-1. Consulte que es un archivo con extensión <kbd>.prj</kbd> en SIG. Genere un archivo con esta extensión con base en la información del Sistema de Proyección de Coordenadas Origen Nacional (EPSG: 9377).
+1. Consulte que es un archivo con extensión <kbd>.prj</kbd> en SIG. Genere un archivo de este tipo con la información del Sistema de Proyección de Coordenadas Origen Nacional (EPSG: 9377).
 2. Descargue los archivos que encontrará en las carpetas del curso, utilice alguna herramienta SIG para explorar e identificar la información y tipo de datos de cada uno de los archivos. 
+3. Investigue qué son los archivos STRM.
 ___
 
 ### Referencias
