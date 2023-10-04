@@ -23,13 +23,11 @@ Entidades públicas, empresas prestadoras de servicios, autoridades ambientales,
 
 ## Metodología
 
-El curso virtual tendrá un enfoque teórico-práctico. La parte teórica comprende videos y presentaciones de forma tal que se abarcan los conceptos básicos y fundamentales sobre las diferentes herramientas para la modelación; y como parte del componente práctico, se desarrollarán ejemplos de modelación y ejecuciones del modelo. En cada sección o módulo, el estudiante deberá desarrollar talleres prácticos de aplicación de las herramientas.
+El curso tendrá un enfoque teórico-práctico. La parte teórica comprende sesiones sincrónicas y presentaciones de forma tal que se abarcan los conceptos básicos y fundamentales sobre las diferentes herramientas para la modelación; y como parte del componente práctico, se desarrollarán ejemplos de uso de las diferentes herramientas, modelaciones y ejecuciones del modelo. En cada sección o módulo, el estudiante deberá desarrollar talleres o actividades prácticas de aplicación de las herramientas.
 
 * Tanto los fundamentos como las prácticas con las diferentes herramientas están explicados en documentos de texto, presentaciones, y videotutoriales, planificados con una complejidad progresiva. 
-* El material multimedia está disponible en un repositorio GitHub con videos asociados a la plataforma YouTube, al que cada alumno puede acceder libremente.
-* El aprendizaje es remoto, y, por lo tanto, resulta compatible con su actividad diaria: el alumno hace el curso a su ritmo, siguiendo su mejor horario. 
-* Es posible contar con acompañamiento y certificación del curso, para esto consulta la página de la [Escuela](https://www.escuelaing.edu.co). Para esto se incluyen actividades con HEC-RAS para evaluar el aprovechamiento y aprendizaje del curso.
-* Las consultas pueden formularse por medio del espacio de [🔰Ayuda](https://github.com/juanrodace/MOHI/discussions) del repositorio en GitHub o mensaje en plataforma de Microsoft Teams en el caso de acompañamiento y certificación. 
+* Para algunas actividades se dispondrá de material multimedia con videos asociados a la plataforma YouTube, al que cada alumno puede acceder libremente.
+* Las consultas pueden formularse por medio del espacio de [🔰Ayuda](https://github.com/juanrodace/MOHI/discussions) del repositorio en GitHub o mensaje en plataforma de Microsoft Teams.
 
 ## Requisitos técnicos
 
@@ -109,29 +107,27 @@ A continuación, se presenta el contenido general del curso. Si desea acceder a 
 
 ### [Sección 5.](Contenido/5.SWMM/Readme.md) Modelación hidráulica de redes de drenaje o alcantarillado. Software SWMM.
 
-### [Sección 6.](Contenido/6.BIM/Readme.md) Fundamentos de la metodología BIM. Herramientas.
-
 ## Resultados de aprendizaje
 
-Esta asignatura aporta al desarrollo de los siguientes resultados de aprendizaje:
+Este curso aporta al desarrollo de ciertas habilidades y competencias en el desarrollo profesional:
 
-- Identifica problemas relacionados con la modelación de fenómenos hidrológicos en cuencas y cuerpos de agua y modelación de sistemas hidráulicos a presión y a superficie libre.
-- Relaciona e interpreta conceptos aplicando competencias matemáticas y científicas, a partir de principios y leyes fundamentales de la ciencia para la comprensión de problemas prácticos y aplicados de modelación de fenómenos hidrológicos y sistemas hidráulicos.
-- Evalúa y brinda soluciones a problemas de modelación hidrológica e hidráulica aplicando los conocimientos y metodologías propias de la asignatura, en el marco de un raciocinio espacial, lógico y matemático.
-- Aplica técnicas, métodos y herramientas computacionales para procesar datos, modelar y simular fenómenos hidrológicos en cuencas y cuerpos de agua y modelación de sistemas hidráulicos a presión y a superficie libre.
-- Evalúa de forma crítica resultados de modelos analíticos y numéricos que simulan el comportamiento de fenómenos hidrológicos y sistemas hidráulicos.
-- Deduce conclusiones lógicas y coherentes a partir de los resultados de modelos analíticos y numéricos obtenidos y con criterio ingenieril.
-- Interpreta requerimientos y necesidades de la hidrología y el transporte de fluidos y los traduce en proyectos de ingeniería, considerando las variables de orden técnico y las restricciones aplicables.
-- Contrasta diferentes alternativas adecuadas y eficientes seleccionando los recursos de manera apropiada para resolver problemas que involucren la simulación y modelación de sistemas hidrológicos e hidráulicos. 
-- Calcula la solución propuesta a través de la simulación de fenómenos hidrológicos e hidráulicos haciendo uso de los métodos, técnicas, normas y estándares apropiados.
-- Comunica ideas de forma oral, escrita y gráfica de manera efectiva con una variedad de audiencias.
-- Desarrolla actividades de manera eficaz en un equipo con actitud de liderazgo, aportando a entorno colaborativo e inclusivo, estableciendo metas y cumpliendo objetivos.
-- Reconoce comportamientos éticos y asume responsabilidad por los proyectos y trabajos realizados, tomando decisiones de manera informada y justa.
-- Adquiere y aplica nuevo conocimiento según sea necesario, utilizando estrategias apropiadas de aprendizaje.
+- Identificar problemas relacionados con la modelación de fenómenos hidrológicos en cuencas y cuerpos de agua y modelación de sistemas hidráulicos a presión y a superficie libre.
+- Relacionar e interpretar conceptos aplicando competencias matemáticas y científicas, a partir de principios y leyes fundamentales de la ciencia para la comprensión de problemas prácticos y aplicados de modelación de fenómenos hidrológicos y sistemas hidráulicos.
+- Evaluar y brindar soluciones a problemas de modelación hidrológica e hidráulica aplicando los conocimientos y metodologías propias de la asignatura, en el marco de un raciocinio espacial, lógico y matemático.
+- Aplicar técnicas, métodos y herramientas computacionales para procesar datos, modelar y simular fenómenos hidrológicos en cuencas y cuerpos de agua y modelación de sistemas hidráulicos a presión y a superficie libre.
+- Evaluar de forma crítica resultados de modelos analíticos y numéricos que simulan el comportamiento de fenómenos hidrológicos y sistemas hidráulicos.
+- Deducir conclusiones lógicas y coherentes a partir de los resultados de modelos analíticos y numéricos obtenidos y con criterio ingenieril.
+- Interpretar requerimientos y necesidades de la hidrología y el transporte de fluidos y traducirlos en proyectos de ingeniería, considerando las variables de orden técnico y las restricciones aplicables.
+- Contrastar diferentes alternativas adecuadas y eficientes seleccionando los recursos de manera apropiada para resolver problemas que involucren la simulación y modelación de sistemas hidrológicos e hidráulicos. 
+- Calcular la solución propuesta a través de la simulación de fenómenos hidrológicos e hidráulicos haciendo uso de los métodos, técnicas, normas y estándares apropiados.
+- Comunicar ideas de forma oral, escrita y gráfica de manera efectiva con una variedad de audiencias.
+- Desarrollar actividades de manera eficaz en un equipo con actitud de liderazgo, aportando a entorno colaborativo e inclusivo, estableciendo metas y cumpliendo objetivos.
+- Reconocer comportamientos éticos y asume responsabilidad por los proyectos y trabajos realizados, tomando decisiones de manera informada y justa.
+- Adquirir y aplicar nuevo conocimiento según sea necesario, utilizando estrategias apropiadas de aprendizaje.
 
 ##
 
-_:beginner: Ayuda / Colabora: a través de la pestaña _[Discussions](https://github.com/juanrodace/MOHI/discussions)_ localizada en la parte superior de esta ventana, podrás encontrar y participar en los [_anuncios o noticias_](https://github.com/juanrodace/J.HRAS/discussions/categories/announcements) publicados, enviarnos tus [_ideas_](https://github.com/juanrodace/MOHI/discussions/categories/ideas) para actividades complementarias, participar en preguntas, respuestas y consultas específicas [_Q&A_](https://github.com/juanrodace/J.HRAS/discussions/categories/q-a) y realizar [_publicaciones o consultas generales_](https://github.com/juanrodace/MOHI/discussions/categories/general) públicas._
+_:beginner: Ayuda / Colabora: a través de la pestaña _[Discussions](https://github.com/juanrodace/MOHI/discussions)_ localizada en la parte superior de esta ventana, podrás encontrar y participar en los [_anuncios o noticias_](https://github.com/juanrodace/MOHI/discussions/categories/announcements) publicados, enviarnos tus [_ideas_](https://github.com/juanrodace/MOHI/discussions/categories/ideas) para actividades complementarias, participar en preguntas, respuestas y consultas específicas [_Q&A_](https://github.com/juanrodace/MOHI/discussions/categories/q-a) y realizar [_publicaciones o consultas generales_](https://github.com/juanrodace/MOHI/discussions/categories/general) públicas._
 
 _MOHI es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](License.md)._
 
