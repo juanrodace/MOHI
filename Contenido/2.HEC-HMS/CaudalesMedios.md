@@ -102,17 +102,53 @@ Con ayuda de información cartográfica se ha caracterizado la cuenca en estudio
 
 Utilizando los registros de dos estaciones pluviométricas cercanas a la cuenca en estudio, se creó una serie anual de precipitación diaria con una extensión de 41 años, desde el 01 de enero de 1980 hasta el 31 de diciembre de 2020. En el siguiente link se encuentra la lluvia total diaria de la cuenca: <a href="https://github.com/AndresOtalora92/MOHI/tree/master/Contenido/2.HEC-HMS/diapositivas/RegistroPrecipitacion.csv"><i>Registros de Precipitacion Diaria</i></a>
 
-Utilizando los registros de temperatura media diaria y a partir de ecuaciones empíricas, se determinó la evapotranspiración potencial mensual multianual de la cuenca. Los valores se presentan en la siguiente tabla.
+Utilizando los registros de temperatura media diaria y a partir de ecuaciones empíricas, se determinó la evapotranspiración potencial mensual multianual de la cuenca. Los valores se presentan en la siguiente tabla:
 
-Para la estimación de la evapotranspiración real mensual multianual en la cuenca, utilice un factor de 0.75.
+| Mes        | Evapotranspiración <br/> potencial (mm/mes) |
+|------------|:--------------------------------------------|
+| Enero      | 193.0                                       |
+| Febrero    | 204.0                                       |
+| Marzo      | 219.0                                       | 
+| Abril      | 162.0                                       | 
+| Mayo       | 140                                         | 
+| Junio      | 140                                         | 
+| Julio      | 162                                         | 
+| Agosto     | 151                                         | 
+| Septiembre | 131                                         | 
+| Octubre    | 126                                         | 
+| Noviembre  | 123                                         | 
+| Diciembre  | 157                                         | 
+
+
+Para la estimación de la evapotranspiración real mensual multianual en la cuenca, utilice un factor de 0.75 si la evapotranspiración mensual multianual es igual o menor que 157 mm/mes y 0.80 si es menor a 157 mm/mes.
+
 
 Finalmente, a partir de información de campo y de planchas tomadas de diferentes fuentes de dominió público, se determinaron las principales características del suelo y de la cobertura vegetal de la cuenca. Las características se resumen en la siguiente tabla:
- 
+
+
+| Característica                                           | Valor | Unidades | 
+|----------------------------------------------------------|:------|----------|
+| Canopy:Almacenamiento inicial                            | 50    | %        | 
+| Canopy:Máximo almacenamiento                             | 10    | mm       | 
+| Almacenamiento inicial en el suelo                       | 50    | %        |
+| Almacenamiento inicial acuífero<br/>superficial          | 10    | %        |
+| Almacenamiento inicial acuífero<br/>profundidad          | 5     | %        |
+| Máxima tasa de infiltración                              | 2     | mm/hr    |
+| Área impermeable                                         | 10    | %        |
+| Almacenamiento máximo de agua en el suelo                | 80    | mm       |
+| Tensión superficial máxima                               | 5     | mm       |
+| Tasa máxima de percolación del suelo al acuífero         | 0.35  | mm/hr    |
+| Almacenamiento máximo en el acuífero superficial*        | 10    | mm       |
+| Tasa máxima de percolación<br/>acuífero superficial*     | 3.5   | mm/hr |
+| Tasa de retardo desde el acuífero a flujo subsuperficial | 2.0   | hr |
+
+*Se asumirá que no existe acuífero profundo
+
 ### Control de versiones
 
 | Versión    | Descripción   | Autor                                      | Horas |
 |------------|:--------------|--------------------------------------------|:-----:|
-| 2023.09.10 | Versión No. 1 | [AndresOtalora92](https://github.com/AndresOtalora92)  |   4   |
+| 2023.09.10 | Versión No. 1 | [AndresOtalora92](https://github.com/AndresOtalora92)  |   8   |
 
 _MOHI es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](../../License.md)._
 
