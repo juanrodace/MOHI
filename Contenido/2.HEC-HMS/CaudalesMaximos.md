@@ -535,7 +535,6 @@ El resultado debe verse similar al presentado en la siguiente figura:
   <img src="Imagenes/FiguraHECHMS_73.PNG" width="300px"> 
 </div>
 
-
 Se debe repetir el procedimiento anterior para todas las lluvias (todas las subcuencas).
 
 ## Definición de la lluvia en las subcuencas
