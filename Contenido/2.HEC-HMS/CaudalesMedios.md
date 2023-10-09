@@ -43,7 +43,7 @@ El módulo de tanques del “Hec-Hms” divide el proceso de transformación de 
 En la siguiente figura se presenta gráficamente lo mencionado en el párrafo anterior:
 
 <div align="Center">
-  <img src="Imagenes/FiguraHECHMS_88.PNG" width="700px"> 
+  <img src="Imagenes/FiguraHECHMS_88.PNG" width="500px"> 
 </div>
 
 Cada uno de los tanques del modelo de HECHMS corresponden subetapas que permiten simplificar los procesos de abstracción que ocurren en una cuenca. Los procesos de abstracción corresponde a la pérdida de masa de agua que sufre la precipitación desde el inicio de la lluvia, pasando por la retención en las plantas (canopy), seguido de las pérdidas en la superficie del suelo hasta finalizar por los diferentes procesos en el subsuelo hasta convertirse en escorrentía superficial y/o escorrentía subsuperficial. 
@@ -51,7 +51,7 @@ Cada uno de los tanques del modelo de HECHMS corresponden subetapas que permiten
 En la siguiente figura se define gráficamente lo mencionado en el párrafo anterior y que corresponde a los procesos de abstracción que el modelo HECHMS simplifica en los cinco tanques. 
 
 <div align="Center">
-  <img src="Imagenes/FiguraHECHMS_89.PNG" width="500px"> 
+  <img src="Imagenes/FiguraHECHMS_89.PNG" width="800px"> 
 </div>
 
 ### Tanque 1: Canopy Interception
