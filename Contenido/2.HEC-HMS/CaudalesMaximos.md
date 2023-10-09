@@ -509,6 +509,7 @@ Repetimos este procedimiento para todas las subcuencas. El resultado debe verse 
 
 Ahora diligenciaremos estos nuevos elementos a partir de la lluvia defina en los cuadros anteriores (cuadros con la precipitación para cada subcuenca).
 
+
 Damos clic en uno de los elementos de lluvía, por ejemplo en "Pe_subcuenca_1", seleccionamos en la opción "Time Series Game" buscamos la opción "Units" y seleccionamos "Incremental Milimeters" y en la opción "Time interval" seleccionamos "15 minutes".
 
 El resultado debe verse similar al presentado en la siguiente figura.
@@ -520,6 +521,7 @@ El resultado debe verse similar al presentado en la siguiente figura.
 
 Como siguiente paso, seleccionamos en la opción "Time Window" y definimos el tiempo de inicio y el tiempo final de nuestro hietograma (se debe tener presente que el aguacero tarda 75 min o lo que es lo mismo, 1 hora y 15 minutos). Como se conoce que el hidrograma de salida durará más tiempo que la lluvia, es necesario definir un intervalo más amplio, por ejemplo 10 horas. Como la lluvia dura solo 75 min, el resto del tiempo se asumirá una lluvia de magnitud cero.
 
+
 El resultado debe verse similar al presentado en la siguiente figura:
 
 <div align="Center">
@@ -529,6 +531,7 @@ El resultado debe verse similar al presentado en la siguiente figura:
 
 Finalmente, se debe dar clic en la opción "Table", posteriormente se diligencia la lluvia, teniendo presente que, después de los 75 min (1 hora y 15 min) se definirán aguaceros de 0 mm.
 
+
 El resultado debe verse similar al presentado en la siguiente figura:
 
 <div align="Center">
@@ -536,16 +539,6 @@ El resultado debe verse similar al presentado en la siguiente figura:
 </div>
 
 Se debe repetir el procedimiento anterior para todas las lluvias (todas las subcuencas).
-
-## Definición de la lluvia en las subcuencas
-
-Una vez realizado esto, debe asignarse a cada subcuenca, la lluvia respectiva. Para realizar esto, damos clic en "Metereologic Model", abrimos la carpeta donde está la opción "Specified Hyetograph". Al realizar esto, se abrirá una ventana que solicitará, para cada subcuenca,la respectiva lluvia. El resultado de la asignación de la lluvia en cada subcuenca se presenta a continuación:
-
-<div align="Center">
-  <img src="Imagenes/FiguraHECHMS_74.PNG" width="900px"> 
-</div>
-
-
 
 ## Definición de los parámetros de la ejecución
 
