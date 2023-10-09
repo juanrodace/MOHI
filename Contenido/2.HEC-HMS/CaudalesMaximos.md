@@ -169,7 +169,7 @@ En la siguiente figura se presenta lo mencionado:
   <img src="Imagenes/FiguraHECHMS_33.PNG" width="700px"> 
 </div>
 
-Se abrirá un ventana, en la cual seleccionaremos la opción "New". Se abrirá una pequeña ventana
+Se abrirá una ventana, en la cual seleccionaremos la opción "New". Se abrirá una pequeña ventana
 la cual solicitará el nombre de la cuenca. Para este caso, el nombre elegido es "Cuenca1"
 
 En la siguiente figura se presenta lo mencionado:
@@ -179,7 +179,7 @@ En la siguiente figura se presenta lo mencionado:
 </div>
 
 Al realizar esto, en la barra de exploración de la cuenca, se creará un ícono que representa la cuenca principal. 
-Adicionamente la zona o "ventana de mapa" cambiará de color gris a color blanco.
+Adicionalmente, la zona o "ventana de mapa" cambiará de color gris a color blanco.
 
 En la siguiente figura se presenta lo mencionado:
 
@@ -194,12 +194,9 @@ seleccionaremos la ópción "Subbasin Creation Tool", tal como se presentan en l
   <img src="Imagenes/FiguraHECHMS_36.PNG" width="700px"> 
 </div>
 
-Al dar clic en el botón "Subbasin Creation Tool" se debe picar sobre la ventana de mapa en el lugar deseado.
-Para conocer la distribución aproximada de cada subcuenca (ubicación donde se debe picar) en la cuenca principal, 
-se debe analizar con calma la figura definida en el ejercicio.
+Al dar clic en el botón "Subbasin Creation Tool" se debe picar sobre la ventana de mapa en el lugar deseado. Para conocer la distribución aproximada de cada subcuenca (ubicación donde se debe picar) en la cuenca principal, se debe analizar con calma la figura definida en el ejercicio.
 
-Una vez se pique sobre la ventana del mapa, se abrirá una ventana que solicita el nombre de la subcuenca. Para este
-caso se definirán el mismo nombre indicado en el ejercicio: "Subcuenca1".
+Una vez se pique sobre la ventana del mapa, se abrirá una ventana que solicita el nombre de la subcuenca. Para este caso se definirán el mismo nombre indicado en el ejercicio: "Subcuenca1".
 
 Se repetirá este procedimiento para cada una de las subcuencas que definen el problema.
 
@@ -237,7 +234,7 @@ siguiente figura:
 </div>
 
 
-Ahora, se crearán los puntos de unión de las corrientes que coinciden en un punto (corrientes que continuan sobre 
+Ahora, se crearán los puntos de unión de las corrientes que coinciden en un punto (corrientes que continúa sobre 
 el cauce principal). Para realizar esto, en la barra de herramientas y menús, seleccionar el botón "Juction Creation Tool".
 Una vez se pica sobre este botón, se debe picar sobre la ventana de dibujo, en la zona indicada por el ejercicio.
 Posteriormente, se abrirá una ventana que solicitará el nombre del elemento. Para el primer elemento (primer nodo)
@@ -322,9 +319,9 @@ Con las subcuencas creadas en la ventana de dibujo del mapa, el punto de control
 Para realizar esto, en la ventana de exploración de la cuenca, se debe seleccionar una de las subcuencas y en la parte inferior, en la ventana de componentes, seleccionar la categoría "Subbasin" y realizar los siguientes cambios:
 
 a. Área (km²): Corresponde al área de la subcuenca definido en el ejercicio
-<div
 
-</div>
+<div></div>
+
 
 b. Loss Method: Método utilizado para determinar las abstracciones inicial de la lluvia bruta. En este caso, seleccionar el método "SCS Curve Number"
 
@@ -369,9 +366,7 @@ El enunciado del ejercicio menciona un suelo tipo II e indica las condiciones de
   <img src="Imagenes/FiguraHECHMS_52.PNG" width="200px"> 
 </div>
 
-<br> 
-
-</br>
+<br> </br>
 
 #### Tiempo de concentración y tiempo de retardo en la cuenca (Tlag).
 
