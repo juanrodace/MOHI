@@ -16,7 +16,7 @@ End:
 
 Subbasin: Subcuenca1
      Last Modified Date: 9 October 2023
-     Last Modified Time: 20:33:18
+     Last Modified Time: 21:07:30
      Canvas X: 817.3515981735159
      Canvas Y: 1324.2009132420092
      From Canvas X: 817.3515981735159
@@ -37,7 +37,17 @@ Subbasin: Subcuenca1
      Surface: None
 
      LossRate: Soil Moisture Account
-     Percent Impervious Area: 0.0
+     Percent Impervious Area: 10
+     Initial Soil Storage Percent: 50
+     Initial Gw1 Storage Percent: 10
+     Initial Gw2 Storage Percent: 5
+     Soil Maximum Infiltration: 2
+     Soil Storage Capacity: 50
+     Soil Tension Capacity: 5
+     Soil Maximum Percolation: 0.35
+     Groundwater 1 Storage Capacity: 10
+     Groundwater 1 Routing Coefficient: 2
+     Groundwater 1 Maximum Percolation: 3.5
 
      Transform: No Transform
 

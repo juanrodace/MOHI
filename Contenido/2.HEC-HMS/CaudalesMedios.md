@@ -268,6 +268,16 @@ Notas:
 
 2. El coeficiente de cultivo (Kp o "Drop Coefficient") se ha definido con un valor de Kp: 0.5, que corresponde a pastos bajos o maleza. 
 
+Posteriormente, se deben definir las variables que definen las pérdidas de masa y la retención en los diferentes niveles (tanques) que definen el modelo de tanques sucesivos implementado en el HECHMS. Estos parámetros definirán la escorrentía superficial diaria. 
+
+En la siguiente imágen se presenta el resultado final de los datos ingresados:
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_102.PNG" width="700px"> 
+</div>
+
+Nota: El cuadro verde resalta las variables que deben ingresarse al acuífero profundo. Si se deja en blanco las celdas, como en este caso, se está asumiendo que no existe acuífero profundo y la última etapa del balance finaliza en el acuífero superficial. 
+
 ### Control de versiones
 
 | Versión    | Descripción   | Autor                                      | Horas |
