@@ -79,8 +79,35 @@ El modelo de tanques incorporado en el HECHMS define los acuíferos en dos etapa
 
 Para la elaboración de los modelos de balance de masas utilizando los tanques sucesivos, se deben conocer más de 18 variables del suelo, la evapotranspiración real y potencial en la cuenca y la precipitación media base en el sistema. Debido a la gran cantidad de información que este modelo requiere, se recomienda su aplicación con prudencia, ya que, es posible que sea necesario de información secundaria para determinar las variables del suelo. La cantidad y calidad de la información dependerá de la magnitud del proyecto, la caracterización de la cuenca y los recursos de tiempo y presupuesto disponibles.
 
-## Ejercicio de aplicación
+## Ejercicio de aplicación para el desarrollo de la actividad
 
+Con el objetivo de aprender a usar el software HEC-HMS para la estimación de caudales medios diarios, a continuación se presenta un ejercicio que se irá desarrollando:
+
+Una empresa de ingeniería ha sido contratada para elaborar un estudio de impacto ambiental, en el que se requiere estimar la curva de duración de caudales medios diarios para la solicitud de un punto de demanda de agua superficial. 
+
+Debido a que la cuenca no cuenta con registros de caudales medios diarios, es necesario la elaboración de un modelo lluvia escorrentía, que permita estimar el caudal medio diario en un punto de control utilizando registros de lluvia diaria con una extensión de 25 años. 
+
+### Información disponible para el ejercicio
+
+Con ayuda de información cartográfica se ha caracterizado la cuenca en estudio. En el siguiente cuadro se presentan las principales características de la cuenca:
+
+| Característica               | Valor | Unidades | 
+|------------------------------|:------|----------|
+| Área                         | 2.12  | km²      | 
+| Perímetro                    | 4.22  | km       | 
+| Longitud del cauce principal | 1.80  | km       | 
+| Longitud axial de la cuenca  | 1.92  | km       | 
+| Tiempo de concentración      | 1.12  | horas    | 
+
+
+Utilizando los registros de dos estaciones pluviométricas cercanas a la cuenca en estudio, se creó una serie anual de precipitación diaria con una extensión de 41 años, desde el 01 de enero de 1980 hasta el 31 de diciembre de 2020. En el siguiente link se encuentra la lluvia total diaria de la cuenca: <a href="https://github.com/AndresOtalora92/MOHI/tree/master/Contenido/2.HEC-HMS/diapositivas/RegistroPrecipitacion.csv"><i>Registros de Precipitacion Diaria</i></a>
+
+Utilizando los registros de temperatura media diaria y a partir de ecuaciones empíricas, se determinó la evapotranspiración potencial mensual multianual de la cuenca. Los valores se presentan en la siguiente tabla.
+
+Para la estimación de la evapotranspiración real mensual multianual en la cuenca, utilice un factor de 0.75.
+
+Finalmente, a partir de información de campo y de planchas tomadas de diferentes fuentes de dominió público, se determinaron las principales características del suelo y de la cobertura vegetal de la cuenca. Las características se resumen en la siguiente tabla:
+ 
 ### Control de versiones
 
 | Versión    | Descripción   | Autor                                      | Horas |
