@@ -567,7 +567,6 @@ Finalmente, se debe ingresar los valores correspondientes al inicio de la modela
   <img src="Imagenes/FiguraHECHMS_78.PNG" width="900px"> 
 </div> 
 
-
 ## Elaboración de una secuencia de modelación ("run")
 
 Con el "Control" creado, el último procedimiento antes de ejecutar el modelo es crear un "run" o "secuencia de modelación". Para realizar esto, nos dirigimos a la barra de "herramientas y menús", en la categoría "Compute", seleccionar "Create Compute" y en seleccionar la subcategoría "Simulation Run", tal como se presenta en la siguiente figura:
@@ -583,6 +582,7 @@ Al realizar esto, se abrirá una nueva ventana que preguntará, a partir de 4 pa
 </div> 
 
 El último paso para ejecutar el modelo corresponde a "correr" el modelo (ejecutar la secuencia de modelación). Para realizar esto, nos dirigimos nuevamente a la barra de "herramientas y menús". En la barra principal, en el primer "scroll", seleccionar la secuencia de modelación "Run 1", tal como se observa en la siguiente figura:
+
 
 <div align="Center">
   <img src="Imagenes/FiguraHECHMS_81.PNG" width="900px"> 
