@@ -29,7 +29,15 @@ Una función espacial o de geoprocesamiento en un SIG es una operación o proces
 
 ### Edición y digitalización
 
-Crear, editar y modificar entidades geoespaciales, como puntos, líneas y polígonos, en una capa vectorial. Dentro de esta funcionalidad, se tienen varias herramientas de edición como las listadas a continuación:
+Crear, editar y modificar entidades geoespaciales, como puntos, líneas y polígonos, en una capa vectorial. 
+
+<div align="center"><br>
+<img alt="MOHI" src=".img/QGIS_Digitize.png" width="650px"><br>
+<img alt="MOHI" src=".img/QGIS_Digitize2.png" width="650px"><br>
+<sub>Edición y digitalización en QGIS.</sub>
+</div>
+
+Dentro de esta funcionalidad, se tienen varias herramientas de edición como las listadas a continuación:
 
 - Recortar: Permite recortar entidades vectoriales para ajustarlas a una ubicación o límite específico.
 - Unión: Combina dos o más capas vectoriales en función de un atributo común.
@@ -37,6 +45,7 @@ Crear, editar y modificar entidades geoespaciales, como puntos, líneas y políg
 - Intersección: Encuentra las áreas donde las entidades de dos capas vectoriales se cruzan o se superponen.
 - Disolución: Combina entidades que comparten un atributo común en una capa vectorial.
 - Fusionar Geometrías: Combina geometrías de entidades vecinas en una sola entidad en una capa vectorial.
+
 
 ### Análisis espacial
 
@@ -46,12 +55,7 @@ Crear, editar y modificar entidades geoespaciales, como puntos, líneas y políg
 
 
 
----
 
-### Actividad
-1. Realiza el mismo proceso de visualización desarrollado y presentado en el ejemplo del caso de estudio por tu propia cuenta.
-2. Con base en la información, determina cuál es el municipio más grande y más pequeño del país. 
-3. Con base en la información disponible encuentra cuál es el municipio con mayor precipitación anual. 
 ---
 
 ### Referencias
