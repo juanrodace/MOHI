@@ -6,10 +6,17 @@ Project: QmedioDiario
      Time Zone ID: America/Bogota
 End:
 
+Precipitation: LluviaDiaria
+     Filename: LluviaDiaria.met
+     Description: 
+     Last Modified Date: 10 October 2023
+     Last Modified Time: 14:09:21
+End:
+
 Basin: Cuenca1
      Filename: Cuenca1.basin
      Description: 
-     Last Modified Date: 9 October 2023
-     Last Modified Time: 21:07:30
+     Last Modified Date: 10 October 2023
+     Last Modified Time: 13:08:03
 End:
 

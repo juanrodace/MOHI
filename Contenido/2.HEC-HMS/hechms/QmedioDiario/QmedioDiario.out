@@ -2,3 +2,22 @@
 14:22:56.196                         Handle 4;  Process: 19404;  DSS Version:  7-IQ
 14:22:56.196                         Single-user advisory access mode
 14:22:56.196      -----DSS---zclose  Handle 4;  Process: 19404;  File: D:\0. MOHI\Contenido\2.HEC-HMS\hechms\QmedioDiario\QmedioDiario.dss
+09:02:59.673 
+09:02:59.673 
+09:02:59.674 -----DSS--- ztsStore  Warning: Invalid pathname
+09:02:59.674 pathname: 
+09:02:59.674 Invalid pathname
+09:02:59.674 In function ztsStore
+09:02:59.674 File D:\0. MOHI\Contenido\2.HEC-HMS\hechms\QmedioDiario\QmedioDiario.dss
+09:02:59.777 -----DSS--- ztsRetrieveReg  Warning: Invalid date or time given.
+09:02:59.778 
+09:02:59.778  
+09:02:59.778 //Lluvia1980_2020/PRECIP-INC//15MIN/GAGE/
+09:02:59.778 Pathname: //Lluvia1980_2020/PRECIP-INC//15MIN/GAGE/
+09:02:59.778 File D:\0. MOHI\Contenido\2.HEC-HMS\hechms\QmedioDiario\QmedioDiario.dss
+09:03:29.199 -----DSS--- ztsRetrieveReg  Warning: Invalid date or time given.
+09:03:29.199 
+09:03:29.199  
+09:03:29.199 //Lluvia1980_2020/PRECIP-INC//1DAY/GAGE/
+09:03:29.199 Pathname: //Lluvia1980_2020/PRECIP-INC//1DAY/GAGE/
+09:03:29.199 File D:\0. MOHI\Contenido\2.HEC-HMS\hechms\QmedioDiario\QmedioDiario.dss

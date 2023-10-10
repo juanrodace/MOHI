@@ -1,0 +1,26 @@
+Gage Manager: QmedioDiario
+     Version: 4.11
+     Filepath Separator: \
+End:
+
+Gage: Lluvia1980_2020
+     Last Modified Date: 10 October 2023
+     Last Modified Time: 14:09:21
+     Reference Height Units: Meters
+     Reference Height: 10.0
+     Gage Type: Precipitation
+     Precipitation Type: Incremental
+     Units: MM
+     Data Type: PER-CUM
+     Data Source Type: Manual Entry
+     Variant: Variant-1
+       Last Variant Modified Date: 10 October 2023
+       Last Variant Modified Time: 14:03:29
+       Default Variant: Yes
+       DSS File Name: QmedioDiario.dss
+       DSS Pathname: //Lluvia1980_2020/PRECIP-INC//1DAY/GAGE/
+       Start Time: 1 January 1980, 00:00
+       End Time: 31 December 2020, 00:00
+     End Variant: Variant-1
+End:
+

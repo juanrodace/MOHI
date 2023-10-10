@@ -368,13 +368,9 @@ El enunciado del ejercicio menciona un suelo tipo II e indica las condiciones de
 
 <br> </br>
 
-#### Tiempo de concentración y tiempo de retardo en la cuenca (Tlag).
-
 #### Modelo lluvia escorrentía y caudal base.
 
-
 ## Definición de los parámetros hidrológicos. Definición en HEC-HMS
-
 
 Una vez cargada toda la información geométrica, se dispone a carga la lluvia para un periodo de retorno definido. En esta caso, cada subcuenca tiene un evento de lluvia (aguacero) con diferente magnitud (intensidad) y diferente duración, pero con la misma frecuencia de ocurrencia (5 años). 
 

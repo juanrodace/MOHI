@@ -1,0 +1,28 @@
+Meteorology: LluviaDiaria
+     Last Modified Date: 10 October 2023
+     Last Modified Time: 13:33:19
+     Version: 4.11
+     Unit System: Metric
+     Set Missing Data to Default: No
+     Precipitation Method: Specified Average
+     Air Temperature Method: None
+     Atmospheric Pressure Method: None
+     Dew Point Method: None
+     Wind Speed Method: None
+     Shortwave Radiation Method: None
+     Longwave Radiation Method: None
+     Snowmelt Method: None
+     Evapotranspiration Method: No Evapotranspiration
+     Use Basin Model: Cuenca1
+End:
+
+Precip Method Parameters: Specified Average
+     Last Modified Date: 10 October 2023
+     Last Modified Time: 13:32:19
+     Allow Depth Override: No
+End:
+
+Subbasin: Subcuenca1
+     Last Modified Date: 10 October 2023
+     Last Modified Time: 13:33:50
+End:

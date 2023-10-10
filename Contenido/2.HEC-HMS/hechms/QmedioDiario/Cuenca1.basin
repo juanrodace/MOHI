@@ -15,8 +15,8 @@ Basin: Cuenca1
 End:
 
 Subbasin: Subcuenca1
-     Last Modified Date: 9 October 2023
-     Last Modified Time: 21:07:30
+     Last Modified Date: 10 October 2023
+     Last Modified Time: 13:08:03
      Canvas X: 817.3515981735159
      Canvas Y: 1324.2009132420092
      From Canvas X: 817.3515981735159
@@ -52,6 +52,9 @@ Subbasin: Subcuenca1
      Transform: No Transform
 
      Baseflow: Recession
+     Recession Factor: 1
+     Initial Baseflow: 0.5
+     Threshold Flow to Peak Ratio: 0.2
 End:
 
 Basin Layer Properties:
