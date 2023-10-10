@@ -1,0 +1,7 @@
+NOTE 15301:  Began computing simulation run "Run 1" at time 10oct.2023, 11:33:10.
+NOTE 20364:  Found no parameter problems in meteorologic model "LluviaDiaria".
+WARNING 45220:  No plant uptake method selected for subbasin "Subcuenca1".  There will be no transpiration for loss method: Soil Moisture Accounting.
+NOTE 40049:  Found no parameter problems in basin model "Cuenca1".
+WARNING 42012:  Storage coefficient for layer 1 in subbasin "Subcuenca1" is less than the simulation time interval.
+NOTE 15302:  Finished computing simulation run "Run 1" at time 10oct.2023, 11:33:13.
+NOTE 15312:  The total runtime for this simulation is 00:03.

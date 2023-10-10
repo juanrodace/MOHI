@@ -10,13 +10,18 @@ Precipitation: LluviaDiaria
      Filename: LluviaDiaria.met
      Description: 
      Last Modified Date: 10 October 2023
-     Last Modified Time: 14:09:21
+     Last Modified Time: 16:24:55
 End:
 
 Basin: Cuenca1
      Filename: Cuenca1.basin
      Description: 
      Last Modified Date: 10 October 2023
-     Last Modified Time: 13:08:03
+     Last Modified Time: 13:08
+End:
+
+Control: Control 1
+     FileName: Control_1.control
+     Description: 
 End:
 

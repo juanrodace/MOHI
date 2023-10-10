@@ -1,5 +1,4 @@
-NOTE 10019:  Finished opening project "QmedioDiario" in directory "D:\0. MOHI\Contenido\2.HEC-HMS\hechms\QmedioDiario" at time 09oct.2023, 14:22:56.
+NOTE 10019:  Finished opening project "QmedioDiario" in directory "D:\0. MOHI\Contenido\2.HEC-HMS\hechms\QmedioDiario" at time 10oct.2023, 10:13:47.
 WARNING 10351:  Could not connect precipitation gage "" to data in the time-series manager.
-NOTE 10604:  97 missing or invalid values for gage "Lluvia1980_2020".
-NOTE 10604:  2 missing or invalid values for gage "Lluvia1980_2020".
 WARNING 10351:  Could not connect precipitation gage "" to data in the time-series manager.
+WARNING 42012:  Storage coefficient for layer 1 in subbasin "Subcuenca1" is less than the simulation time interval.

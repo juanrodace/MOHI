@@ -120,7 +120,7 @@ Utilizando los registros de temperatura media diaria y a partir de ecuaciones em
 | Diciembre  | 157.0                                       | 
 
 
-Para la estimación de la evapotranspiración real mensual multianual en la cuenca, utilice un factor de 0.75 si la evapotranspiración mensual multianual es igual o menor que 157 mm/mes y 0.80 si es menor a 157 mm/mes.
+Para la estimación de la evapotranspiración real mensual multianual en la cuenca, utilice un factor de 0.75 si la evapotranspiración mensual multianual es igual o menor que 157 mm/mes y 0.80 si es mayor a 157 mm/mes.
 
 
 Finalmente, a partir de información de campo y de planchas tomadas de diferentes fuentes de dominió público, se determinaron las principales características del suelo y de la cobertura vegetal de la cuenca. Las características se resumen en la siguiente tabla:
@@ -392,43 +392,74 @@ El resultado debe verse similar al presentado en la siguiente figura:
 </div>
 
 
-Finalmente, se debe dar clic en la opción "Table", posteriormente se diligencia la lluvia. El resultado debe verse similar al presentado en la siguiente figura:
+Ahora, se debe dar clic en la opción "Table", posteriormente se diligencia la lluvia. El resultado debe verse similar al presentado en la siguiente figura:
 
 <div align="Center">
   <img src="Imagenes/FiguraHECHMS_115.PNG" width="700px"> 
 </div>
 
+Finalmente, con la lluvia creada, se debe indicar que, la lluvia creada corresponderá a la subcuenca 1, para realizar esto, en el modelo "metereología", al desplegar la lluvia y en la opción "Specified Hietograph", definir que la subcuenca 1 tiene la lluvia "lluvia1980_2020". Lo anterior se presenta explicado en la siguiente figura:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_116.PNG" width="700px"> 
+</div>
+
+## Definición de la evapotranspiración
+
+Para ingresar los datos de la evapotranspiración total para cada mes (a nivel multianual: Promedio Multianual) se debe activar la opción de evapotranspiración en la "meteorología" definida y creada en pasos anteriores.
+
+En la siguiente figura se presenta lo mencionado:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_117.PNG" width="600px"> 
+</div>
+
+Nota: Las metodologías para la estimación de la evapotranspiración mensual están fuera del alcance de este curso. 
+
+Al realizar esto, se creará un nuevo elemento, en el que, al ser desplegado, permite introducir la evapotranspiración total mensual multianual y el coeficiente de reducción de la evapotranspiración real. 
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_118.PNG" width="600px"> 
+</div>
+
+Con base en los datos definidos en el enunciado, se procede a diligenciar los datos, tal y como se presenta en la siguiente figura:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_119.PNG" width="600px"> 
+</div>
 
 ## Definición de los parámetros de la ejecución
 
-Con los parámetros morfométricos de cada subcuenca y las características de las corrientes (tramos de corriente), de la descarga (punto de control) y de la lluvia (incluyendo la "metereología"), ya es posible definir los parámetros para la ejecución del modelo.
+Con los parámetros morfométricos de la subcuenca, los parámetros del modelo de tanques sucesivos, la evapotranspiración mensual y de la lluvia (incluyendo la "metereología"), ya es posible definir los parámetros para la ejecución del modelo.
 
-Debido a que el método utiliza el hidrograma unitario adimensional del SCS, el software HEC-HMS requiere definir intervalos de modelación (dt) con el objetivo de aplicar este hidrograma a la lluvia efectiva. Para una adecuada estabilidad numérica del modelo computacional, se recomienda que el "dt" de la modelación sea inferior al intervalo del hietograma de la lluvia en cada subcuenca. 
+Debido a que el modelo de tanques integrado en el HECHMS, depende de las variables que cambian en el tiempo, es necesario definir un intervalo total de evaluación (inicio y final) y un intervalo de iteración "dt" para la ejecución del modelo. Este intervalo dependerá del intervalo de la lluvia. Para una adecuada estabilidad numérica del modelo computacional, se recomienda que el "dt" de la modelación sea inferior al intervalo del hietograma de la lluvia en la subcuenca. 
 
-Para este ejercicio, teniendo en cuenta que el intervalo de los hietogramas son de 15 min, se asumirá un intervalo de modelación (dt) de 1.0 min. 
+Para este ejercicio, teniendo en cuenta que el intervalo de la lluvia es diaria, se asumirá un intervalo de modelación (dt) de 1.0 día. 
+
+
 
 Para definir esta condición de modelación en el software, nos dirigimos a la barra de "herramientas y menús", en la categoría "Components", seleccionamos "Creat Component" y damos clic en la subcategoría "Control Specifcation", tal como se presenta en la siguiente figura:
 
 <div align="Center">
-  <img src="Imagenes/FiguraHECHMS_75.PNG" width="900px"> 
+  <img src="Imagenes/FiguraHECHMS_120.PNG" width="700px"> 
 </div>
 
 Al realizar esto, se abrirá una ventana que solicitará el nombre del "Control". Para este caso, se dejará el nombre por defecto y que corresponde a "Control 1", tal como se presenta en la siguiente figura:
 
 <div align="Center">
-  <img src="Imagenes/FiguraHECHMS_76.PNG" width="900px"> 
+  <img src="Imagenes/FiguraHECHMS_121.PNG" width="700px"> 
 </div>
 
 Al realizar esto se creará un nuevo objeto en la ventana de exploración de la cuenca, tal como se presenta en la siguiente figura:
 
 <div align="Center">
-  <img src="Imagenes/FiguraHECHMS_77.PNG" width="900px"> 
+  <img src="Imagenes/FiguraHECHMS_122.PNG" width="700px"> 
 </div> 
 
 Finalmente, se debe ingresar los valores correspondientes al inicio de la modelación (fecha y hora), el final de la modelación (fecha y hora) y el intervalo (dt) de la modelación, tal como se presenta en la siguiente figura:
 
 <div align="Center">
-  <img src="Imagenes/FiguraHECHMS_78.PNG" width="900px"> 
+  <img src="Imagenes/FiguraHECHMS_123.PNG" width="700px"> 
 </div> 
 
 ## Elaboración de una secuencia de modelación ("run")
@@ -436,35 +467,31 @@ Finalmente, se debe ingresar los valores correspondientes al inicio de la modela
 Con el "Control" creado, el último procedimiento antes de ejecutar el modelo es crear un "run" o "secuencia de modelación". Para realizar esto, nos dirigimos a la barra de "herramientas y menús", en la categoría "Compute", seleccionar "Create Compute" y en seleccionar la subcategoría "Simulation Run", tal como se presenta en la siguiente figura:
 
 <div align="Center">
-  <img src="Imagenes/FiguraHECHMS_79.PNG" width="900px"> 
+  <img src="Imagenes/FiguraHECHMS_124.PNG" width="700px"> 
 </div> 
 
 Al realizar esto, se abrirá una nueva ventana que preguntará, a partir de 4 pasos, las características del modelo. Las características se asocian a los objetos que se modelarán. Para este caso, el modelo solicitará: El nombre del "run", la cuenca principal, la agrupación de lluvias (metereología) y el control. Para nuestro ejercicio, las ventanas se verán así:
 
 <div align="Center">
-  <img src="Imagenes/FiguraHECHMS_80.PNG" width="900px"> 
+  <img src="Imagenes/FiguraHECHMS_125.PNG" width="700px"> 
 </div> 
 
 El último paso para ejecutar el modelo corresponde a "correr" el modelo (ejecutar la secuencia de modelación). Para realizar esto, nos dirigimos nuevamente a la barra de "herramientas y menús". En la barra principal, en el primer "scroll", seleccionar la secuencia de modelación "Run 1", tal como se observa en la siguiente figura:
 
 
 <div align="Center">
-  <img src="Imagenes/FiguraHECHMS_81.PNG" width="900px"> 
+  <img src="Imagenes/FiguraHECHMS_126.PNG" width="700px"> 
 </div> 
 
 Finalmente, en el ícono de "la gota que está sobre una explosión" ejecutamos el modelo, tal como se observa en la siguiente figura:
 
 <div align="Center">
-  <img src="Imagenes/FiguraHECHMS_82.PNG" width="900px"> 
+  <img src="Imagenes/FiguraHECHMS_127.PNG" width="700px"> 
 </div> 
 
 Para verificar que todo esté bien, se recomienda revisar la ventana de texto y leer los posibles comentarios o advertencias generadas por el modelo.
 
 ## Análisis de resultados
-
-
-
-
 
 
 ### Control de versiones

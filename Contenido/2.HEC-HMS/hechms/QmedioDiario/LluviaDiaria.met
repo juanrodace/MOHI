@@ -1,6 +1,6 @@
 Meteorology: LluviaDiaria
      Last Modified Date: 10 October 2023
-     Last Modified Time: 13:33:19
+     Last Modified Time: 15:20:10
      Version: 4.11
      Unit System: Metric
      Set Missing Data to Default: No
@@ -12,7 +12,7 @@ Meteorology: LluviaDiaria
      Shortwave Radiation Method: None
      Longwave Radiation Method: None
      Snowmelt Method: None
-     Evapotranspiration Method: No Evapotranspiration
+     Evapotranspiration Method: Monthly Evaporation
      Use Basin Model: Cuenca1
 End:
 
@@ -22,7 +22,40 @@ Precip Method Parameters: Specified Average
      Allow Depth Override: No
 End:
 
+Evapotranspiration Method Parameters: Monthly Evaporation
+     Last Modified Date: 10 October 2023
+     Last Modified Time: 15:20:10
+End:
+
 Subbasin: Subcuenca1
      Last Modified Date: 10 October 2023
-     Last Modified Time: 13:33:50
+     Last Modified Time: 16:15:54
+     Gage: Lluvia1980_2020
+
+     Begin Et: Monthly Evaporation
+     Pan Evaporation: 193
+     Pan Evaporation: 204
+     Pan Evaporation: 219
+     Pan Evaporation: 162
+     Pan Evaporation: 140
+     Pan Evaporation: 140
+     Pan Evaporation: 162
+     Pan Evaporation: 151
+     Pan Evaporation: 131
+     Pan Evaporation: 126
+     Pan Evaporation: 123
+     Pan Evaporation: 157
+     Evapotranspiration Coefficient: 0.8
+     Evapotranspiration Coefficient: 0.8
+     Evapotranspiration Coefficient: 0.8
+     Evapotranspiration Coefficient: 0.8
+     Evapotranspiration Coefficient: 0.75
+     Evapotranspiration Coefficient: 0.75
+     Evapotranspiration Coefficient: 0.8
+     Evapotranspiration Coefficient: 0.75
+     Evapotranspiration Coefficient: 0.75
+     Evapotranspiration Coefficient: 0.75
+     Evapotranspiration Coefficient: 0.75
+     Evapotranspiration Coefficient: 0.75
+     End Et:
 End:

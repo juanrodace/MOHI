@@ -1,0 +1,17 @@
+Run: Run 1
+     Default Description: Yes
+     Log File: Run_1.log
+     DSS File: Run_1.dss
+     Is Save Spatial Results: No
+     Last Modified Date: 10 October 2023
+     Last Modified Time: 16:28:29
+     Last Execution Date: 10 October 2023
+     Last Execution Time: 16:33:10
+     Basin: Cuenca1
+     Precip: LluviaDiaria
+     Control: Control 1
+     Time-Series Output: Save All
+     Time Series Results Manager Start:
+     Time Series Results Manager End:
+End:
+

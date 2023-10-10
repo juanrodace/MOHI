@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RunResults>
+  <RunName>Run 1</RunName>
+  <Description>Basin: Cuenca1 , Meteorology: LluviaDiaria , Control: Control 1</Description>
+  <ExecutionTime>10Oct2023, 16:33:10</ExecutionTime>
+  <StartTime>31Dec1979, 24:00</StartTime>
+  <EndTime>30Dec2020, 24:00</EndTime>
+  <BasinElement name="Subcuenca1" type="Subbasin">
+    <ExecutionTime>10Oct2023, 16:33:10</ExecutionTime>
+    <SubbasinArea area="2.12" units="KM2" />
+    <UnitSystem>SI</UnitSystem>
+    <IsComputationPoint>No</IsComputationPoint>
+    <DrainageArea area="2.12" units="KM2" />
+    <Hydrology>
+      <TimeSeries>
+        <TimeSeriesType type="Outflow" displayString="Outflow" />
+        <DssFileName>Run_1.dss</DssFileName>
+        <DssPathname>//Subcuenca1/FLOW//1DAY/RUN:Run 1/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Cumulative Outflow" displayString="Cumulative Outflow" />
+        <DssFileName>Run_1.dss</DssFileName>
+        <DssPathname>//Subcuenca1/FLOW-CUMULATIVE//1DAY/RUN:Run 1/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Incremental Precip" displayString="Precipitation" />
+        <DssFileName>LluviaDiaria.dss</DssFileName>
+        <DssPathname>//Subcuenca1/PRECIP-INC//1DAY/MET:LluviaDiaria/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Cumulative Precip" displayString="Cumulative Precipitation" />
+        <DssFileName>LluviaDiaria.dss</DssFileName>
+        <DssPathname>//Subcuenca1/PRECIP-CUM//1DAY/MET:LluviaDiaria/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Reference ET" displayString="Reference Evapotranspiration" />
+        <DssFileName>LluviaDiaria.dss</DssFileName>
+        <DssPathname>//Subcuenca1/ET-REFERENCE//1DAY/MET:LluviaDiaria/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Canopy Excess" displayString="Canopy Overflow" />
+        <DssFileName>Run_1.dss</DssFileName>
+        <DssPathname>//Subcuenca1/EXCESS-CANOPY//1DAY/RUN:Run 1/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Potential ET" displayString="Potential Evapotranspiration" />
+        <DssFileName>Run_1.dss</DssFileName>
+        <DssPathname>//Subcuenca1/ET-POTENTIAL//1DAY/RUN:Run 1/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Canopy ET" displayString="Canopy Evapotranspiration" />
+        <DssFileName>Run_1.dss</DssFileName>
+        <DssPathname>//Subcuenca1/ET-CANOPY//1DAY/RUN:Run 1/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Canopy Storage" displayString="Canopy Storage" />
+        <DssFileName>Run_1.dss</DssFileName>
+        <DssPathname>//Subcuenca1/STORAGE-CANOPY//1DAY/RUN:Run 1/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Infiltration" displayString="Soil Infiltration" />
+        <DssFileName>Run_1.dss</DssFileName>
+        <DssPathname>//Subcuenca1/INFILTRATION//1DAY/RUN:Run 1/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Soil Storage" displayString="Soil Storage" />
+        <DssFileName>Run_1.dss</DssFileName>
+        <DssPathname>//Subcuenca1/STORAGE-SOIL//1DAY/RUN:Run 1/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Soil Percolation" displayString="Soil Percolation" />
+        <DssFileName>Run_1.dss</DssFileName>
+        <DssPathname>//Subcuenca1/PERC-SOIL//1DAY/RUN:Run 1/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Soil Saturation Fraction" displayString="Saturation Fraction" />
+        <DssFileName>Run_1.dss</DssFileName>
+        <DssPathname>//Subcuenca1/SATURATION FRACTION//1DAY/RUN:Run 1/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="GW1 Storage" displayString="Groundwater 1 Storage" />
+        <DssFileName>Run_1.dss</DssFileName>
+        <DssPathname>//Subcuenca1/STORAGE-GW-1//1DAY/RUN:Run 1/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="GW1 Release" displayString="Groundwater 1 Lateral Flow" />
+        <DssFileName>Run_1.dss</DssFileName>
+        <DssPathname>//Subcuenca1/OUTFLOW-GW-1//1DAY/RUN:Run 1/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="GW1 Percolation" displayString="Groundwater 1 Percolation" />
+        <DssFileName>Run_1.dss</DssFileName>
+        <DssPathname>//Subcuenca1/PERC-GW-1//1DAY/RUN:Run 1/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Precip Excess" displayString="Excess Precipitation" />
+        <DssFileName>Run_1.dss</DssFileName>
+        <DssPathname>//Subcuenca1/PRECIP-EXCESS//1DAY/RUN:Run 1/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Cumulative Excess" displayString="Cumulative Excess Precipitation" />
+        <DssFileName>Run_1.dss</DssFileName>
+        <DssPathname>//Subcuenca1/PRECIP-EXCESS-CUM//1DAY/RUN:Run 1/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Precip Loss" displayString="Precipitation Loss" />
+        <DssFileName>Run_1.dss</DssFileName>
+        <DssPathname>//Subcuenca1/PRECIP-LOSS//1DAY/RUN:Run 1/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Cumulative Loss" displayString="Cumulative Precipitation Loss" />
+        <DssFileName>Run_1.dss</DssFileName>
+        <DssPathname>//Subcuenca1/PRECIP-LOSS-CUM//1DAY/RUN:Run 1/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Direct Runoff" displayString="Direct Runoff" />
+        <DssFileName>Run_1.dss</DssFileName>
+        <DssPathname>//Subcuenca1/FLOW-DIRECT//1DAY/RUN:Run 1/</DssPathname>
+      </TimeSeries>
+      <TimeSeries>
+        <TimeSeriesType type="Baseflow" displayString="Baseflow" />
+        <DssFileName>Run_1.dss</DssFileName>
+        <DssPathname>//Subcuenca1/FLOW-BASE//1DAY/RUN:Run 1/</DssPathname>
+      </TimeSeries>
+    </Hydrology>
+    <Sediment />
+    <WaterQuality />
+    <Statistics>
+      <StatisticMeasure type="Inflow Minimum" displayString="Minimum Inflow" value="0.0000000" units="M3/S" />
+      <StatisticMeasure type="Inflow Minimum Time" displayString="Time of Minimum Inflow" value="31Dec1979, 24:00" />
+      <StatisticMeasure type="Inflow Maximum" displayString="Maximum Inflow" value="0.0000000" units="M3/S" />
+      <StatisticMeasure type="Inflow Maximum Time" displayString="Time of Maximum Inflow" value="31Dec1979, 24:00" />
+      <StatisticMeasure type="Inflow Volume" displayString="Inflow Volume" value="0.0000000" units="M3" />
+      <StatisticMeasure type="Inflow Depth" displayString="Inflow Depth" value="0.0000000" units="MM" />
+      <StatisticMeasure type="Inflow Average" displayString="Inflow Average" value="0.0000000" units="M3/S" />
+      <StatisticMeasure type="Outflow Minimum" displayString="Minimum Outflow" value="0.5000000" units="M3/S" />
+      <StatisticMeasure type="Outflow Minimum Time" displayString="Time of Minimum Outflow" value="31Dec1979, 24:00" />
+      <StatisticMeasure type="Outflow Maximum" displayString="Maximum Outflow" value="3.9018255" units="M3/S" />
+      <StatisticMeasure type="Outflow Maximum Time" displayString="Time of Maximum Outflow" value="30Aug1988, 24:00" />
+      <StatisticMeasure type="Outflow Volume" displayString="Outflow Volume" value="812570252.2369980" units="M3" />
+      <StatisticMeasure type="Outflow Depth" displayString="Outflow Depth" value="383287.8548288" units="MM" />
+      <StatisticMeasure type="Outflow Average" displayString="Outflow Average" value="0.6280270" units="M3/S" />
+      <StatisticMeasure type="Direct Flow Minimum" displayString="Minimum Direct Flow" value="0.0000000" units="M3/S" />
+      <StatisticMeasure type="Direct Flow Minimum Time" displayString="Time of Minimum Direct Flow" value="31Dec1979, 24:00" />
+      <StatisticMeasure type="Direct Flow Maximum" displayString="Maximum Direct Flow" value="3.4007030" units="M3/S" />
+      <StatisticMeasure type="Direct Flow Maximum Time" displayString="Time of Maximum Direct Flow" value="30Aug1988, 24:00" />
+      <StatisticMeasure type="Direct Flow Volume" displayString="Direct Flow Volume" value="37278698.3970488" units="M3" />
+      <StatisticMeasure type="Direct Flow Depth" displayString="Direct Flow Depth" value="17584.2916967" units="MM" />
+      <StatisticMeasure type="Direct Flow Average" displayString="Direct Flow Average" value="0.0288105" units="M3/S" />
+      <StatisticMeasure type="Baseflow Minimum" displayString="Minimum Baseflow" value="0.5000000" units="M3/S" />
+      <StatisticMeasure type="Baseflow Minimum Time" displayString="Time of Minimum Baseflow" value="31Dec1979, 24:00" />
+      <StatisticMeasure type="Baseflow Maximum" displayString="Maximum Baseflow" value="0.6687865" units="M3/S" />
+      <StatisticMeasure type="Baseflow Maximum Time" displayString="Time of Maximum Baseflow" value="31Oct2001, 24:00" />
+      <StatisticMeasure type="Baseflow Volume" displayString="Baseflow Volume" value="775291553.8399104" units="M3" />
+      <StatisticMeasure type="Baseflow Depth" displayString="Baseflow Depth" value="365703.5631320" units="MM" />
+      <StatisticMeasure type="Baseflow Average" displayString="Baseflow Average" value="0.5992165" units="M3/S" />
+      <StatisticMeasure type="Precipitation Maximum" displayString="Maximum Precipitation" value="146.6999969" units="MM" />
+      <StatisticMeasure type="Precipitation Maximum Time" displayString="Time of Maximum Precipitation" value="29Aug1988, 24:00" />
+      <StatisticMeasure type="Precipitation Total" displayString="Precipitation Total" value="62209.6800126" units="MM" />
+      <StatisticMeasure type="Precipitation Volume" displayString="Precipitation Volume" value="131884521.6266538" units="M3" />
+      <StatisticMeasure type="Loss Maximum" displayString="Maximum Loss" value="36.8529361" units="MM" />
+      <StatisticMeasure type="Loss Maximum Time" displayString="Time of Maximum Loss" value="30Mar1987, 24:00" />
+      <StatisticMeasure type="Loss Total" displayString="Loss Total" value="44625.3883159" units="MM" />
+      <StatisticMeasure type="Loss Volume" displayString="Loss Volume" value="94605823.2296049" units="M3" />
+      <StatisticMeasure type="Excess Maximum" displayString="Maximum Excess" value="138.5946900" units="MM" />
+      <StatisticMeasure type="Excess Maximum Time" displayString="Time of Maximum Excess" value="29Aug1988, 24:00" />
+      <StatisticMeasure type="Excess Total" displayString="Excess Total" value="17584.2916967" units="MM" />
+      <StatisticMeasure type="Excess Volume" displayString="Excess Volume" value="37278698.3970488" units="M3" />
+    </Statistics>
+  </BasinElement>
+</RunResults>
+
