@@ -493,13 +493,38 @@ Para verificar que todo esté bien, se recomienda revisar la ventana de texto y 
 
 ## Análisis de resultados
 
+Para analizar los resultados, HEC-HMS tiene distintas herramientas, las cuales muestran los resultados como valores puntuales, tablas resumen, tablas detalladas y gráficos. Estas herramientas se encuentran en la barra de "herramientas y menús".
+
+Es posible consultar los resultados de cada elemento creado en la cuenca (subcuencas, tramos de corrientes, puntos de descarga, etc.). Al seleccionar un elemento en la ventana de "visualización del mapa" y posteriormente hacer clic en algunas de las herramientas de presentación de resultados, se abrirá una nueva ventana con el resumen de la información más relevante del objeto seleccionado.
+
+A manera de ejemplo, a continuación se presentan los resultados obtenidos en la subcuenca del modelo (subcuenca 1): 
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_128.PNG" width="700px"> 
+</div> 
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_129.PNG" width="700px"> 
+</div> 
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_130.PNG" width="700px"> 
+</div> 
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_131.PNG" width="700px"> 
+</div> 
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_132.PNG" width="700px"> 
+</div> 
 
 ### Control de versiones
 
 | Versión    | Descripción   | Autor                                      | Horas |
 |------------|:--------------|--------------------------------------------|:-----:|
 | 2023.09.10 | Versión No. 1 | [AndresOtalora92](https://github.com/AndresOtalora92)  |   8   |
-| 2023.10.10  | Versión No. 1 | [AndresOtalora92](https://github.com/AndresOtalora92)  |   8   |
+| 2023.10.10  | Versión No. 1 | [AndresOtalora92](https://github.com/AndresOtalora92)  |   4   |
 
 _MOHI es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](../../License.md)._
 
