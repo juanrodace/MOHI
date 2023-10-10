@@ -1,0 +1,91 @@
+Basin: Cuenca1
+     Last Modified Date: 9 October 2023
+     Last Modified Time: 19:37:46
+     Version: 4.11
+     Filepath Separator: \
+     Unit System: Metric
+     Missing Flow To Zero: No
+     Enable Flow Ratio: No
+     Compute Local Flow At Junctions: No
+     Unregulated Output Required: No
+
+     Enable Sediment Routing: No
+
+     Enable Quality Routing: No
+End:
+
+Subbasin: Subcuenca1
+     Last Modified Date: 9 October 2023
+     Last Modified Time: 21:07:30
+     Canvas X: 817.3515981735159
+     Canvas Y: 1324.2009132420092
+     From Canvas X: 817.3515981735159
+     From Canvas Y: 1324.2009132420092
+     Area: 2.12
+
+     Discretization: None
+     File: 
+
+     Canopy: Simple
+     Allow Simultaneous Precip Et: Yes
+     Plant Uptake Method: None
+     Initial Canopy Storage Percent: 50
+     Canopy Storage Capacity: 10
+     Crop Coefficient: 0.50
+     End Canopy:
+
+     Surface: None
+
+     LossRate: Soil Moisture Account
+     Percent Impervious Area: 10
+     Initial Soil Storage Percent: 50
+     Initial Gw1 Storage Percent: 10
+     Initial Gw2 Storage Percent: 5
+     Soil Maximum Infiltration: 2
+     Soil Storage Capacity: 50
+     Soil Tension Capacity: 5
+     Soil Maximum Percolation: 0.35
+     Groundwater 1 Storage Capacity: 10
+     Groundwater 1 Routing Coefficient: 2
+     Groundwater 1 Maximum Percolation: 3.5
+
+     Transform: No Transform
+
+     Baseflow: Recession
+End:
+
+Basin Layer Properties:
+     Element Layer:
+          Name: Icons
+          Layer shown: Yes
+     End Layer:
+End:
+
+Basin Spatial Properties:
+End:
+
+Basin Schematic Properties:
+     Last View N: NaN
+     Last View S: NaN
+     Last View W: NaN
+     Last View E: NaN
+     Maximum View N: NaN
+     Maximum View S: NaN
+     Maximum View W: NaN
+     Maximum View E: NaN
+     Extent Method: Manual
+     Buffer: 0
+     Draw Icons: Yes
+     Draw Icon Labels: Name
+     Draw Map Objects: No
+     Draw Gridlines: No
+     Draw Flow Direction: No
+     Draw HillShade Layer: Yes
+     Draw Elevation Layer: Yes
+     Elevation Layer Color Palette: Gray Scale
+     Ignore Elevation Color Ramp Scale: No
+     Use Interpolated Color Ramp for Elevation Layer: Yes
+     Color Ramp Opacity Level for Elevation Layer: 33.0
+     Fix Element Locations: No
+     Fix Hydrologic Order: No
+End:

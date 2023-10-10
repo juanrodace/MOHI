@@ -1,0 +1,15 @@
+Project: QmedioDiario
+     Description: 
+     Version: 4.11
+     Filepath Separator: \
+     DSS File Name: QmedioDiario.dss
+     Time Zone ID: America/Bogota
+End:
+
+Basin: Cuenca1
+     Filename: Cuenca1.basin
+     Description: 
+     Last Modified Date: 9 October 2023
+     Last Modified Time: 21:07:30
+End:
+

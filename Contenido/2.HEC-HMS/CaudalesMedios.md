@@ -110,14 +110,14 @@ Utilizando los registros de temperatura media diaria y a partir de ecuaciones em
 | Febrero    | 204.0                                       |
 | Marzo      | 219.0                                       | 
 | Abril      | 162.0                                       | 
-| Mayo       | 140                                         | 
-| Junio      | 140                                         | 
-| Julio      | 162                                         | 
-| Agosto     | 151                                         | 
-| Septiembre | 131                                         | 
-| Octubre    | 126                                         | 
-| Noviembre  | 123                                         | 
-| Diciembre  | 157                                         | 
+| Mayo       | 140.0                                       | 
+| Junio      | 140.0                                       | 
+| Julio      | 162.0                                       | 
+| Agosto     | 151.0                                       | 
+| Septiembre | 131.0                                       | 
+| Octubre    | 126.0                                       | 
+| Noviembre  | 123.0                                       | 
+| Diciembre  | 157.0                                       | 
 
 
 Para la estimación de la evapotranspiración real mensual multianual en la cuenca, utilice un factor de 0.75 si la evapotranspiración mensual multianual es igual o menor que 157 mm/mes y 0.80 si es menor a 157 mm/mes.
@@ -142,7 +142,141 @@ Finalmente, a partir de información de campo y de planchas tomadas de diferente
 | Tasa máxima de percolación<br/>acuífero superficial*     | 3.5   | mm/hr |
 | Tasa de retardo desde el acuífero a flujo subsuperficial | 2.0   | hr |
 
-*Se asumirá que no existe acuífero profundo
+*Se asumirá que no existe acuífero profundo.
+
+
+## Creación de un nuevo documento en HEC-HMS
+
+Para iniciar con el modelo, se recomienda crear una carpeta sin caracteres especiales, tales como:"%,&,*;$,#,´,+,-,/,?,¡" entre otros. Adicionalmente, la ruta de la carpeta debe ser lo más corta posible. 
+
+En la siguiente figura se presenta un ejemplo de lo mencionado. Se ha creado una carpeta con el nombre "hechms" en la carpeta documentos.
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_90.PNG" width="700px"> 
+</div>
+
+Una vez creada la carpeta en la ruta, se creará un documento en blanco. 
+Para realizar esto, en la barra de "herramientas y menús", buscar el botón "nuevo". Al dar clic en este botón se abrirá una nueva ventana, la cual solicitará el nombre del proyecto, el cual corresponderá al nombre de la cuenca, la ubicación del archivo y el sistema de unidades.  En la siguiente figura se presenta lo mencionado.
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_91.PNG" width="700px"> 
+</div>
+
+Para este ejemplo, llamaremos "QmedioDiario" el archivo principal de HEC - HMS. La ruta donde se guardará el archivo corresponderá a la carpeta que se acaba de crear y el sistema de unidades corresponderá al sistema métrico o sistema internacional.
+
+Al realizar esto, se creará una carpeta con el mismo nombre del archivo en la barra de "exploración de cuenca". En la barra de estado (parte superior del software) se verá la ruta de guardado del archivo principal.
+
+En la siguiente figura se presenta lo mencionado.
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_92.PNG" width="700px"> 
+</div>
+
+Al abrir la carpeta donde se guardó el archivo, el usuario podrá notar que se crearon subcarpetas y otros archivos aparentemente en blanco y con distintas extensiones. Estas subcarpetas y archivos corresponden a todos los archivos que HEC-HMS requiere para funcionar adecuadamente.
+
+En la siguiente figura se presenta lo mencionado.
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_93.PNG" width="700px"> 
+</div>
+
+
+## Características morfométricas y modelo lluvias escorrentía. Definición en HEC-HMS
+
+Una vez creado el archivo principal, se deben crear la cuenca prinicipal y la subcuenca que define el sistema hidrológico. Para realizar esto, inicialmente se creará el espacio de trabajo que corresponderá a la cuenca principal. En la barra de herramientas y menús, damos clic en "Components" y en la subcategoría "Basic Model Manager"
+
+En la siguiente figura se presenta lo mencionado:
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_33.PNG" width="700px"> 
+</div>
+
+Se abrirá una ventana en la cual seleccionaremos la opción "New". Se abrirá una pequeña ventana la cual solicitará el nombre de la cuenca. Para este caso, el nombre elegido es "Cuenca1"
+
+En la siguiente figura se presenta lo mencionado:
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_34.PNG" width="700px"> 
+</div>
+
+Al realizar esto, en la barra de exploración de la cuenca, se creará un ícono que representa la cuenca principal. Adicionalmente, la zona o "ventana de mapa" cambiará de color gris a color blanco.
+
+En la siguiente figura se presenta lo mencionado:
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_35.PNG" width="700px"> 
+</div>
+
+Ahora, con la cuenca creada, se deberán definir la subcuenca. Para realizar esto, en la barra de herramientas y menús, se debe selecionar la ópción "Subbasin Creation Tool", tal como se presentan en la siguiente figura:
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_36.PNG" width="700px"> 
+</div>
+
+Al dar clic en el botón "Subbasin Creation Tool" se debe picar sobre la ventana de mapa en el lugar deseado. Una vez se pique sobre la ventana del mapa, se abrirá una ventana que solicita el nombre de la subcuenca. Para este caso se definirán el mismo nombre indicado en el ejercicio: "Subcuenca1".
+
+## Modelo lluvia - escorrentía. Modelo de pérdidas y modelo de balance.
+
+Inicialmente, se diligenciará el campo del área hidráulica. Para realizar esto, se da clic sobre la subuenca creada y en la opción "Área(km²)" se define escribe el área de la subcuenca, tal como se presenta en la siguiente imagen.
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_94.PNG" width="700px"> 
+</div>
+
+Ahora se definirán los métodos de la determinación de la retención en la cobertura vegetal (canopy), el método de pérdidas (modelo de transformación lluvia escorrentía de tanques sucesivos: "Soil Moisture Accounting") y el método para la estimación del caudal base (BaseFlow Method).
+
+Para realizar esto, en la misma ventana donde se ingresan los datos de área, en la parte inferior, se encuentran los elementos mencionados. Se seleccionan las opciones indicadas en el párrafo anterior, tal como se presenta en la siguiente imágen:
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_95.PNG" width="700px"> 
+</div>
+
+A continuación se definirán las variables que permiten la estimación de la retención de agua en las hojas de la cobertura vegetal en la cuenca. Para realizar esto, en la segunda opción "Canopy" se deben diligenciar los valores solicitados y que corresponden al "Almacenamiento inicial" (almacenamiento inicial de la retención en las hojas) "máximo almacenamiento" (en las hojas) y el coeficiente de cultivo o "Crop Coefficient", que describe la capacidad de evapotranspirar de la planta. Este último parámetro depende del tipo de cultivo presente en la cuenca y de la etapa de desarrollo. 
+
+En las siguientes tablas se encuentra un consolidado de los coeficientes de cultivo (Kp) más usado disponibles en la literatura y que pueden servir de guía al lector para futuros trabajos o investigaciones:
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_96.PNG" width="600px"> 
+</div>
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_97.PNG" width="600px"> 
+</div>
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_98.PNG" width="600px"> 
+</div>
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_99.PNG" width="600px"> 
+</div>
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_100.PNG" width="600px"> 
+</div>
+
+
+En la siguiente imágen se presenta el resultado final de los datos ingresados:
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_101.PNG" width="700px"> 
+</div>
+
+Notas:
+
+1. Para la estimación de la evapotranspiración del agua almacenada en los árboles, se ha definido que esta sea calculada tanto en épocas húmedas como en épocas secas.
+
+2. El coeficiente de cultivo (Kp o "Drop Coefficient") se ha definido con un valor de Kp: 0.5, que corresponde a pastos bajos o maleza. 
+
+Posteriormente, se deben definir las variables que definen las pérdidas de masa y la retención en los diferentes niveles (tanques) que definen el modelo de tanques sucesivos implementado en el HECHMS. Estos parámetros definirán la escorrentía superficial diaria. 
+
+En la siguiente imágen se presenta el resultado final de los datos ingresados:
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_102.PNG" width="700px"> 
+</div>
+
+Nota: El cuadro verde resalta las variables que deben ingresarse al acuífero profundo. Si se deja en blanco las celdas, como en este caso, se está asumiendo que no existe acuífero profundo y la última etapa del balance finaliza en el acuífero superficial. 
 
 ### Control de versiones
 
