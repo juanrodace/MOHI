@@ -283,7 +283,7 @@ Finalmente, se definen las variables del modelo para la estimación de los cauda
 El modelo se puede escribir como:
 
 <div align="center">
-  <img src="Imagenes/FiguraHECHMS_103.PNG" width="150px"> 
+  <img src="Imagenes/FiguraHECHMS_103.png" width="150px"> 
 </div>
 
 Donde,
@@ -435,8 +435,6 @@ Con los parámetros morfométricos de la subcuenca, los parámetros del modelo d
 Debido a que el modelo de tanques integrado en el HECHMS, depende de las variables que cambian en el tiempo, es necesario definir un intervalo total de evaluación (inicio y final) y un intervalo de iteración "dt" para la ejecución del modelo. Este intervalo dependerá del intervalo de la lluvia. Para una adecuada estabilidad numérica del modelo computacional, se recomienda que el "dt" de la modelación sea inferior al intervalo del hietograma de la lluvia en la subcuenca. 
 
 Para este ejercicio, teniendo en cuenta que el intervalo de la lluvia es diaria, se asumirá un intervalo de modelación (dt) de 1.0 día. 
-
-
 
 Para definir esta condición de modelación en el software, nos dirigimos a la barra de "herramientas y menús", en la categoría "Components", seleccionamos "Creat Component" y damos clic en la subcategoría "Control Specifcation", tal como se presenta en la siguiente figura:
 
