@@ -22,7 +22,7 @@ Profesor del Centro de Estudios Hidráulicos
 andres.otalora@escuelaing.edu.co
 <br></div>
 
-Keywords: `HEC-HMS` `Hidrograma` `Caudal Máximo` `Escorrentía` `Hidrograma Unitario`
+Keywords: `HEC-HMS` `Balance Hidrológico` `Caudales Medios` `Escorrentía` `Tanques Sucesivos`
 
 ## Introducción
 
@@ -120,7 +120,7 @@ Utilizando los registros de temperatura media diaria y a partir de ecuaciones em
 | Diciembre  | 157.0                                       | 
 
 
-Para la estimación de la evapotranspiración real mensual multianual en la cuenca, utilice un factor de 0.75 si la evapotranspiración mensual multianual es igual o menor que 157 mm/mes y 0.80 si es menor a 157 mm/mes.
+Para la estimación de la evapotranspiración real mensual multianual en la cuenca, utilice un factor de 0.75 si la evapotranspiración mensual multianual es igual o menor que 157 mm/mes y 0.80 si es mayor a 157 mm/mes.
 
 
 Finalmente, a partir de información de campo y de planchas tomadas de diferentes fuentes de dominió público, se determinaron las principales características del suelo y de la cobertura vegetal de la cuenca. Las características se resumen en la siguiente tabla:
@@ -278,11 +278,251 @@ En la siguiente imágen se presenta el resultado final de los datos ingresados:
 
 Nota: El cuadro verde resalta las variables que deben ingresarse al acuífero profundo. Si se deja en blanco las celdas, como en este caso, se está asumiendo que no existe acuífero profundo y la última etapa del balance finaliza en el acuífero superficial. 
 
+Finalmente, se definen las variables del modelo para la estimación de los caudales base o flujo base. Para este caso, al inicio del ejercicio se definió como metodología de cálculo del caudal base el método de "Recession". Este método corresponde a una función potencial, que inicia en un caudal Qo para un tiempo t:0 y finaliza en un límite Qf. Dicho límite puede definirse como una relación porcentual entre el Caudal Pico del hidrograma de escorrentía superficial y el caudal base.
+
+El modelo se puede escribir como:
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_103.png" width="150px"> 
+</div>
+
+Donde,
+
+Qb, Caudal base (m³/s).
+Qo, Caudal inicial del flujo base (m³/s).
+K, Constante de recesión.
+t, tiempo (hr)
+
+Notas: 
+
+1. Para este problema se escoge un límite del caudal base en 20% (relación entre el caudal base y el caudal pico del hidrograma de escorrentía: "Ratio", en el software HECHMS).
+
+2. Para el presente ejercicio se definirá un caudal inicial Qo de 0.50 m³/s y un valor de K de 0.50. 
+En la siguiente imágen se presenta el resultado final de los datos ingresados:
+
+<div align="center">
+  <img src="Imagenes/FiguraHECHMS_104.PNG" width="700px"> 
+</div>
+
+
+## Definición de los parámetros hidrológicos. Definición en HEC-HMS
+
+Una vez cargada toda la información morfométrica y los parámetros del modelo de tanque sucesivos, se dispone a carga la lluvia diaria difinida en el enunciado. 
+
+Como ya se mencionó, HEC-HMS agrupa las lluvias en paquetes que denomina "Metereología". Para la definición de los hietogramas que corresponderán a la lluvia diaria , inicialmente se debe crear el elemento "Metereorologia", posteriormente carga la lluvia y finalmente asociar cada lluvia a la respectiva subcuenca. 
+
+### Modelo de metereología 
+
+En la barra de herramientas y menús, seleccionar la opción "Components", seleccionar la categoría "Meteorologic Model Manager", tal como se presenta en la siguiente figura:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_105.PNG" width="700px"> 
+</div>
+
+
+Al realizar esto, se desplegará una ventana. En esta ventana se debe seleccionar la opción "New". Se abrirá una nueva ventana, en la cual se solicitará el nombre, escriba para este ejemplo "LluviaDiaria", tal como se presenta en la siguiente figura:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_106.PNG" width="700px"> 
+</div>
+
+Una vez se acepte el nombre, se creará en la ventana de exploración de la cuenca una carpeta denominada "Meteorologic Model" que al ser desplegada, se abrirá el archivo creado "LluviaDiaria", tal como se presenta en la siguiente figura:
+
+Ahora se debe definir como se ingresarán los valores de la lluvia, que para este caso corresponderá a un hietograma. Para realizar esto, en la ventana de exploración de la cuenca, se debe seleccionar el modelo de lluvia creado (LluviaDiaria) y en la parte inferior, en la ventana de componentes, seleccionar la categoría "Meteorologic Model" y en la opción "Precipitation", seleccionar la opción "Specified Hyetograph", tal como se presenta en la siguiente figura:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_107.PNG" width="700px"> 
+</div>
+
+En la opción "Basin" definir "yes". Este procedimiento permite que el programa utilice las lluvias (hietogramas) que se crearán para cada subcuenca. Lo mencionado se presenta en la siguiente figura.
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_108.PNG" width="700px"> 
+</div>
+
+
+## Creación y definición de la lluvia en la subcuenca
+
+Con el modelo de metereología creado y definido para la cuenca principal, es siguiente paso corresponde a crear la lluvia específica para la subcuenca a partir de un hietograma. 
+
+Con esta información ya es posible crear los aguaceros o hietogramas de lluvias diarias HEC-HMS.
+
+Para realizar estos, nos dirigimos a la barra de herramientas y menús, damos clic en "Components" y en la opción "Time series data manager", tal como se presenta en la siguiente figura:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_109.PNG" width="700px"> 
+</div>
+
+Paso seguido, se debe seleccionar la opción "Precipitation Gage" tal como se presenta en la siguiente figura:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_110.PNG" width="700px"> 
+</div>
+
+
+Damos clic en "New" y definimos un nombre del aguacero. Para el aguacero que corresponde a la primera subcuenca se escogerá el nombre "Lluvia1980_2020" tal como se presenta en la figura:
+
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_111.PNG" width="700px"> 
+</div>
+
+
+Al realizar este procedimiento, en la ventana de exploración de la cuenca, se creará una carpeta denominada "Time-Series data", que al ser desplegada se abrirá el archivo de lluvia creado. 
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_112.PNG" width="700px"> 
+</div>
+
+Ahora diligenciaremos este nuevo elemento con la lluvia mencionada presentada en el enunciado. Damos clic en la lluvía, seleccionamos la opción "Time Series Gage" buscamos la opción "Units" y seleccionamos "Incremental Milimeters" y en la opción "Time interval" seleccionamos "1 day".
+
+El resultado debe verse similar al presentado en la siguiente figura.
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_113.PNG" width="700px"> 
+</div>
+
+
+Como siguiente paso, seleccionamos en la opción "Time Window" y definimos el tiempo de inicio y el tiempo final de nuestro hietograma (se debe tener presente que el aguacero tarda 41 años).
+
+El resultado debe verse similar al presentado en la siguiente figura:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_114.PNG" width="700px"> 
+</div>
+
+
+Ahora, se debe dar clic en la opción "Table", posteriormente se diligencia la lluvia. El resultado debe verse similar al presentado en la siguiente figura:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_115.PNG" width="700px"> 
+</div>
+
+Finalmente, con la lluvia creada, se debe indicar que, la lluvia creada corresponderá a la subcuenca 1, para realizar esto, en el modelo "metereología", al desplegar la lluvia y en la opción "Specified Hietograph", definir que la subcuenca 1 tiene la lluvia "lluvia1980_2020". Lo anterior se presenta explicado en la siguiente figura:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_116.PNG" width="700px"> 
+</div>
+
+## Definición de la evapotranspiración
+
+Para ingresar los datos de la evapotranspiración total para cada mes (a nivel multianual: Promedio Multianual) se debe activar la opción de evapotranspiración en la "meteorología" definida y creada en pasos anteriores.
+
+En la siguiente figura se presenta lo mencionado:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_117.PNG" width="600px"> 
+</div>
+
+Nota: Las metodologías para la estimación de la evapotranspiración mensual están fuera del alcance de este curso. 
+
+Al realizar esto, se creará un nuevo elemento, en el que, al ser desplegado, permite introducir la evapotranspiración total mensual multianual y el coeficiente de reducción de la evapotranspiración real. 
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_118.PNG" width="600px"> 
+</div>
+
+Con base en los datos definidos en el enunciado, se procede a diligenciar los datos, tal y como se presenta en la siguiente figura:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_119.PNG" width="600px"> 
+</div>
+
+## Definición de los parámetros de la ejecución
+
+Con los parámetros morfométricos de la subcuenca, los parámetros del modelo de tanques sucesivos, la evapotranspiración mensual y de la lluvia (incluyendo la "metereología"), ya es posible definir los parámetros para la ejecución del modelo.
+
+Debido a que el modelo de tanques integrado en el HECHMS, depende de las variables que cambian en el tiempo, es necesario definir un intervalo total de evaluación (inicio y final) y un intervalo de iteración "dt" para la ejecución del modelo. Este intervalo dependerá del intervalo de la lluvia. Para una adecuada estabilidad numérica del modelo computacional, se recomienda que el "dt" de la modelación sea inferior al intervalo del hietograma de la lluvia en la subcuenca. 
+
+Para este ejercicio, teniendo en cuenta que el intervalo de la lluvia es diaria, se asumirá un intervalo de modelación (dt) de 1.0 día. 
+
+Para definir esta condición de modelación en el software, nos dirigimos a la barra de "herramientas y menús", en la categoría "Components", seleccionamos "Creat Component" y damos clic en la subcategoría "Control Specifcation", tal como se presenta en la siguiente figura:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_120.PNG" width="700px"> 
+</div>
+
+Al realizar esto, se abrirá una ventana que solicitará el nombre del "Control". Para este caso, se dejará el nombre por defecto y que corresponde a "Control 1", tal como se presenta en la siguiente figura:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_121.PNG" width="700px"> 
+</div>
+
+Al realizar esto se creará un nuevo objeto en la ventana de exploración de la cuenca, tal como se presenta en la siguiente figura:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_122.PNG" width="700px"> 
+</div> 
+
+Finalmente, se debe ingresar los valores correspondientes al inicio de la modelación (fecha y hora), el final de la modelación (fecha y hora) y el intervalo (dt) de la modelación, tal como se presenta en la siguiente figura:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_123.PNG" width="700px"> 
+</div> 
+
+## Elaboración de una secuencia de modelación ("run")
+
+Con el "Control" creado, el último procedimiento antes de ejecutar el modelo es crear un "run" o "secuencia de modelación". Para realizar esto, nos dirigimos a la barra de "herramientas y menús", en la categoría "Compute", seleccionar "Create Compute" y en seleccionar la subcategoría "Simulation Run", tal como se presenta en la siguiente figura:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_124.PNG" width="700px"> 
+</div> 
+
+Al realizar esto, se abrirá una nueva ventana que preguntará, a partir de 4 pasos, las características del modelo. Las características se asocian a los objetos que se modelarán. Para este caso, el modelo solicitará: El nombre del "run", la cuenca principal, la agrupación de lluvias (metereología) y el control. Para nuestro ejercicio, las ventanas se verán así:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_125.PNG" width="700px"> 
+</div> 
+
+El último paso para ejecutar el modelo corresponde a "correr" el modelo (ejecutar la secuencia de modelación). Para realizar esto, nos dirigimos nuevamente a la barra de "herramientas y menús". En la barra principal, en el primer "scroll", seleccionar la secuencia de modelación "Run 1", tal como se observa en la siguiente figura:
+
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_126.PNG" width="700px"> 
+</div> 
+
+Finalmente, en el ícono de "la gota que está sobre una explosión" ejecutamos el modelo, tal como se observa en la siguiente figura:
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_127.PNG" width="700px"> 
+</div> 
+
+Para verificar que todo esté bien, se recomienda revisar la ventana de texto y leer los posibles comentarios o advertencias generadas por el modelo.
+
+## Análisis de resultados
+
+Para analizar los resultados, HEC-HMS tiene distintas herramientas, las cuales muestran los resultados como valores puntuales, tablas resumen, tablas detalladas y gráficos. Estas herramientas se encuentran en la barra de "herramientas y menús".
+
+Es posible consultar los resultados de cada elemento creado en la cuenca (subcuencas, tramos de corrientes, puntos de descarga, etc.). Al seleccionar un elemento en la ventana de "visualización del mapa" y posteriormente hacer clic en algunas de las herramientas de presentación de resultados, se abrirá una nueva ventana con el resumen de la información más relevante del objeto seleccionado.
+
+A manera de ejemplo, a continuación se presentan los resultados obtenidos en la subcuenca del modelo (subcuenca 1): 
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_128.PNG" width="700px"> 
+</div> 
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_129.PNG" width="700px"> 
+</div> 
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_130.PNG" width="700px"> 
+</div> 
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_131.PNG" width="700px"> 
+</div> 
+
+<div align="Center">
+  <img src="Imagenes/FiguraHECHMS_132.PNG" width="700px"> 
+</div> 
+
 ### Control de versiones
 
 | Versión    | Descripción   | Autor                                      | Horas |
 |------------|:--------------|--------------------------------------------|:-----:|
 | 2023.09.10 | Versión No. 1 | [AndresOtalora92](https://github.com/AndresOtalora92)  |   8   |
+| 2023.10.10  | Versión No. 1 | [AndresOtalora92](https://github.com/AndresOtalora92)  |   4   |
 
 _MOHI es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](../../License.md)._
 

@@ -24,7 +24,7 @@ Subbasin: Subcuenca1
      Area: 2.12
 
      Discretization: None
-     File: 
+     File: Cuenca1.sqlite
 
      Canopy: Simple
      Allow Simultaneous Precip Et: Yes
@@ -65,14 +65,14 @@ Basin Spatial Properties:
 End:
 
 Basin Schematic Properties:
-     Last View N: NaN
-     Last View S: NaN
-     Last View W: NaN
-     Last View E: NaN
-     Maximum View N: NaN
-     Maximum View S: NaN
-     Maximum View W: NaN
-     Maximum View E: NaN
+     Last View N: 1349.2009132420092
+     Last View S: 1299.2009132420092
+     Last View W: 792.3515981735159
+     Last View E: 842.3515981735159
+     Maximum View N: 1349.2009132420092
+     Maximum View S: 1299.2009132420092
+     Maximum View W: 792.3515981735159
+     Maximum View E: 842.3515981735159
      Extent Method: Manual
      Buffer: 0
      Draw Icons: Yes

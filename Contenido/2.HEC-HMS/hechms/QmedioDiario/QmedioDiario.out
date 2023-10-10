@@ -1,4 +1,1 @@
-14:22:56.192      -----DSS---zopen   New file opened,  File: D:\0. MOHI\Contenido\2.HEC-HMS\hechms\QmedioDiario\QmedioDiario.dss
-14:22:56.196                         Handle 4;  Process: 19404;  DSS Version:  7-IQ
-14:22:56.196                         Single-user advisory access mode
-14:22:56.196      -----DSS---zclose  Handle 4;  Process: 19404;  File: D:\0. MOHI\Contenido\2.HEC-HMS\hechms\QmedioDiario\QmedioDiario.dss
+11:33:13.250      -----DSS---zclose  Handle 6;  Process: 14516;  File: D:\0. MOHI\Contenido\2.HEC-HMS\hechms\QmedioDiario\Run_1.dss
