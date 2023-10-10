@@ -46,4 +46,32 @@ Crear, editar y modificar entidades geoespaciales, como puntos, líneas y políg
 
 
 
+---
 
+### Actividad
+1. Realiza el mismo proceso de visualización desarrollado y presentado en el ejemplo del caso de estudio por tu propia cuenta.
+2. Con base en la información, determina cuál es el municipio más grande y más pequeño del país. 
+3. Con base en la información disponible encuentra cuál es el municipio con mayor precipitación anual. 
+---
+
+### Referencias
+- QGIS Training Manual. QGIS Documentation. 2023.
+- GIS Applications for Water, Wastewater, and Stormwater Systems. Shamsi, U.M.Taylor & Francis Group. 2005.
+- LibroSIG: prendiendo a manejar los SIG en la gestión ambiental. Mancebo, S.; Ortega, E.;Martín, L.; Valentín, A. Madrid, España. 2009.  
+- Sistemas de Información Geográfica. Olaya, Victor. Creative Commons Atribucion. 2012.
+- Getting Started with ArcGIS. Booth and Mitchell. ESRI. 2001
+
+
+### Control de versiones
+
+| Versión | Descripción                                                    |                    Autor                    | Horas |
+|:-------:|:---------------------------------------------------------------|:-------------------------------------------:|:-----:|
+| 2023.09 | Versión inicial, definición de estructura general y contenido. | [juanrodace](https://github.com/juanrodace) |  1.0  |
+| 2023.10 | Inclusión de conceptos, esquemas y ejemplos.                   | [juanrodace](https://github.com/juanrodace) |  4.0  |
+
+| [:arrow_backward:Anterior](QGIS.md) | [:house: Inicio](../../Readme.md) | [:beginner: Ayuda](https://github.com/juanrodace/MOHI/discussions) | [Siguiente:arrow_forward:](../2HEC-HMS/Readme.md) |
+|-------------------------------------|-----------------------------------|--------------------------------------------------------------------|---------------------------------------------------|
+
+_MOHI es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](../../License.md)._
+
+_¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [juanrodace](https://github.com/juanrodace) en GitHub._ 
