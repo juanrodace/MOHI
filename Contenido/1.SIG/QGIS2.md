@@ -112,6 +112,13 @@ Las herramientas de estadística espacial permiten a analizar patrones y tendenc
 
 Las herramientas de geoprocesamiento de imágenes y sensores remotos en QGIS permiten a los usuarios trabajar con datos de imágenes satelitales, aéreas o de otros sensores remotos para realizar análisis y procesamiento de información geoespacial. Estas herramientas son fundamentales para tareas como la clasificación de imágenes, la corrección de datos, la extracción de información y el análisis de cambios en el paisaje. A continuación, se detallan algunas de las funciones y características comunes de las herramientas de geoprocesamiento de imágenes en QGIS:
 
+<div align="center"><br>
+<img alt="MOHI" src=".img/QGIS_Image.png" width="650px"><br>
+<sub>Cálculo del índice de vegetación a partir de datos Landsat 8   
+
+.</sub>
+</div>
+
 - Importación de Imágenes: QGIS permite importar una amplia variedad de formatos de imágenes, incluyendo formatos raster comunes como GeoTIFF, JPEG, y formatos de imágenes de sensores remotos como Landsat, Sentinel y otros.
 
 - Corrección Atmosférica: Herramientas para realizar correcciones atmosféricas en imágenes satelitales, lo que ayuda a mejorar la precisión de los datos.
