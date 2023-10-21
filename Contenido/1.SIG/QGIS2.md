@@ -166,6 +166,9 @@ Las herramientas de geoprocesamiento de imágenes y sensores remotos en QGIS per
   
   <br> Estas mediciones son útiles para una variedad de aplicaciones científicas y de monitoreo ambiental. Por ejemplo, MODIS ayuda a cartografiar áreas cubiertas por hielo y nive traídos por tempestades de invierno y temperaturas frías. Las bandas del MODIS son sensibles a los incendios, pudiéndose distinguir llamas de brasas y realizar estimaciones mejores de una cantidad de aerosoles y de gases producidos por el fuego dispersos en la atmósfera.
 
+> El plugin [<kbd><b>Semi-Automatic Classification</b></kbd>](https://www.youtube.com/watch?v=7SZDCFXjIbA) de QGIS permite realizar la clasificación supervisada de imagenes. El plugin ha sido diseñado para agilizar el procesamiento de imágenes de teledetección multiespectrales e hiperespectrales. Ofrece un conjunto de herramientas 
+para la descarga de imágenes Landsat, Sentinel, MODIS, etc, preprocesamiento y post procesamiento. 
+
 ---
 
 ### Actividades
