@@ -112,13 +112,6 @@ Las herramientas de estadística espacial permiten a analizar patrones y tendenc
 
 Las herramientas de geoprocesamiento de imágenes y sensores remotos en QGIS permiten a los usuarios trabajar con datos de imágenes satelitales, aéreas o de otros sensores remotos para realizar análisis y procesamiento de información geoespacial. Estas herramientas son fundamentales para tareas como la clasificación de imágenes, la corrección de datos, la extracción de información y el análisis de cambios en el paisaje. A continuación, se detallan algunas de las funciones y características comunes de las herramientas de geoprocesamiento de imágenes en QGIS:
 
-<div align="center"><br>
-<img alt="MOHI" src=".img/QGIS_Image.png" width="650px"><br>
-<sub>Cálculo del índice de vegetación a partir de datos Landsat 8   
-
-.</sub>
-</div>
-
 - Importación de Imágenes: QGIS permite importar una amplia variedad de formatos de imágenes, incluyendo formatos raster comunes como GeoTIFF, JPEG, y formatos de imágenes de sensores remotos como Landsat, Sentinel y otros.
 
 - Corrección Atmosférica: Herramientas para realizar correcciones atmosféricas en imágenes satelitales, lo que ayuda a mejorar la precisión de los datos.
@@ -144,15 +137,58 @@ Las herramientas de geoprocesamiento de imágenes y sensores remotos en QGIS per
 
 - Análisis de Series Temporales: Permite el análisis de imágenes de series temporales, lo que es valioso para el seguimiento de cambios a lo largo del tiempo.
 
+<div align="center"><br>
+<img alt="MOHI" src=".img/QGIS_Image.png" width="650px"><br>
+<sub>Cálculo del índice de vegetación a partir de datos Landsat 8.</sub>
+</div>
+
+
+#### Imágenes satelitales globales 
+
+- **Landsat**. Es un programa conjunto de la NASA y el Servicio Geológico de los Estados Unidos (USGS) que ha estado tomando imágenes de la Tierra desde 1972. Los satélites Landsat capturan imágenes de la superficie de la Tierra y estas imágenes proporcionan información valiosa para una variedad de aplicaciones. <br><br> Los datos de Landsat se utilizan para investigación, negocios, educación y otras actividades en todo el mundo. Las imágenes pueden ser vistas a través del sitio web [EarthExplorer](https://earthexplorer.usgs.gov/) del USGS o mediante navegadores como [EOSDA LandViewer](https://eos.com/landviewer) o [Libra](https://libra.developmentseed.org/). <br><br> Los datos de Landsat se utilizan en una amplia gama de campos, incluyendo: <br><br>
+  - Identificar el tipo y la distribución de los principales cultivos en todo el mundo.
+  - Medir cómo la agricultura se está expandiendo o reduciendo en regiones remotas.
+  - Monitorear la salud de los cultivos y la condición de los pastizales y tierras de pastoreo.
+  - Investigar sobre el cambio global.
+  - Aplicaciones en agricultura, cartografía, geología, silvicultura, planificación regional, medio ambiente, vigilancia y educación.
+  
+
+- **Sentinel**. Las imágenes Sentinel son proporcionadas por los satélites Sentinel 2A y Sentinel 2B, que forman parte de la flota de Sentinel. Estos satélites orbitan con un desfase de 180º entre sí para situarlos en extremos opuestos del globo terrestre y disponer de imágenes con una recurrencia temporal mayor. La adquisición de imágenes, o resolución temporal, es de 10 días por satélite o 5 días en conjunto. <br><br> Las imágenes Sentinel tienen una resolución de 10 metros en el visible y están disponibles para descarga de manera gratuita. Con sus 13 bandas de trabajo puedes realizar filtros a color natural y falso color o componer índices espectrales a máxima resolución. Estas imágenes son útiles para una variedad de aplicaciones, como monitorear la salud de los cultivos, evaluar la condición de los pastizales y tierras de pastoreo, investigar sobre cambios globales, planificación y desarrollo regional, medio ambiente, entre otros. <br><br> Además, las imágenes Sentinel pueden ser utilizadas para gestionar las consecuencias de desastres naturales como inundaciones, erupciones volcánicas y deslizamientos, y ayudar en las tareas de ayuda humanitaria. La plataforma [Copernicus Open Access Hub](https://s5phub.copernicus.eu/dhus/#/home) te ayudará a descargar las imágenes. 
+
+
+- **MODIS**. El Espectrorradiómetro de Imágenes de Resolución Moderada (MODIS, por sus siglas en inglés) es un instrumento científico lanzado en órbita terrestre por la NASA en 1999 a bordo del satélite Terra (EOS AM) y en 2002 a bordo del satélite Aqua. MODIS mide una serie de variables vitales, incluyendo: <br><br>
+  - Temperatura de la superficie (suelo y océano)
+  - Detección de incendios
+  - Color del océano (sedimentos, fitoplancton)
+  - Cartografía de la vegetación global, detección de cambios
+  - Características de la nubosidad 
+  - Concentraciones de aerosoles 
+  
+  <br> Estas mediciones son útiles para una variedad de aplicaciones científicas y de monitoreo ambiental. Por ejemplo, MODIS ayuda a cartografiar áreas cubiertas por hielo y nive traídos por tempestades de invierno y temperaturas frías. Las bandas del MODIS son sensibles a los incendios, pudiéndose distinguir llamas de brasas y realizar estimaciones mejores de una cantidad de aerosoles y de gases producidos por el fuego dispersos en la atmósfera.
+
 ---
 
-### Actividad
-1. Delimitación de cuencas hidrográficas.
+### Actividades
+
+1. A partir de la información existente, cree y edite las siguientes capas con el fin de tener información básica SIG para el estudio y diseño de un sistema de acueducto en Palmarito (Nuevo Colón) en el municipio de Pueblo Viejo.
+   - Polígono que delimite la zona de estudio.
+   - Corrientes naturales cercanas.
+   - Posibles puntos o nodos del sistema de presión.
+   - Posibles tramos del sistema de acueducto.
+   - Capa de usos del suelo en la zona de estudio.
+   - ¿Qué otra información considera necesaria para un estudio de estas características? 
+
+
+2. Delimitación de cuencas hidrográficas.
    - Cargue el archivo **MDT_Alos_Cesar.tif** y realice un recorte con ayuda del polígono del archivo **PoligonoAnalisis.shp**.
    - Con ayuda de las herramientas <kbd>Raster(r.*)</kbd> de GRASS, realice la delimitación de la cuenca hidrográfica al punto de drenaje ubicado en: [X:4954505.1, Y:2638060.0].
    - Genere subcuencas de mínimo 25 km<sup>2</sup> asociadas. Para esto, parta de la capa con ajuste de sumideros (Fill) y recórtela al tamaño de la cuenca obtenida. Luego utilice la herramienta <kbd><b>r.watershed</b></kbd>.
-2. A partir de los datos de precipitación y las herramientas estadísticas, determine la precipitación media en cada una de las subcuencas.
-3. Utilice el geoprocesamiento de imágenes para determinar el índice NDVI en la cuenca de estudio.
+
+   
+3. A partir de los datos de precipitación y las herramientas estadísticas, determine la precipitación media en cada una de las subcuencas.
+
+
+4. Utilice el geoprocesamiento de imágenes para determinar el índice NDVI en la cuenca de estudio.
 ---
 
 ### Referencias
