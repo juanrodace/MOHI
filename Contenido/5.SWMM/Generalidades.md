@@ -19,13 +19,21 @@ SWMM puede predecir la cantidad y calidad de la escorrentía de los sistemas de 
 
 El manual del usuario de SWMM contiene un tutorial para aprender a utilizar el software y también proporciona una descripción de los diversos objetos que SWMM utiliza para modelar un sistema de drenaje y una breve explicación de los métodos numéricos utilizados para calcular la cantidad y calidad de la escorrentía y las técnicas utilizadas para enrutar esta escorrentía a través de un sistema de canales de drenaje y/o alcantarillas.
 
-Las aplicaciones más frecuentes de SWMM son:
+### Referencias
+- 
 
-- Diseñar la red de drenaje para prevenir inundaciones.
-- Delimitar zonas de inundación en cauces naturales.
-- Definir la estrategia de control de una red de aguas.
-- Dimensionar la estructura de retención y los accesorios para el control de inundaciones y la protección de la calidad de aguas.
-- Además, este programa permite simular tanto la cantidad como la calidad del agua1.
-- Modelizar cargas contaminantes no puntuales para estudios o informes de Ingeniería Ambiental.
 
+### Control de versiones
+
+| Versión | Descripción                                                    |                    Autor                    | Horas |
+|:-------:|:---------------------------------------------------------------|:-------------------------------------------:|:-----:|
+| 2023.11 | Versión inicial, definición de estructura general y contenido. | [juanrodace](https://github.com/juanrodace) |  1.0  |
+| 2023.11 | Inclusión de conceptos, esquemas y ejemplos.                   | [juanrodace](https://github.com/juanrodace) |  1.0  |
+
+| [:arrow_backward:Anterior](Readme.md) | [:house: Inicio](../../Readme.md) | [:beginner: Ayuda](https://github.com/juanrodace/MOHI/discussions) | [Siguiente:arrow_forward:](Simulacion.md) |
+|---------------------------------------|-----------------------------------|--------------------------------------------------------------------|-------------------------------------------|
+
+_MOHI es de uso libre para fines académicos, conoce nuestra licencia, cláusulas, condiciones de uso y como referenciar los contenidos publicados en este repositorio, dando [clic aquí](../../License.md)._
+
+_¡Encontraste útil este repositorio!, apoya su difusión marcando este repositorio con una ⭐ o síguenos dando clic en el botón Follow de [juanrodace](https://github.com/juanrodace) en GitHub._ 
 
